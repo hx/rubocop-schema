@@ -27,9 +27,19 @@ module RuboCop
       section = doc.at_css('article.doc')&.at_xpath(%`div[h2/text()="#{badge}"]`) or
         return
 
+      attrs = section.css('.sect2:has([id^=configurable-attributes]) tbody tr').map do |row|
+        name, default, type = *row.css('td').map { |td| td.text.strip }
+        Schema::Attribute.new(
+          name:    name,
+          default: default,
+          type:    type.downcase
+        )
+      end
+
       Schema::CopInfo.new(
         name:        badge.to_s,
-        description: section.css('> .sectionbody > .paragraph').map { |div| div.text.strip.gsub(/\s+/, ' ') }.join("\n\n")
+        description: section.css('> .sectionbody > .paragraph').map { |div| div.text.strip.gsub(/\s+/, ' ') }.join("\n\n"),
+        attributes:  attrs
       )
     end
 

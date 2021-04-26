@@ -12,6 +12,8 @@ module RuboCop
         @info = info
       end
 
+      KNOWN_TYPES = Set.new(%w[boolean integer array string]).freeze
+
       def as_json
         Schema.template('cop_schema').tap do |json|
           json['$comment']   = cop.documentation_url
@@ -22,7 +24,13 @@ module RuboCop
 
           if @info
             json['description'] = @info.description
-            # TODO: attributes
+            @info.attributes.each do |attr|
+              next if attr.name.blank?
+
+              props[attr.name]    = prop = {}
+              prop['description'] = "Default: #{attr.default}" unless attr.default.blank?
+              prop['type']        = attr.type if KNOWN_TYPES.include? attr.type
+            end
           end
         end
       end

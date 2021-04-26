@@ -147,7 +147,8 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles"
+          "description": "Default: **/*.gemfile, **/Gemfile, **/gems.rb",
+          "type": "array"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -180,7 +181,8 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles"
+          "description": "Default: **/*.gemfile, **/Gemfile, **/gems.rb",
+          "type": "array"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -193,6 +195,14 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "IgnoredGems": {
+          "description": "Default: []",
+          "type": "array"
+        },
+        "OnlyFor": {
+          "description": "Default: []",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_bundler.html#bundlergemcomment",
@@ -213,7 +223,8 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles"
+          "description": "Default: **/*.gemfile, **/Gemfile, **/gems.rb",
+          "type": "array"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -249,7 +260,8 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles"
+          "description": "Default: **/*.gemfile, **/Gemfile, **/gems.rb",
+          "type": "array"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -264,6 +276,14 @@
           "type": "string"
         },
         "AutoCorrect": {
+          "type": "boolean"
+        },
+        "TreatCommentsAsGroupSeparators": {
+          "description": "Default: true",
+          "type": "boolean"
+        },
+        "ConsiderPunctuation": {
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -285,7 +305,8 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles"
+          "description": "Default: **/*.gemspec",
+          "type": "array"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -321,7 +342,8 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles"
+          "description": "Default: **/*.gemspec",
+          "type": "array"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -354,7 +376,8 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles"
+          "description": "Default: **/*.gemspec",
+          "type": "array"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -369,6 +392,14 @@
           "type": "string"
         },
         "AutoCorrect": {
+          "type": "boolean"
+        },
+        "TreatCommentsAsGroupSeparators": {
+          "description": "Default: true",
+          "type": "boolean"
+        },
+        "ConsiderPunctuation": {
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -390,7 +421,8 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles"
+          "description": "Default: **/*.gemspec",
+          "type": "array"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -423,7 +455,8 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles"
+          "description": "Default: **/*.gemspec",
+          "type": "array"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -472,6 +505,13 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: indent"
+        },
+        "IndentationWidth": {
+          "description": "Default: <none>",
+          "type": "integer"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutaccessmodifierindentation",
@@ -508,6 +548,13 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: with_first_argument"
+        },
+        "IndentationWidth": {
+          "description": "Default: <none>",
+          "type": "integer"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutargumentalignment",
@@ -544,6 +591,13 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: with_first_element"
+        },
+        "IndentationWidth": {
+          "description": "Default: <none>",
+          "type": "integer"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutarrayalignment",
@@ -580,6 +634,10 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "IndentationWidth": {
+          "description": "Default: <none>",
+          "type": "integer"
         }
       },
       "$comment": null,
@@ -603,7 +661,8 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
-          "$ref": "#/definitions/severity"
+          "description": "Default: warning",
+          "type": "string"
         },
         "Details": {
           "type": "string"
@@ -616,6 +675,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyleAlignWith": {
+          "description": "Default: start_of_line"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutbeginendalignment",
@@ -652,6 +714,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyleAlignWith": {
+          "description": "Default: either"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutblockalignment",
@@ -724,6 +789,17 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: case"
+        },
+        "IndentOneStep": {
+          "description": "Default: false",
+          "type": "boolean"
+        },
+        "IndentationWidth": {
+          "description": "Default: <none>",
+          "type": "integer"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutcaseindentation",
@@ -760,6 +836,13 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "Categories": {
+          "description": "Default: {\"module_inclusion\"⇒[\"include\", \"prepend\", \"extend\"]}"
+        },
+        "ExpectedOrder": {
+          "description": "Default: module_inclusion, constants, public_class_methods, initializer, public_methods, protected_methods, private_methods",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutclassstructure",
@@ -927,7 +1010,8 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
-          "$ref": "#/definitions/severity"
+          "description": "Default: warning",
+          "type": "string"
         },
         "Details": {
           "type": "string"
@@ -940,6 +1024,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyleAlignWith": {
+          "description": "Default: start_of_line"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutdefendalignment",
@@ -976,6 +1063,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: leading"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutdotposition",
@@ -1047,6 +1137,14 @@
           "type": "string"
         },
         "AutoCorrect": {
+          "type": "boolean"
+        },
+        "AllowBorderComment": {
+          "description": "Default: true",
+          "type": "boolean"
+        },
+        "AllowMarginComment": {
+          "description": "Default: true",
           "type": "boolean"
         }
       },
@@ -1192,6 +1290,26 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EmptyLineBetweenMethodDefs": {
+          "description": "Default: true",
+          "type": "boolean"
+        },
+        "EmptyLineBetweenClassDefs": {
+          "description": "Default: true",
+          "type": "boolean"
+        },
+        "EmptyLineBetweenModuleDefs": {
+          "description": "Default: true",
+          "type": "boolean"
+        },
+        "AllowAdjacentOneLineDefs": {
+          "description": "Default: false",
+          "type": "boolean"
+        },
+        "NumberOfEmptyLines": {
+          "description": "Default: 1",
+          "type": "integer"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutemptylinebetweendefs",
@@ -1228,6 +1346,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: around"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutemptylinesaroundaccessmodifier",
@@ -1300,6 +1421,14 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "AllowAliasSyntax": {
+          "description": "Default: true",
+          "type": "boolean"
+        },
+        "AllowedMethods": {
+          "description": "Default: alias_method, public, protected, private",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutemptylinesaroundattributeaccessor",
@@ -1372,6 +1501,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: no_empty_lines"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutemptylinesaroundblockbody",
@@ -1408,6 +1540,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: no_empty_lines"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutemptylinesaroundclassbody",
@@ -1516,6 +1651,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: no_empty_lines"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutemptylinesaroundmodulebody",
@@ -1575,7 +1713,8 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
-          "$ref": "#/definitions/severity"
+          "description": "Default: warning",
+          "type": "string"
         },
         "Details": {
           "type": "string"
@@ -1588,6 +1727,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyleAlignWith": {
+          "description": "Default: keyword"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutendalignment",
@@ -1621,6 +1763,9 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "EnforcedStyle": {
+          "description": "Default: native"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutendofline",
@@ -1656,6 +1801,18 @@
           "type": "string"
         },
         "AutoCorrect": {
+          "type": "boolean"
+        },
+        "AllowForAlignment": {
+          "description": "Default: true",
+          "type": "boolean"
+        },
+        "AllowBeforeTrailingComments": {
+          "description": "Default: false",
+          "type": "boolean"
+        },
+        "ForceEqualSignAlignment": {
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -1693,6 +1850,13 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: special_for_inner_method_call_in_parentheses"
+        },
+        "IndentationWidth": {
+          "description": "Default: <none>",
+          "type": "integer"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutfirstargumentindentation",
@@ -1729,6 +1893,13 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: special_inside_parentheses"
+        },
+        "IndentationWidth": {
+          "description": "Default: <none>",
+          "type": "integer"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutfirstarrayelementindentation",
@@ -1801,6 +1972,13 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: special_inside_parentheses"
+        },
+        "IndentationWidth": {
+          "description": "Default: <none>",
+          "type": "integer"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutfirsthashelementindentation",
@@ -1945,6 +2123,13 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: consistent"
+        },
+        "IndentationWidth": {
+          "description": "Default: <none>",
+          "type": "integer"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutfirstparameterindentation",
@@ -1981,6 +2166,15 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedHashRocketStyle": {
+          "description": "Default: key"
+        },
+        "EnforcedColonStyle": {
+          "description": "Default: key"
+        },
+        "EnforcedLastArgumentHashStyle": {
+          "description": "Default: always_inspect"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layouthashalignment",
@@ -2089,6 +2283,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: normal"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutindentationconsistency",
@@ -2125,6 +2322,13 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "IndentationWidth": {
+          "description": "Default: <none>",
+          "type": "integer"
+        },
+        "EnforcedStyle": {
+          "description": "Default: spaces"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutindentationstyle",
@@ -2161,6 +2365,14 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "Width": {
+          "description": "Default: 2",
+          "type": "integer"
+        },
+        "IgnoredPatterns": {
+          "description": "Default: []",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutindentationwidth",
@@ -2233,6 +2445,14 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "AllowDoxygenCommentStyle": {
+          "description": "Default: false",
+          "type": "boolean"
+        },
+        "AllowGemfileRubyComment": {
+          "description": "Default: false",
+          "type": "boolean"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutleadingcommentspace",
@@ -2304,7 +2524,32 @@
           "type": "string"
         },
         "AutoCorrect": {
+          "description": "Default: true",
           "type": "boolean"
+        },
+        "Max": {
+          "description": "Default: 120",
+          "type": "integer"
+        },
+        "AllowHeredoc": {
+          "description": "Default: true",
+          "type": "boolean"
+        },
+        "AllowURI": {
+          "description": "Default: true",
+          "type": "boolean"
+        },
+        "URISchemes": {
+          "description": "Default: http, https",
+          "type": "array"
+        },
+        "IgnoreCopDirectives": {
+          "description": "Default: true",
+          "type": "boolean"
+        },
+        "IgnoredPatterns": {
+          "description": "Default: []",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutlinelength",
@@ -2341,6 +2586,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: symmetrical"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutmultilinearraybracelayout",
@@ -2413,6 +2661,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: new_line"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutmultilineassignmentlayout",
@@ -2485,6 +2736,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: symmetrical"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutmultilinehashbracelayout",
@@ -2593,6 +2847,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: symmetrical"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutmultilinemethodcallbracelayout",
@@ -2629,6 +2886,13 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: aligned"
+        },
+        "IndentationWidth": {
+          "description": "Default: <none>",
+          "type": "integer"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutmultilinemethodcallindentation",
@@ -2665,6 +2929,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: symmetrical"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutmultilinemethoddefinitionbracelayout",
@@ -2701,6 +2968,13 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: aligned"
+        },
+        "IndentationWidth": {
+          "description": "Default: <none>",
+          "type": "integer"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutmultilineoperationindentation",
@@ -2737,6 +3011,13 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: with_first_parameter"
+        },
+        "IndentationWidth": {
+          "description": "Default: <none>",
+          "type": "integer"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutparameteralignment",
@@ -2772,6 +3053,10 @@
           "type": "string"
         },
         "AutoCorrect": {
+          "type": "boolean"
+        },
+        "InspectBlocks": {
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -3025,6 +3310,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyleInsidePipes": {
+          "description": "Default: no_space"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutspacearoundblockparameters",
@@ -3061,6 +3349,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: space"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutspacearoundequalsinparameterdefault",
@@ -3169,6 +3460,13 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "AllowForAlignment": {
+          "description": "Default: true",
+          "type": "boolean"
+        },
+        "EnforcedStyleForExponentOperator": {
+          "description": "Default: no_space"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutspacearoundoperators",
@@ -3205,6 +3503,12 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: space"
+        },
+        "EnforcedStyleForEmptyBraces": {
+          "description": "Default: space"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutspacebeforeblockbraces",
@@ -3349,6 +3653,10 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "AllowForAlignment": {
+          "description": "Default: true",
+          "type": "boolean"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutspacebeforefirstarg",
@@ -3421,6 +3729,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: require_no_space"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutspaceinlambdaliteral",
@@ -3493,6 +3804,12 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: no_space"
+        },
+        "EnforcedStyleForEmptyBrackets": {
+          "description": "Default: no_space"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutspaceinsidearrayliteralbrackets",
@@ -3528,6 +3845,16 @@
           "type": "string"
         },
         "AutoCorrect": {
+          "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: space"
+        },
+        "EnforcedStyleForEmptyBraces": {
+          "description": "Default: no_space"
+        },
+        "SpaceBeforeBlockParameters": {
+          "description": "Default: true",
           "type": "boolean"
         }
       },
@@ -3565,6 +3892,12 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: space"
+        },
+        "EnforcedStyleForEmptyBraces": {
+          "description": "Default: no_space"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutspaceinsidehashliteralbraces",
@@ -3601,6 +3934,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: no_space"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutspaceinsideparens",
@@ -3709,6 +4045,12 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: no_space"
+        },
+        "EnforcedStyleForEmptyBrackets": {
+          "description": "Default: no_space"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutspaceinsidereferencebrackets",
@@ -3745,6 +4087,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: no_space"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layoutspaceinsidestringinterpolation",
@@ -3781,6 +4126,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: final_newline"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_layout.html#layouttrailingemptylines",
@@ -3816,6 +4164,10 @@
           "type": "string"
         },
         "AutoCorrect": {
+          "type": "boolean"
+        },
+        "AllowInHeredoc": {
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -3883,6 +4235,10 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "IgnoredMethods": {
+          "description": "Default: []",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_lint.html#lintambiguousblockassociation",
@@ -3988,6 +4344,10 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "AllowSafeAssignment": {
+          "description": "Default: true",
+          "type": "boolean"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_lint.html#lintassignmentincondition",
@@ -4159,6 +4519,10 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "AllowedMethods": {
+          "description": "Default: enums",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_lint.html#lintconstantdefinitioninblock",
@@ -4192,6 +4556,14 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "Only": {
+          "description": "Default: []",
+          "type": "array"
+        },
+        "Ignore": {
+          "description": "Default: []",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_lint.html#lintconstantresolution",
@@ -4225,6 +4597,13 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "DebuggerReceivers": {
+          "description": "Default: []",
+          "type": "array"
+        },
+        "DebuggerMethods": {
+          "description": "Default: {\"Kernel\"⇒[\"binding.irb\"], \"Byebug\"⇒[\"byebug\", \"remote_byebug\", \"Kernel.byebug\", \"Kernel.remote_byebug\"], \"Capybara\"⇒[\"save_and_open_page\", \"save_and_open_screenshot\"], \"Pry\"⇒[\"binding.pry\", \"binding.remote_pry\", \"binding.pry_remote\", \"Pry.rescue\"], \"Rails\"⇒[\"debugger\", \"Kernel.debugger\"], \"WebConsole\"⇒[\"binding.console\"]}"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_lint.html#lintdebugger",
@@ -4297,6 +4676,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "DeprecatedConstants": {
+          "description": "Default: {\"NIL\"⇒{\"Alternative\"⇒\"nil\", \"DeprecatedVersion\"⇒\"2.4\"}, \"TRUE\"⇒{\"Alternative\"⇒\"true\", \"DeprecatedVersion\"⇒\"2.4\"}, \"FALSE\"⇒{\"Alternative\"⇒\"false\", \"DeprecatedVersion\"⇒\"2.4\"}, \"Random::DEFAULT\"⇒{\"Alternative\"⇒\"Random.new\", \"DeprecatedVersion\"⇒\"3.0\"}}"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_lint.html#lintdeprecatedconstants",
@@ -4402,6 +4784,14 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "IgnoreLiteralBranches": {
+          "description": "Default: false",
+          "type": "boolean"
+        },
+        "IgnoreConstantBranches": {
+          "description": "Default: false",
+          "type": "boolean"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_lint.html#lintduplicatebranch",
@@ -4738,6 +5128,14 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "AllowComments": {
+          "description": "Default: true",
+          "type": "boolean"
+        },
+        "AllowEmptyLambdas": {
+          "description": "Default: true",
+          "type": "boolean"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_lint.html#lintemptyblock",
@@ -4771,6 +5169,10 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "AllowComments": {
+          "description": "Default: false",
+          "type": "boolean"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_lint.html#lintemptyclass",
@@ -4804,6 +5206,10 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "AllowComments": {
+          "description": "Default: true",
+          "type": "boolean"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_lint.html#lintemptyconditionalbody",
@@ -4906,6 +5312,10 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "AllowComments": {
+          "description": "Default: true",
+          "type": "boolean"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_lint.html#lintemptyfile",
@@ -4975,6 +5385,10 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "AllowComments": {
+          "description": "Default: true",
+          "type": "boolean"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_lint.html#lintemptywhen",
@@ -5353,6 +5767,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: runtime_error"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_lint.html#lintinheritexception",
@@ -5596,6 +6013,9 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "MaximumRangeSize": {
+          "description": "Default: Infinity"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_lint.html#lintmissingcopenabledirective",
@@ -5697,6 +6117,10 @@
           "type": "string"
         },
         "AutoCorrect": {
+          "type": "boolean"
+        },
+        "AllowMethodComparison": {
+          "description": "Default: true",
           "type": "boolean"
         }
       },
@@ -5935,6 +6359,14 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "IgnoredMethods": {
+          "description": "Default: []",
+          "type": "array"
+        },
+        "IgnoredClasses": {
+          "description": "Default: Time, DateTime",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_lint.html#lintnumberconversion",
@@ -6217,6 +6649,10 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "AllowedImplicitNamespaces": {
+          "description": "Default: Gem",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_lint.html#lintraiseexception",
@@ -6430,6 +6866,10 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "AllowedMethods": {
+          "description": "Default: instance_of?, kind_of?, is_a?, eql?, respond_to?, equal?",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_lint.html#lintredundantsafenavigation",
@@ -6465,6 +6905,10 @@
           "type": "string"
         },
         "AutoCorrect": {
+          "type": "boolean"
+        },
+        "AllowPercentLiteralArrayArgument": {
+          "description": "Default: true",
           "type": "boolean"
         }
       },
@@ -6781,6 +7225,10 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "AllowedMethods": {
+          "description": "Default: present?, blank?, presence, try, try!",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_lint.html#lintsafenavigationconsistency",
@@ -6814,6 +7262,10 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "AllowedMethods": {
+          "description": "Default: present?, blank?, presence, try, try!, in?",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_lint.html#lintsafenavigationchain",
@@ -6988,6 +7440,10 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "IgnoreImplicitReferences": {
+          "description": "Default: false",
+          "type": "boolean"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_lint.html#lintshadowedargument",
@@ -7120,6 +7576,14 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "AllowComments": {
+          "description": "Default: true",
+          "type": "boolean"
+        },
+        "AllowNil": {
+          "description": "Default: true",
+          "type": "boolean"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_lint.html#lintsuppressedexception",
@@ -7156,6 +7620,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: strict"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_lint.html#lintsymbolconversion",
@@ -7396,6 +7863,10 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "AllowKeywordBlockArguments": {
+          "description": "Default: false",
+          "type": "boolean"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_lint.html#lintunderscoreprefixedvariablename",
@@ -7429,6 +7900,9 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "Methods": {
+          "description": "Default: {\"chunk_while\"⇒2, \"each_with_index\"⇒2, \"each_with_object\"⇒2, \"inject\"⇒2, \"max\"⇒2, \"min\"⇒2, \"minmax\"⇒2, \"reduce\"⇒2, \"slice_when\"⇒2, \"sort\"⇒2}"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_lint.html#lintunexpectedblockarity",
@@ -7564,6 +8038,9 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "IgnoredPatterns": {
+          "description": "Default: `(?-mix:(exactly"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_lint.html#lintunreachableloop",
@@ -7600,6 +8077,14 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "IgnoreEmptyBlocks": {
+          "description": "Default: true",
+          "type": "boolean"
+        },
+        "AllowUnusedKeywordArguments": {
+          "description": "Default: false",
+          "type": "boolean"
         }
       },
       "$comment": null,
@@ -7635,6 +8120,18 @@
           "type": "string"
         },
         "AutoCorrect": {
+          "type": "boolean"
+        },
+        "AllowUnusedKeywordArguments": {
+          "description": "Default: false",
+          "type": "boolean"
+        },
+        "IgnoreEmptyMethods": {
+          "description": "Default: true",
+          "type": "boolean"
+        },
+        "IgnoreNotImplementedMethods": {
+          "description": "Default: true",
           "type": "boolean"
         }
       },
@@ -7741,6 +8238,14 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "ContextCreatingMethods": {
+          "description": "Default: []",
+          "type": "array"
+        },
+        "MethodCreatingMethods": {
+          "description": "Default: []",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_lint.html#lintuselessaccessmodifier",
@@ -7842,6 +8347,10 @@
           "type": "string"
         },
         "AutoCorrect": {
+          "type": "boolean"
+        },
+        "AllowComments": {
+          "description": "Default: true",
           "type": "boolean"
         }
       },
@@ -7948,6 +8457,10 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "CheckForMethodsWithNoSideEffects": {
+          "description": "Default: false",
+          "type": "boolean"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_lint.html#lintvoid",
@@ -7981,6 +8494,14 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "IgnoredMethods": {
+          "description": "Default: []",
+          "type": "array"
+        },
+        "Max": {
+          "description": "Default: 7",
+          "type": "integer"
         }
       },
       "$comment": null,
@@ -8014,6 +8535,18 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "IgnoredMethods": {
+          "description": "Default: []",
+          "type": "array"
+        },
+        "CountRepeatedAttributes": {
+          "description": "Default: true",
+          "type": "boolean"
+        },
+        "Max": {
+          "description": "Default: 17",
+          "type": "integer"
         }
       },
       "$comment": null,
@@ -8031,7 +8564,8 @@
           "type": "boolean"
         },
         "Exclude": {
-          "$ref": "#/definitions/listOfFiles"
+          "description": "Default: */.gemspec",
+          "type": "array"
         },
         "Include": {
           "$ref": "#/definitions/listOfFiles"
@@ -8047,6 +8581,26 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "CountComments": {
+          "description": "Default: false",
+          "type": "boolean"
+        },
+        "Max": {
+          "description": "Default: 25",
+          "type": "integer"
+        },
+        "CountAsOne": {
+          "description": "Default: []",
+          "type": "array"
+        },
+        "ExcludedMethods": {
+          "description": "Default: []",
+          "type": "array"
+        },
+        "IgnoredMethods": {
+          "description": "Default: refine",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_metrics.html#metricsblocklength",
@@ -8080,6 +8634,14 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "CountBlocks": {
+          "description": "Default: false",
+          "type": "boolean"
+        },
+        "Max": {
+          "description": "Default: 3",
+          "type": "integer"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_metrics.html#metricsblocknesting",
@@ -8113,6 +8675,18 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "CountComments": {
+          "description": "Default: false",
+          "type": "boolean"
+        },
+        "Max": {
+          "description": "Default: 100",
+          "type": "integer"
+        },
+        "CountAsOne": {
+          "description": "Default: []",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_metrics.html#metricsclasslength",
@@ -8146,6 +8720,26 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "CountComments": {
+          "description": "Default: false",
+          "type": "boolean"
+        },
+        "Max": {
+          "description": "Default: 10",
+          "type": "integer"
+        },
+        "CountAsOne": {
+          "description": "Default: []",
+          "type": "array"
+        },
+        "ExcludedMethods": {
+          "description": "Default: []",
+          "type": "array"
+        },
+        "IgnoredMethods": {
+          "description": "Default: []",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_metrics.html#metricsmethodlength",
@@ -8179,6 +8773,18 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "CountComments": {
+          "description": "Default: false",
+          "type": "boolean"
+        },
+        "Max": {
+          "description": "Default: 100",
+          "type": "integer"
+        },
+        "CountAsOne": {
+          "description": "Default: []",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_metrics.html#metricsmodulelength",
@@ -8212,6 +8818,18 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "Max": {
+          "description": "Default: 5",
+          "type": "integer"
+        },
+        "CountKeywordArgs": {
+          "description": "Default: true",
+          "type": "boolean"
+        },
+        "MaxOptionalParameters": {
+          "description": "Default: 3",
+          "type": "integer"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_metrics.html#metricsparameterlists",
@@ -8245,6 +8863,14 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "IgnoredMethods": {
+          "description": "Default: []",
+          "type": "array"
+        },
+        "Max": {
+          "description": "Default: 8",
+          "type": "integer"
         }
       },
       "$comment": null,
@@ -8311,6 +8937,10 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "AsciiConstants": {
+          "description": "Default: true",
+          "type": "boolean"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_naming.html#namingasciiidentifiers",
@@ -8344,6 +8974,22 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "MinNameLength": {
+          "description": "Default: 1",
+          "type": "integer"
+        },
+        "AllowNamesEndingInNumbers": {
+          "description": "Default: true",
+          "type": "boolean"
+        },
+        "AllowedNames": {
+          "description": "Default: []",
+          "type": "array"
+        },
+        "ForbiddenNames": {
+          "description": "Default: []",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_naming.html#namingblockparametername",
@@ -8377,6 +9023,10 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "AllowedNames": {
+          "description": "Default: module_parent",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_naming.html#namingclassandmodulecamelcase",
@@ -8427,7 +9077,8 @@
           "type": "boolean"
         },
         "Exclude": {
-          "$ref": "#/definitions/listOfFiles"
+          "description": "Default: []",
+          "type": "array"
         },
         "Include": {
           "$ref": "#/definitions/listOfFiles"
@@ -8443,6 +9094,25 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "ExpectMatchingDefinition": {
+          "description": "Default: false",
+          "type": "boolean"
+        },
+        "CheckDefinitionPathHierarchy": {
+          "description": "Default: true",
+          "type": "boolean"
+        },
+        "Regex": {
+          "description": "Default: <none>"
+        },
+        "IgnoreExecutableScripts": {
+          "description": "Default: true",
+          "type": "boolean"
+        },
+        "AllowedAcronyms": {
+          "description": "Default: CLI, DSL, ACL, API, ASCII, CPU, CSS, DNS, EOF, GUID, HTML, HTTP, HTTPS, ID, IP, JSON, LHS, QPS, RAM, RHS, RPC, SLA, SMTP, SQL, SSH, TCP, TLS, TTL, UDP, UI, UID, UUID, URI, URL, UTF8, VM, XML, XMPP, XSRF, XSS",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_naming.html#namingfilename",
@@ -8479,6 +9149,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: uppercase"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_naming.html#namingheredocdelimitercase",
@@ -8512,6 +9185,13 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "ForbiddenDelimiters": {
+          "description": "Default: `(?-mix:(^"
+        },
+        "END)(\\s": {
+          "description": "Default: $))`",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_naming.html#namingheredocdelimiternaming",
@@ -8545,6 +9225,9 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "EnforcedStyleForLeadingUnderscores": {
+          "description": "Default: disallowed"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_naming.html#namingmemoizedinstancevariablename",
@@ -8578,6 +9261,13 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "EnforcedStyle": {
+          "description": "Default: snake_case"
+        },
+        "IgnoredPatterns": {
+          "description": "Default: []",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_naming.html#namingmethodname",
@@ -8611,6 +9301,22 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "MinNameLength": {
+          "description": "Default: 3",
+          "type": "integer"
+        },
+        "AllowNamesEndingInNumbers": {
+          "description": "Default: true",
+          "type": "boolean"
+        },
+        "AllowedNames": {
+          "description": "Default: at, by, db, id, in, io, ip, of, on, os, pp, to",
+          "type": "array"
+        },
+        "ForbiddenNames": {
+          "description": "Default: []",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_naming.html#namingmethodparametername",
@@ -8664,7 +9370,8 @@
           "type": "boolean"
         },
         "Exclude": {
-          "$ref": "#/definitions/listOfFiles"
+          "description": "Default: spec/*/",
+          "type": "array"
         },
         "Include": {
           "$ref": "#/definitions/listOfFiles"
@@ -8680,6 +9387,22 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "NamePrefix": {
+          "description": "Default: is_, has_, have_",
+          "type": "array"
+        },
+        "ForbiddenPrefixes": {
+          "description": "Default: is_, has_, have_",
+          "type": "array"
+        },
+        "AllowedMethods": {
+          "description": "Default: is_a?",
+          "type": "array"
+        },
+        "MethodDefinitionMacros": {
+          "description": "Default: define_method, define_singleton_method",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_naming.html#namingpredicatename",
@@ -8716,6 +9439,10 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "PreferredName": {
+          "description": "Default: e",
+          "type": "string"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_naming.html#namingrescuedexceptionsvariablename",
@@ -8749,6 +9476,13 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "EnforcedStyle": {
+          "description": "Default: snake_case"
+        },
+        "AllowedIdentifiers": {
+          "description": "Default: []",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_naming.html#namingvariablename",
@@ -8782,6 +9516,21 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "EnforcedStyle": {
+          "description": "Default: normalcase"
+        },
+        "CheckMethodNames": {
+          "description": "Default: true",
+          "type": "boolean"
+        },
+        "CheckSymbols": {
+          "description": "Default: true",
+          "type": "boolean"
+        },
+        "AllowedIdentifiers": {
+          "description": "Default: capture3, iso8601, rfc1123_date, rfc822, rfc2822, rfc3339",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_naming.html#namingvariablenumber",
@@ -8815,6 +9564,13 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "EnforcedStyle": {
+          "description": "Default: group"
+        },
+        "AllowModifiersOnSymbols": {
+          "description": "Default: true",
+          "type": "boolean"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styleaccessmodifierdeclarations",
@@ -8851,6 +9607,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: grouped"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styleaccessorgrouping",
@@ -8887,6 +9646,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: prefer_alias"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylealias",
@@ -8923,6 +9685,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: conditionals"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styleandor",
@@ -8958,6 +9723,10 @@
           "type": "string"
         },
         "AutoCorrect": {
+          "type": "boolean"
+        },
+        "AllowOnlyRestArgument": {
+          "description": "Default: true",
           "type": "boolean"
         }
       },
@@ -9064,6 +9833,10 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "AllowedChars": {
+          "description": "Default: ©",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styleasciicomments",
@@ -9169,6 +9942,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: bare_percent"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylebarepercentliterals",
@@ -9310,6 +10086,29 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: line_count_based"
+        },
+        "ProceduralMethods": {
+          "description": "Default: benchmark, bm, bmbm, create, each_with_object, measure, new, realtime, tap, with_object",
+          "type": "array"
+        },
+        "FunctionalMethods": {
+          "description": "Default: let, let!, subject, watch",
+          "type": "array"
+        },
+        "IgnoredMethods": {
+          "description": "Default: lambda, proc, it",
+          "type": "array"
+        },
+        "AllowBracesOnProceduralOneLiners": {
+          "description": "Default: false",
+          "type": "boolean"
+        },
+        "BracesRequiredMethods": {
+          "description": "Default: []",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styleblockdelimiters",
@@ -9345,6 +10144,10 @@
           "type": "string"
         },
         "AutoCorrect": {
+          "type": "boolean"
+        },
+        "AllowOnConstant": {
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -9454,6 +10257,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: nested"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styleclassandmodulechildren",
@@ -9490,6 +10296,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: is_a?"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styleclasscheck",
@@ -9526,6 +10335,10 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "IgnoredMethods": {
+          "description": "Default: ==, equal?, eql?",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styleclassequalitycomparison",
@@ -9598,6 +10411,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: def_self"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styleclassmethodsdefinitions",
@@ -9703,6 +10519,13 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "PreferredMethods": {
+          "description": "Default: {\"collect\"⇒\"map\", \"collect!\"⇒\"map!\", \"inject\"⇒\"reduce\", \"detect\"⇒\"find\", \"find_all\"⇒\"select\", \"member?\"⇒\"include?\"}"
+        },
+        "MethodsAcceptingSymbol": {
+          "description": "Default: inject, reduce",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylecollectionmethods",
@@ -9844,6 +10667,13 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: backticks"
+        },
+        "AllowInnerBackticks": {
+          "description": "Default: false",
+          "type": "boolean"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylecommandliteral",
@@ -9880,6 +10710,10 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "Keywords": {
+          "description": "Default: TODO, FIXME, OPTIMIZE, HACK, REVIEW, NOTE",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylecommentannotation",
@@ -9952,6 +10786,17 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: assign_to_condition"
+        },
+        "SingleLineConditionsOnly": {
+          "description": "Default: true",
+          "type": "boolean"
+        },
+        "IncludeTernaryExpressions": {
+          "description": "Default: true",
+          "type": "boolean"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styleconditionalassignment",
@@ -9985,6 +10830,10 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "IgnoreModules": {
+          "description": "Default: false",
+          "type": "boolean"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styleconstantvisibility",
@@ -10021,6 +10870,14 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "Notice": {
+          "description": "Default: ^Copyright (\\(c\\) )?2[0-9]{3} .+",
+          "type": "string"
+        },
+        "AutocorrectNotice": {
+          "description": "Default: ``",
+          "type": "string"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylecopyright",
@@ -10056,6 +10913,10 @@
           "type": "string"
         },
         "AutoCorrect": {
+          "type": "boolean"
+        },
+        "AllowCoercion": {
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -10165,6 +11026,10 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "AllowedCops": {
+          "description": "Default: []",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styledisablecopswithinsourcecodedirective",
@@ -10182,7 +11047,8 @@
           "type": "boolean"
         },
         "Exclude": {
-          "$ref": "#/definitions/listOfFiles"
+          "description": "Default: spec//, test//",
+          "type": "array"
         },
         "Include": {
           "$ref": "#/definitions/listOfFiles"
@@ -10198,6 +11064,10 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "RequireForNonPublicMethods": {
+          "description": "Default: false",
+          "type": "boolean"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styledocumentationmethod",
@@ -10215,7 +11085,8 @@
           "type": "boolean"
         },
         "Exclude": {
-          "$ref": "#/definitions/listOfFiles"
+          "description": "Default: spec//, test//",
+          "type": "array"
         },
         "Include": {
           "$ref": "#/definitions/listOfFiles"
@@ -10231,6 +11102,10 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "AllowedConstants": {
+          "description": "Default: []",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styledocumentation",
@@ -10336,6 +11211,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: allowed_in_returns"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styledoublenegation",
@@ -10516,6 +11394,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: both"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styleemptyelse",
@@ -10624,6 +11505,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: compact"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styleemptymethod",
@@ -10660,6 +11544,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: allow_single_line"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styleendlessmethod",
@@ -10909,6 +11796,9 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "EnforcedStyle": {
+          "description": "Default: scientific"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styleexponentialnotation",
@@ -10945,6 +11835,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: single_coerce"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylefloatdivision",
@@ -10981,6 +11874,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: each"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylefor",
@@ -11017,6 +11913,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: format"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styleformatstring",
@@ -11050,6 +11949,17 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "EnforcedStyle": {
+          "description": "Default: annotated"
+        },
+        "MaxUnannotatedPlaceholdersAllowed": {
+          "description": "Default: 1",
+          "type": "integer"
+        },
+        "IgnoredMethods": {
+          "description": "Default: []",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styleformatstringtoken",
@@ -11086,6 +11996,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: always"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylefrozenstringliteralcomment",
@@ -11155,6 +12068,10 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "AllowedVariables": {
+          "description": "Default: []",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styleglobalvars",
@@ -11188,6 +12105,10 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "MinBodyLength": {
+          "description": "Default: 1",
+          "type": "integer"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styleguardclause",
@@ -11224,6 +12145,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: braces"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylehashaslastarrayitem",
@@ -11259,6 +12183,10 @@
           "type": "string"
         },
         "AutoCorrect": {
+          "type": "boolean"
+        },
+        "AllowSplatArgument": {
+          "description": "Default: true",
           "type": "boolean"
         }
       },
@@ -11365,6 +12293,10 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "MinBranchesCount": {
+          "description": "Default: 3",
+          "type": "integer"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylehashlikecase",
@@ -11400,6 +12332,17 @@
           "type": "string"
         },
         "AutoCorrect": {
+          "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: ruby19"
+        },
+        "UseHashRocketsWithSymbolValues": {
+          "description": "Default: false",
+          "type": "boolean"
+        },
+        "PreferHashRocketsForNonAlnumEndingSymbols": {
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -11542,6 +12485,10 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "AllowIfModifier": {
+          "description": "Default: false",
+          "type": "boolean"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styleifinsideelse",
@@ -11650,6 +12597,10 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "AllowedMethods": {
+          "description": "Default: nonzero?",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styleifwithbooleanliteralbranches",
@@ -11791,6 +12742,12 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "InverseMethods": {
+          "description": "Default: {:any?⇒:none?, :even?⇒:odd?, :==⇒:!=, :=⇒:!, :<⇒:>=, :>⇒:⇐}"
+        },
+        "InverseBlocks": {
+          "description": "Default: {:select⇒:reject, :select!⇒:reject!}"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styleinversemethods",
@@ -11841,7 +12798,8 @@
           "type": "boolean"
         },
         "Exclude": {
-          "$ref": "#/definitions/listOfFiles"
+          "description": "Default: /.gemfile, /Gemfile, /gems.rb, /.gemspec",
+          "type": "array"
         },
         "Include": {
           "$ref": "#/definitions/listOfFiles"
@@ -11857,6 +12815,10 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "AllowedAddresses": {
+          "description": "Default: ::",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styleipaddresses",
@@ -11929,6 +12891,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: line_count_dependent"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylelambda",
@@ -11965,6 +12930,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: call"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylelambdacall",
@@ -12037,6 +13005,10 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "IgnoredMethods": {
+          "description": "Default: []",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylemethodcallwithoutargsparentheses",
@@ -12073,6 +13045,41 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "IgnoreMacros": {
+          "description": "Default: true",
+          "type": "boolean"
+        },
+        "IgnoredMethods": {
+          "description": "Default: []",
+          "type": "array"
+        },
+        "IgnoredPatterns": {
+          "description": "Default: []",
+          "type": "array"
+        },
+        "IncludedMacros": {
+          "description": "Default: []",
+          "type": "array"
+        },
+        "AllowParenthesesInMultilineCall": {
+          "description": "Default: false",
+          "type": "boolean"
+        },
+        "AllowParenthesesInChaining": {
+          "description": "Default: false",
+          "type": "boolean"
+        },
+        "AllowParenthesesInCamelCaseMethod": {
+          "description": "Default: false",
+          "type": "boolean"
+        },
+        "AllowParenthesesInStringInterpolation": {
+          "description": "Default: false",
+          "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: require_parentheses"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylemethodcallwithargsparentheses",
@@ -12144,6 +13151,10 @@
           "type": "string"
         },
         "AutoCorrect": {
+          "type": "boolean"
+        },
+        "SafeForConstants": {
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -12253,6 +13264,10 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "AllowModifier": {
+          "description": "Default: false",
+          "type": "boolean"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylesolenestedconditional",
@@ -12355,6 +13370,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: require_parentheses"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylemethoddefparentheses",
@@ -12424,6 +13442,9 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "EnforcedStyle": {
+          "description": "Default: both"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylemissingelse",
@@ -12493,6 +13514,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: separated"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylemixingrouping",
@@ -12561,6 +13585,13 @@
           "type": "string"
         },
         "AutoCorrect": {
+          "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: module_function"
+        },
+        "Autocorrect": {
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -12739,6 +13770,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: keyword"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylemultilinememoization",
@@ -12883,6 +13917,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: literals"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylemutableconstant",
@@ -12919,6 +13956,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: both"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylenegatedif",
@@ -12991,6 +14031,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: both"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylenegatedunless",
@@ -13099,6 +14142,10 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "AllowedMethods": {
+          "description": "Default: be, be_a, be_an, be_between, be_falsey, be_kind_of, be_instance_of, be_truthy, be_within, eq, eql, end_with, include, match, raise_error, respond_to, start_with",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylenestedparenthesizedcalls",
@@ -13171,6 +14218,13 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: skip_modifier_ifs"
+        },
+        "MinBodyLength": {
+          "description": "Default: 3",
+          "type": "integer"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylenext",
@@ -13207,6 +14261,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: predicate"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylenilcomparison",
@@ -13278,6 +14335,10 @@
           "type": "string"
         },
         "AutoCorrect": {
+          "type": "boolean"
+        },
+        "IncludeSemanticChanges": {
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -13351,6 +14412,14 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "MinDigits": {
+          "description": "Default: 5",
+          "type": "integer"
+        },
+        "Strict": {
+          "description": "Default: false",
+          "type": "boolean"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylenumericliterals",
@@ -13387,6 +14456,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedOctalStyle": {
+          "description": "Default: zero_with_o"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylenumericliteralprefix",
@@ -13404,7 +14476,8 @@
           "type": "boolean"
         },
         "Exclude": {
-          "$ref": "#/definitions/listOfFiles"
+          "description": "Default: spec/*/",
+          "type": "array"
         },
         "Include": {
           "$ref": "#/definitions/listOfFiles"
@@ -13423,6 +14496,13 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: predicate"
+        },
+        "IgnoredMethods": {
+          "description": "Default: []",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylenumericpredicate",
@@ -13458,6 +14538,10 @@
           "type": "string"
         },
         "AutoCorrect": {
+          "type": "boolean"
+        },
+        "AlwaysCorrectToMultiline": {
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -13528,6 +14612,10 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "SuspiciousParamNames": {
+          "description": "Default: options, opts, args, params, parameters",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styleoptionhash",
@@ -13594,6 +14682,10 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "AllowedMethods": {
+          "description": "Default: respond_to_missing?",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styleoptionalbooleanparameter",
@@ -13666,6 +14758,14 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "AllowSafeAssignment": {
+          "description": "Default: true",
+          "type": "boolean"
+        },
+        "AllowInMultilineConditions": {
+          "description": "Default: false",
+          "type": "boolean"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styleparenthesesaroundcondition",
@@ -13702,6 +14802,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "PreferredDelimiters": {
+          "description": "Default: {\"default\"⇒\"()\", \"%i\"⇒\"[]\", \"%I\"⇒\"[]\", \"%r\"⇒\"{}\", \"%w\"⇒\"[]\", \"%W\"⇒\"[]\"}"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylepercentliteraldelimiters",
@@ -13738,6 +14841,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: lower_case_q"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylepercentqliterals",
@@ -13810,6 +14916,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: short"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylepreferredhashmethods",
@@ -13882,6 +14991,13 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: exploded"
+        },
+        "AllowedCompactTypes": {
+          "description": "Default: []",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styleraiseargs",
@@ -13954,6 +15070,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "Methods": {
+          "description": "Default: {\"join\"⇒\"\", \"split\"⇒\" \", \"chomp\"⇒\"\\n\", \"chomp!\"⇒\"\\n\"}"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundantargument",
@@ -14386,6 +15505,10 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "AllowMultipleReturnValues": {
+          "description": "Default: false",
+          "type": "boolean"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styleredundantreturn",
@@ -14530,6 +15653,13 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: slashes"
+        },
+        "AllowInnerSlashes": {
+          "description": "Default: false",
+          "type": "boolean"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styleregexpliteral",
@@ -14602,6 +15732,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: explicit"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylerescuestandarderror",
@@ -14638,6 +15771,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: return"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylereturnnil",
@@ -14674,6 +15810,14 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "ConvertCodeThatCanStartToReturnNil": {
+          "description": "Default: false",
+          "type": "boolean"
+        },
+        "AllowedMethods": {
+          "description": "Default: present?, blank?, presence, try, try!",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylesafenavigation",
@@ -14782,6 +15926,10 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "AllowAsExpressionSeparator": {
+          "description": "Default: false",
+          "type": "boolean"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylesemicolon",
@@ -14851,6 +15999,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: only_raise"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylesignalexception",
@@ -14923,6 +16074,10 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "Methods": {
+          "description": "Default: {\"reduce\"⇒[\"acc\", \"elem\"]}, {\"inject\"⇒[\"acc\", \"elem\"]}",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylesinglelineblockparams",
@@ -14958,6 +16113,10 @@
           "type": "string"
         },
         "AutoCorrect": {
+          "type": "boolean"
+        },
+        "AllowIfMethodIsEmpty": {
+          "description": "Default: true",
           "type": "boolean"
         }
       },
@@ -15031,6 +16190,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: use_english_names"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylespecialglobalvars",
@@ -15067,6 +16229,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: require_parentheses"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylestabbylambdaparentheses",
@@ -15247,6 +16412,13 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: single_quotes"
+        },
+        "ConsistentQuotesInMultiline": {
+          "description": "Default: false",
+          "type": "boolean"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylestringliterals",
@@ -15283,6 +16455,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: single_quotes"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylestringliteralsininterpolation",
@@ -15319,6 +16494,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "PreferredMethods": {
+          "description": "Default: {\"intern\"⇒\"to_sym\"}"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylestringmethods",
@@ -15463,6 +16641,13 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: percent"
+        },
+        "MinSize": {
+          "description": "Default: 2",
+          "type": "integer"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylesymbolarray",
@@ -15535,6 +16720,14 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "AllowMethodsWithArguments": {
+          "description": "Default: false",
+          "type": "boolean"
+        },
+        "IgnoredMethods": {
+          "description": "Default: respond_to, define_method",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylesymbolproc",
@@ -15570,6 +16763,13 @@
           "type": "string"
         },
         "AutoCorrect": {
+          "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: require_no_parentheses"
+        },
+        "AllowSafeAssignment": {
+          "description": "Default: true",
           "type": "boolean"
         }
       },
@@ -15715,6 +16915,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyleForMultiline": {
+          "description": "Default: no_comma"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styletrailingcommainarguments",
@@ -15751,6 +16954,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyleForMultiline": {
+          "description": "Default: no_comma"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styletrailingcommainarrayliteral",
@@ -15823,6 +17029,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyleForMultiline": {
+          "description": "Default: no_comma"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styletrailingcommainhashliteral",
@@ -15895,6 +17104,10 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "AllowNamedUnderscoreVariables": {
+          "description": "Default: true",
+          "type": "boolean"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styletrailingunderscorevariable",
@@ -15931,6 +17144,26 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "ExactNameMatch": {
+          "description": "Default: true",
+          "type": "boolean"
+        },
+        "AllowPredicates": {
+          "description": "Default: true",
+          "type": "boolean"
+        },
+        "AllowDSLWriters": {
+          "description": "Default: false",
+          "type": "boolean"
+        },
+        "IgnoreClassMethods": {
+          "description": "Default: false",
+          "type": "boolean"
+        },
+        "AllowedMethods": {
+          "description": "Default: to_ary, to_a, to_c, to_enum, to_h, to_hash, to_i, to_int, to_io, to_open, to_path, to_proc, to_r, to_regexp, to_str, to_s, to_sym",
+          "type": "array"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styletrivialaccessors",
@@ -16000,6 +17233,9 @@
         },
         "StyleGuide": {
           "type": "string"
+        },
+        "EnforcedStyle": {
+          "description": "Default: forbid_mixed_logical_operators"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styleunlesslogicaloperators",
@@ -16216,6 +17452,19 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: percent"
+        },
+        "MinSize": {
+          "description": "Default: 2",
+          "type": "integer"
+        },
+        "WordRegex": {
+          "description": "Default: `(?-mix:\\A(?:\\p{Word}"
+        },
+        "\\n": {
+          "description": "Default: \\t)+\\z)`"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#stylewordarray",
@@ -16252,6 +17501,9 @@
         },
         "AutoCorrect": {
           "type": "boolean"
+        },
+        "EnforcedStyle": {
+          "description": "Default: forbid_for_all_comparison_operators"
         }
       },
       "$comment": "https://docs.rubocop.org/rubocop/cops_style.html#styleyodacondition",
@@ -16356,6 +17608,7 @@
           "type": "string"
         },
         "AutoCorrect": {
+          "description": "Default: false",
           "type": "boolean"
         }
       },
