@@ -1,0 +1,15 @@
+type: object
+additionalProperties: false
+
+propertyNames:
+  type: string
+  pattern: '^[A-Z][A-Za-z]*$'
+
+properties:
+  Enabled: { type: boolean }
+  Exclude: { $ref: '#/definitions/listOfFiles' }
+  Include: { $ref: '#/definitions/listOfFiles' }
+  Severity: { $ref: '#/definitions/severity' }
+  Details: { type: string }
+  StyleGuideBaseURL: { type: string }
+  StyleGuide: { type: string }

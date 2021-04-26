@@ -1,0 +1,63 @@
+$schema: http://json-schema.org/draft-07/schema
+
+title: RuboCop configuration schema
+description: >-
+  Schema for RuboCop configuration files (e.g. .rubocop.yml), intended for
+  helping IDEs provide autocompletion and validation.
+
+type: object
+additionalProperties: false
+
+definitions:
+  inherit_mode:
+    type: object
+    minProperties: 1
+    propertyNames:
+      enum:
+        - merge
+        - override
+    additionalProperties:
+      type: array
+      minItems: 1
+      items: { type: string }
+
+  listOfFiles:
+    type: array
+    items: { type: string }
+
+  severity:
+    type: string
+    enum:
+      - info
+      - refactor
+      - convention
+      - warning
+      - error
+      - fatal
+
+properties:
+  inherit_from: { type: string }
+
+  inherit_gem:
+    type: object
+    additionalProperties:
+      oneOf:
+        - type: string
+        - type: array
+          items: { type: string }
+
+  inherit_mode: { $ref: '#/definitions/inherit_mode' }
+
+  AllCops:
+    type: object
+    additionalProperties: false
+    properties:
+      Exclude: { $ref: '#/definitions/listOfFiles' }
+      Include: { $ref: '#/definitions/listOfFiles' }
+      NewCops: { type: boolean }
+      EnabledByDefault: { type: boolean }
+      DisabledByDefault: { type: boolean }
+      SuggestExtensions: { type: boolean }
+      TargetRubyVersion: { type: number }
+      StyleGuideBaseURL: { type: string }
+      StyleGuide: { type: string }
