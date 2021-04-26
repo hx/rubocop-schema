@@ -54,7 +54,7 @@ properties:
     properties:
       Exclude: { $ref: '#/definitions/listOfFiles' }
       Include: { $ref: '#/definitions/listOfFiles' }
-      NewCops: { type: boolean }
+      NewCops: { enum: [ enable, disable ] }
       EnabledByDefault: { type: boolean }
       DisabledByDefault: { type: boolean }
       SuggestExtensions: { type: boolean }

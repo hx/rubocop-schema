@@ -74,7 +74,10 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "NewCops": {
-          "type": "boolean"
+          "enum": [
+            "enable",
+            "disable"
+          ]
         },
         "EnabledByDefault": {
           "type": "boolean"
