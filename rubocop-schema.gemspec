@@ -27,5 +27,4 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'asciidoctor', '~> 2.0.14'
   spec.add_dependency 'nokogiri', '~> 1.11'
-  spec.add_dependency 'rubocop', '~> 1'
 end
