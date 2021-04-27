@@ -35,16 +35,20 @@ definitions:
       - error
       - fatal
 
+  stringOrStrings:
+    oneOf:
+      - type: string
+      - type: array
+        items: { type: string }
+
 properties:
   inherit_from: { type: string }
 
   inherit_gem:
     type: object
-    additionalProperties:
-      oneOf:
-        - type: string
-        - type: array
-          items: { type: string }
+    additionalProperties: { $ref: '#/definitions/stringOrStrings' }
+
+  require: { $ref: '#/definitions/stringOrStrings' }
 
   inherit_mode: { $ref: '#/definitions/inherit_mode' }
 

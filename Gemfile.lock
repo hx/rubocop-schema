@@ -2,12 +2,14 @@ PATH
   remote: .
   specs:
     rubocop-schema (0.1.0)
+      asciidoctor (~> 2.0.14)
       nokogiri (~> 1.11)
       rubocop (~> 1)
 
 GEM
   remote: https://rubygems.org/
   specs:
+    asciidoctor (2.0.14)
     ast (2.4.2)
     diff-lcs (1.4.4)
     mini_portile2 (2.5.0)
@@ -46,6 +48,9 @@ GEM
       unicode-display_width (>= 1.4.0, < 3.0)
     rubocop-ast (1.4.1)
       parser (>= 2.7.1.5)
+    rubocop-rspec (2.2.0)
+      rubocop (~> 1.0)
+      rubocop-ast (>= 1.1.0)
     ruby-progressbar (1.11.0)
     unicode-display_width (2.0.0)
 
@@ -55,6 +60,7 @@ PLATFORMS
 DEPENDENCIES
   rake (~> 12.0)
   rspec (~> 3.0)
+  rubocop-rspec
   rubocop-schema!
 
 BUNDLED WITH

@@ -4,6 +4,9 @@ require 'rubocop'
 require "rubocop/schema/version"
 require "rubocop/schema/cop_schema"
 require "rubocop/schema/templates"
+require "rubocop/schema/cache"
+require "rubocop/schema/scraper"
+require "rubocop/schema/lockfile_inspector"
 
 require 'rubocop/doc_scraper'
 
@@ -19,7 +22,7 @@ module RuboCop
     end
 
     def as_json
-      scraper = DocScraper.new(cache: ROOT + 'cache')
+      scraper = DocScraper.new(cache: ROOT + '.cache')
       Schema.template('schema').tap do |json|
         properties = json.fetch('properties')
         # TODO: departments
