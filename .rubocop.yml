@@ -30,3 +30,9 @@ Style/FrozenStringLiteralComment:
 
 Style/Documentation:
   Enabled: false
+
+Style/StringConcatenation:
+  Enabled: false
+
+Style/StderrPuts:
+  Enabled: false
