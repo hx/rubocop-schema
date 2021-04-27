@@ -1,7 +1,10 @@
 require 'asciidoctor'
+require 'nokogiri'
 
 require 'rubocop/schema/cache'
 require 'rubocop/schema/lockfile_inspector'
+require 'rubocop/schema/templates'
+require 'rubocop/schema/value_objects'
 
 module RuboCop
   class Schema
