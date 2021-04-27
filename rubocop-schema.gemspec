@@ -1,7 +1,7 @@
 require_relative 'lib/rubocop/schema/version'
 
 Gem::Specification.new do |spec|
-  spec.name    = 'rubocop-schema'
+  spec.name    = 'rubocop-schema-gen'
   spec.version = RuboCop::Schema::VERSION
   spec.authors = ['Neil E. Pearson']
   spec.email   = ['neil@helium.net.au']
