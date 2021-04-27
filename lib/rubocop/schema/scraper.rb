@@ -30,7 +30,7 @@ module RuboCop
           lockfile.specs.each do |spec|
             index(spec).each do |department_name|
               dept_info = CopInfo.new(
-                name: department_name,
+                name:        department_name,
                 description: "Department #{department_name}"
               )
               dept_info.description << " (#{spec.short_name} extension)" if spec.short_name
@@ -60,7 +60,12 @@ module RuboCop
 
           description = []
           # Stats table
-          if (stats_table_block = section.query(context: :table) { |t| t.rows.head.first.first.text == 'Enabled by default' }.first)
+          stats_table_block =
+            section
+              .query(context: :table) { |t| t.rows.head.first.first.text == 'Enabled by default' }
+              .first
+
+          if stats_table_block
             stats_table = table_to_hash(stats_table_block).first
             description << "Default: #{stats_table['Enabled by default']}"
             info.supports_autocorrect = stats_table['Supports autocorrection'] == 'Yes'
@@ -80,7 +85,7 @@ module RuboCop
             when :ulist
               s.blocks.map { |b| " - #{reverse_html b.text}" }
             when :olist
-              s.blocks.map.with_index { |b, i| "  #{i+1}. #{reverse_html b.text}" }
+              s.blocks.map.with_index { |b, i| "  #{i + 1}. #{reverse_html b.text}" }
             when :dlist
               reverse_html s.convert # Too hard, just go HTML for now
             else
@@ -92,10 +97,9 @@ module RuboCop
 
           # Configurable attributes
 
-          attr_table_block =
-            section
-              .query(context: :section) { |s| s.title == 'Configurable attributes' }&.first
-              &.query(context: :table)&.first
+          attr_table_block = section
+            .query(context: :section) { |s| s.title == 'Configurable attributes' }&.first
+            &.query(context: :table)&.first
 
           if attr_table_block
             info.attributes = table_to_hash(attr_table_block).map do |row|
@@ -121,17 +125,13 @@ module RuboCop
       end
 
       def load_doc(...)
-        #noinspection RubyResolve
+        # noinspection RubyResolve
         Asciidoctor.load cache.get url_for(...)
       end
 
       def url_for(department: nil, version: DEFAULT_VERSION, extension: nil)
         version = "v#{version}" if version =~ /\A\d+\./
-        URL_TEMPLATE % [
-          extension && "-#{extension}",
-          version,
-          department && "_#{department.to_s.downcase}"
-        ]
+        format(URL_TEMPLATE, extension && "-#{extension}", version, department && "_#{department.to_s.downcase}")
       end
 
       def link_text(str)

@@ -9,5 +9,23 @@
 #
 # See https://docs.rubocop.org/rubocop/configuration
 
-Style/YodaCondition:
-  Severity: error
+require:
+  - rubocop-rspec
+  - rubocop-rake
+
+AllCops:
+  SuggestExtensions: false
+  NewCops: enable
+
+Layout/HashAlignment:
+  EnforcedColonStyle: table
+  EnforcedHashRocketStyle: table
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: never
+
+Style/Documentation:
+  Enabled: false

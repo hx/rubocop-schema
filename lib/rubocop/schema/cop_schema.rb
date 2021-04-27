@@ -8,6 +8,7 @@ module RuboCop
       # @param [CopInfo] info
       def initialize(cop, info)
         raise ArgumentError unless cop.is_a?(Class) && cop < Cop::Base
+
         @cop  = cop
         @info = info
       end
