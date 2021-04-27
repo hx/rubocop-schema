@@ -16,6 +16,7 @@ require:
 AllCops:
   SuggestExtensions: false
   NewCops: enable
+  TargetRubyVersion: 3.0
 
 Layout/HashAlignment:
   EnforcedColonStyle: table
