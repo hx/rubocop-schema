@@ -3,7 +3,7 @@ require 'uri'
 require 'net/http'
 
 module RuboCop
-  class Schema
+  module Schema
     class Cache
       # @return [URI]
       attr_reader :base_url

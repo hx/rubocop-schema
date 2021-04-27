@@ -2,7 +2,7 @@ require 'bundler'
 require 'pathname'
 
 module RuboCop
-  class Schema
+  module Schema
     class LockfileInspector
       Spec = Struct.new(:name, :version, keyword_init: true) do
         def short_name

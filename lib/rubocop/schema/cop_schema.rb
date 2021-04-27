@@ -1,5 +1,5 @@
 module RuboCop
-  class Schema
+  module Schema
     class CopSchema
       # @return [Class<RuboCop::Cop::Base>]
       attr_reader :cop

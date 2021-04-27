@@ -7,7 +7,7 @@ require "rubocop/schema/scraper"
 require "rubocop/schema/lockfile_inspector"
 
 module RuboCop
-  class Schema
+  module Schema
     ROOT = Pathname(__dir__)  # rubocop
              .parent          # lib
              .parent          # root

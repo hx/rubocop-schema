@@ -7,7 +7,7 @@ require 'rubocop/schema/templates'
 require 'rubocop/schema/value_objects'
 
 module RuboCop
-  class Schema
+  module Schema
     class Scraper
       DEFAULT_VERSION = -'master'
       URL_TEMPLATE    =
