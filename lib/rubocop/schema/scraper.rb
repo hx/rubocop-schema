@@ -6,6 +6,7 @@ require 'rubocop/schema/value_objects'
 require 'rubocop/schema/cop_schema'
 require 'rubocop/schema/helpers'
 require 'rubocop/schema/ascii_doc/index'
+require 'rubocop/schema/ascii_doc/department'
 require 'rubocop/schema/document_loader'
 
 module RuboCop
@@ -79,83 +80,7 @@ module RuboCop
       end
 
       def info_for(spec, department)
-        doc = @loader.doc(spec, department)
-        cop_blocks = doc.query(context: :section) { |s| s.title.start_with? "#{department}/" }
-        cop_blocks.map do |section|
-          info = CopInfo.new(name: section.title)
-
-          # Stats table
-          stats_table_block =
-            section
-              .query(context: :table) { |t| t.rows.head.first.first.text == 'Enabled by default' }
-              .first
-
-          if stats_table_block
-            stats_table = table_to_hash(stats_table_block).first
-            info.enabled_by_default   = stats_table['Enabled by default'] == 'Enabled'
-            info.supports_autocorrect = stats_table['Supports autocorrection'] == 'Yes'
-          end
-
-          # Description
-          top = section.blocks.index(stats_table_block) || -1
-          top += 1
-          bottom = section.blocks.index(section.sections.first) || 0
-          bottom -= 1
-          description = section.blocks[top..bottom].map do |s|
-            case s.context
-            when :paragraph, :admonition, :listing
-              s.lines.join(' ')
-            when :literal
-              s.lines.map { |l| "  #{l}" }.join("\n")
-            when :ulist
-              s.blocks.map { |b| " - #{strip_html b.text}" }
-            when :olist
-              s.blocks.map.with_index { |b, i| "  #{i + 1}. #{strip_html b.text}" }
-            when :dlist
-              strip_html s.convert # Too hard, just go HTML for now
-            else
-              raise "Don't know what to do with #{s.context}"
-            end
-          end
-
-          info.description = description.join("\n\n") unless description.empty?
-
-          # Configurable attributes
-
-          attr_table_block = section
-            .query(context: :section) { |s| s.title == 'Configurable attributes' }&.first
-            &.query(context: :table)&.first
-
-          if attr_table_block
-            info.attributes = table_to_hash(attr_table_block).map do |row|
-              type = row['Configurable values']
-              Attribute.new(
-                name:    row['Name'],
-                default: row['Default value'],
-                type:    type
-              )
-            end
-          end
-
-          info
-        end
-      end
-
-      # Used for stripping HTML from Asciidoctor output, where raw output is not available, or not
-      # appropriate to use.
-      # TODO: look into the Asciidoctor for a way to do a non-HTML conversion
-      def strip_html(str)
-        Nokogiri::HTML(str).text
-      end
-
-      # @param [Asciidoctor::Table] table
-      def table_to_hash(table)
-        headings = table.rows.head.first.map(&:text)
-        table.rows.body.map do |row|
-          headings.each_with_index.to_h do |heading, i|
-            [heading, strip_html(row[i].text)]
-          end
-        end
+        AsciiDoc::Department.new(@loader.doc(spec, department)).cops
       end
 
       # @param [CopInfo] info

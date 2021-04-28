@@ -25,6 +25,13 @@ module RuboCop
       def template(name)
         deep_dup(Helpers.templates[name] ||= YAML.load_file(ROOT.join('assets', 'templates', "#{name}.yml")).freeze)
       end
+
+      # Used for stripping HTML from Asciidoctor output, where raw output is not available, or not
+      # appropriate to use.
+      # TODO: look into the Asciidoctor for a way to do a non-HTML conversion
+      def strip_html(str)
+        Nokogiri::HTML(str).text
+      end
     end
   end
 end

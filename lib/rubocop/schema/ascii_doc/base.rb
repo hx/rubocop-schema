@@ -1,7 +1,12 @@
+require 'rubocop/schema/ascii_doc/stringifier'
+require 'rubocop/schema/helpers'
+
 module RuboCop
   module Schema
     module AsciiDoc
       class Base
+        include Helpers
+
         # @param [Asciidoctor::AbstractBlock] ascii_block
         def initialize(ascii_block)
           @root = ascii_block
@@ -21,6 +26,22 @@ module RuboCop
           # The Asciidoctor API doesn't provide access to the raw title, or parts of it.
           # If performance becomes an issue, this could become a regexp or similarly crude solution.
           Nokogiri::HTML(str).at_css('a')&.text
+        end
+
+        # @param [Asciidoctor::Table] table
+        # @return [Array<Hash>] A hash for each row, with table headings as keys
+        def table_to_hash(table)
+          headings = table.rows.head.first.map(&:text)
+          table.rows.body.map do |row|
+            headings.each_with_index.to_h do |heading, i|
+              [heading, strip_html(row[i].text)]
+            end
+          end
+        end
+
+        def stringify_section(section)
+          @stringifier ||= Stringifier.new
+          @stringifier.stringify section
         end
       end
     end
