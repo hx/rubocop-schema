@@ -21,6 +21,7 @@ module RuboCop
 
       # @param [LockFileInspector::Spec] spec
       # @param [String] department
+      # @return [Asciidoctor::Document]
       def doc(spec, department = nil)
         @docs[[spec, department]] ||=
           Asciidoctor.load @http_client.get url_for_doc(spec, department)

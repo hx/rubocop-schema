@@ -5,6 +5,7 @@ require 'rubocop/schema/lockfile_inspector'
 require 'rubocop/schema/value_objects'
 require 'rubocop/schema/cop_schema'
 require 'rubocop/schema/helpers'
+require 'rubocop/schema/cop_index'
 require 'rubocop/schema/document_loader'
 
 module RuboCop
@@ -35,7 +36,7 @@ module RuboCop
           properties = json.fetch('properties')
 
           lockfile.specs.each do |spec|
-            index(spec).each do |department_name|
+            CopIndex.new(@loader.doc(spec)).department_names.each do |department_name|
               dept_info = CopInfo.new(
                 name:        department_name,
                 description: department_description(spec, department_name)
@@ -138,19 +139,6 @@ module RuboCop
 
           info
         end
-      end
-
-      # @param [LockFileInspector::Spec] spec
-      def index(spec)
-        doc         = @loader.doc(spec)
-        dept_blocks = doc.query(context: :section) { |s| s.title.start_with? 'Department ' }
-        dept_blocks.map { |section| link_text section.title }
-      end
-
-      def link_text(str)
-        # The Asciidoctor API doesn't provide access to the raw title, or parts of it.
-        # If performance becomes an issue, this could become a regexp or similarly crude solution.
-        Nokogiri::HTML(str).at_css('a')&.text
       end
 
       # Used for stripping HTML from Asciidoctor output, where raw output is not available, or not
