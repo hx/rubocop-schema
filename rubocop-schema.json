@@ -153,7 +153,8 @@
           "type": "boolean",
           "description": "Default: false"
         }
-      }
+      },
+      "description": "'AllCops' department"
     },
     "RSpec": {
       "type": "object",
@@ -189,7 +190,7 @@
           "description": "Default: {\"ExampleGroups\"=>{\"Regular\"=>[\"describe\", \"context\", \"feature\", \"example_group\"], \"Skipped\"=>[\"xdescribe\", \"xcontext\", \"xfeature\"], \"Focused\"=>[\"fdescribe\", \"fcontext\", \"ffeature\"]}, \"Examples\"=>{\"Regular\"=>[\"it\", \"specify\", \"example\", \"scenario\", \"its\"], \"Focused\"=>[\"fit\", \"fspecify\", \"fexample\", \"fscenario\", \"focus\"], \"Skipped\"=>[\"xit\", \"xspecify\", \"xexample\", \"xscenario\", \"skip\"], \"Pending\"=>[\"pending\"]}, \"Expectations\"=>[\"expect\", \"is_expected\", \"expect_any_instance_of\"], \"Helpers\"=>[\"let\", \"let!\"], \"Hooks\"=>[\"prepend_before\", \"before\", \"append_before\", \"around\", \"prepend_after\", \"after\", \"append_after\"], \"HookScopes\"=>[\"each\", \"example\", \"context\", \"all\", \"suite\"], \"Includes\"=>{\"Examples\"=>[\"it_behaves_like\", \"it_should_behave_like\", \"include_examples\"], \"Context\"=>[\"include_context\"]}, \"Runners\"=>[\"to\", \"to_not\", \"not_to\"], \"SharedGroups\"=>{\"Examples\"=>[\"shared_examples\", \"shared_examples_for\"], \"Context\"=>[\"shared_context\"]}, \"Subjects\"=>[\"subject\", \"subject!\"]}"
         }
       },
-      "description": "Department RSpec (rspec extension)"
+      "description": "'RSpec' department (rspec extension)"
     },
     "RSpec/AlignLeftLetBrace": {
       "type": "object",
@@ -3193,7 +3194,7 @@
           "type": "string"
         }
       },
-      "description": "Department RSpec/Capybara (rspec extension)"
+      "description": "'RSpec/Capybara' department (rspec extension)"
     },
     "RSpec/Capybara/CurrentPathExpectation": {
       "type": "object",
@@ -3335,7 +3336,7 @@
           "type": "string"
         }
       },
-      "description": "Department RSpec/FactoryBot (rspec extension)"
+      "description": "'RSpec/FactoryBot' department (rspec extension)"
     },
     "RSpec/FactoryBot/AttributeDefinedStatically": {
       "type": "object",
@@ -3488,7 +3489,7 @@
           "type": "string"
         }
       },
-      "description": "Department RSpec/Rails (rspec extension)"
+      "description": "'RSpec/Rails' department (rspec extension)"
     },
     "RSpec/Rails/HttpStatus": {
       "type": "object",
@@ -3568,7 +3569,8 @@
         "StyleGuide": {
           "type": "string"
         }
-      }
+      },
+      "description": "'Rake' department (rake extension)"
     },
     "Rake/ClassDefinitionInTask": {
       "type": "object",
@@ -3766,7 +3768,7 @@
           "type": "string"
         }
       },
-      "description": "Department Bundler"
+      "description": "'Bundler' department"
     },
     "Bundler/DuplicatedGem": {
       "type": "object",
@@ -3953,7 +3955,7 @@
           "type": "string"
         }
       },
-      "description": "Department Gemspec"
+      "description": "'Gemspec' department"
     },
     "Gemspec/DateAssignment": {
       "type": "object",
@@ -4165,7 +4167,7 @@
           "type": "string"
         }
       },
-      "description": "Department Layout"
+      "description": "'Layout' department"
     },
     "Layout/AccessModifierIndentation": {
       "type": "object",
@@ -8374,7 +8376,7 @@
           "type": "string"
         }
       },
-      "description": "Department Lint"
+      "description": "'Lint' department"
     },
     "Lint/AmbiguousAssignment": {
       "type": "object",
@@ -12758,7 +12760,7 @@
           "type": "string"
         }
       },
-      "description": "Department Metrics"
+      "description": "'Metrics' department"
     },
     "Metrics/AbcSize": {
       "type": "object",
@@ -13205,7 +13207,7 @@
           "type": "string"
         }
       },
-      "description": "Department Migration"
+      "description": "'Migration' department"
     },
     "Migration/DepartmentName": {
       "type": "object",
@@ -13274,7 +13276,7 @@
           "type": "string"
         }
       },
-      "description": "Department Naming"
+      "description": "'Naming' department"
     },
     "Naming/AccessorMethodName": {
       "type": "object",
@@ -14022,7 +14024,7 @@
           "type": "string"
         }
       },
-      "description": "Department Security"
+      "description": "'Security' department"
     },
     "Security/Eval": {
       "type": "object",
@@ -14248,7 +14250,7 @@
           "type": "string"
         }
       },
-      "description": "Department Style"
+      "description": "'Style' department"
     },
     "Style/AccessModifierDeclarations": {
       "type": "object",

@@ -40,9 +40,8 @@ module RuboCop
             index(spec).each do |department_name|
               dept_info = CopInfo.new(
                 name:        department_name,
-                description: "Department #{department_name}"
+                description: department_description(spec, department_name)
               )
-              dept_info.description << " (#{spec.short_name} extension)" if spec.short_name
               properties[department_name] = cop_schema(dept_info)
 
               info_for(spec, department_name).each do |cop_info|
@@ -53,6 +52,7 @@ module RuboCop
             defaults(spec)&.each do |cop_name, attributes|
               cop = properties[cop_name] ||= cop_schema(CopInfo.new(name: cop_name))
               cop['description'] ||= attributes['Description'] if attributes['Description']
+              cop['description'] ||= department_description(spec, cop_name) unless cop_name.include?('/')
               attributes.each do |attr_name, attr_default|
                 next if EXCLUDE_ATTRIBUTES.include? attr_name
 
@@ -75,6 +75,12 @@ module RuboCop
 
       # @return [Cache]
       attr_reader :cache
+
+      def department_description(spec, department)
+        str = "'#{department}' department"
+        str << " (#{spec.short_name} extension)" if spec.short_name
+        str
+      end
 
       def info_for(spec, department)
         doc = load_doc(extension: spec.short_name, version: spec.version, department: department)
