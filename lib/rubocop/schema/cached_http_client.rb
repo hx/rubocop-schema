@@ -5,18 +5,13 @@ require 'net/http'
 module RuboCop
   module Schema
     class CachedHTTPClient
-      # @return [URI]
-      attr_reader :base_url
-
-      def initialize(cache_dir, base_url: nil, &event_handler)
+      def initialize(cache_dir, &event_handler)
         @cache_dir     = Pathname(cache_dir)
-        @base_url      = validate_url(base_url)
         @event_handler = event_handler
       end
 
       def get(url)
         url = URI(url)
-        url = @base_url + url if @base_url && url.relative?
         validate_url url
 
         path = path_for_url(url)
@@ -34,8 +29,6 @@ module RuboCop
 
         raise ArgumentError, 'Expected an absolute URL' unless url.absolute?
         raise ArgumentError, 'Expected an HTTP URL' unless url.is_a? URI::HTTP
-
-        url
       end
 
       # @param [URI::HTTP] url
