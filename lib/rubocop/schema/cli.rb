@@ -17,7 +17,7 @@ module RuboCop
         fail "Cannot read #{lockfile_path}" unless lockfile_path.readable?
         fail 'RuboCop is not part of this project' unless lockfile.specs.any?
 
-        schema = report_duration { Scraper.new(lockfile, cache).schema }
+        schema = report_duration { Scraper.new(lockfile, http_client).schema }
         puts JSON.pretty_generate schema
       end
 
@@ -56,8 +56,8 @@ module RuboCop
         @lockfile_path ||= @working_dir + 'Gemfile.lock'
       end
 
-      def cache
-        @cache ||= Cache.new(cache_dir, &method(:handle_event))
+      def http_client
+        @http_client ||= CachedHTTPClient.new(cache_dir, &method(:handle_event))
       end
 
       def cache_dir

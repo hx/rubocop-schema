@@ -4,7 +4,7 @@ require 'net/http'
 
 module RuboCop
   module Schema
-    class Cache
+    class CachedHTTPClient
       # @return [URI]
       attr_reader :base_url
 

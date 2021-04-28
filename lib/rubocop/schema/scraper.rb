@@ -1,7 +1,7 @@
 require 'asciidoctor'
 require 'nokogiri'
 
-require 'rubocop/schema/cache'
+require 'rubocop/schema/cached_http_client'
 require 'rubocop/schema/lockfile_inspector'
 require 'rubocop/schema/templates'
 require 'rubocop/schema/value_objects'
@@ -23,13 +23,13 @@ module RuboCop
       EXCLUDE_ATTRIBUTES = Set.new(%w[Description VersionAdded VersionChanged StyleGuide]).freeze
 
       # @param [LockfileInspector] lockfile
-      # @param [Object] cache
-      def initialize(lockfile, cache)
-        raise ArgumentError unless cache.is_a? Cache
+      # @param [CachedHTTPClient] http_client
+      def initialize(lockfile, http_client)
+        raise ArgumentError unless http_client.is_a? CachedHTTPClient
         raise ArgumentError unless lockfile.is_a? LockfileInspector
 
-        @cache    = cache
-        @lockfile = lockfile
+        @http_client = http_client
+        @lockfile    = lockfile
       end
 
       def schema
@@ -73,8 +73,8 @@ module RuboCop
       # @return [LockfileInspector]
       attr_reader :lockfile
 
-      # @return [Cache]
-      attr_reader :cache
+      # @return [CachedHTTPClient]
+      attr_reader :http_client
 
       def department_description(spec, department)
         str = "'#{department}' department"
@@ -151,7 +151,7 @@ module RuboCop
       end
 
       def load_defaults(...)
-        YAML.safe_load cache.get(url_for_defaults(...)), permitted_classes: [Regexp, Symbol]
+        YAML.safe_load http_client.get(url_for_defaults(...)), permitted_classes: [Regexp, Symbol]
       end
 
       # @param [LockFileInspector::Spec] spec
@@ -163,7 +163,7 @@ module RuboCop
 
       def load_doc(...)
         # noinspection RubyResolve
-        Asciidoctor.load cache.get url_for_doc(...)
+        Asciidoctor.load http_client.get url_for_doc(...)
       end
 
       def url_for_doc(department: nil, version: DEFAULT_VERSION, extension: nil)
