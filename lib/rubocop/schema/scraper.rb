@@ -45,7 +45,7 @@ module RuboCop
               )
               properties[department_name] = cop_schema(dept_info)
 
-              info_for(spec, department_name).each do |cop_info|
+              AsciiDoc::Department.new(@loader.doc(spec, department_name)).cops.each do |cop_info|
                 properties[cop_info.name] = cop_schema(cop_info)
               end
             end
@@ -78,10 +78,6 @@ module RuboCop
         str = "'#{department}' department"
         str << " (#{spec.short_name} extension)" if spec.short_name
         str
-      end
-
-      def info_for(spec, department)
-        AsciiDoc::Department.new(@loader.doc(spec, department)).cops
       end
 
       # @param [CopInfo] info
