@@ -12,11 +12,10 @@ module RuboCop
     class Scraper
       include Helpers
 
-      DEFAULT_VERSION = -'master'
       DOCS_URL_TEMPLATE =
-        -'https://raw.githubusercontent.com/rubocop/rubocop%s/%s/docs/modules/ROOT/pages/cops%s.adoc'
+        -'https://raw.githubusercontent.com/rubocop/%s/v%s/docs/modules/ROOT/pages/cops%s.adoc'
       DEFAULTS_URL_TEMPLATE =
-        -'https://raw.githubusercontent.com/rubocop/rubocop%s/%s/config/default.yml'
+        -'https://raw.githubusercontent.com/rubocop/%s/v%s/config/default.yml'
       TYPE_MAP = {
         number:  [Numeric],
         boolean: [TrueClass, FalseClass],
@@ -86,7 +85,7 @@ module RuboCop
       end
 
       def info_for(spec, department)
-        doc = load_doc(extension: spec.short_name, version: spec.version, department: department)
+        doc = load_doc(spec, department: department)
         cop_blocks = doc.query(context: :section) { |s| s.title.start_with? "#{department}/" }
         cop_blocks.map do |section|
           info = CopInfo.new(name: section.title)
@@ -150,16 +149,12 @@ module RuboCop
 
       # @param [LockFileInspector::Spec] spec
       def defaults(spec)
-        load_defaults extension: spec.short_name, version: spec.version
-      end
-
-      def load_defaults(...)
-        YAML.safe_load http_client.get(url_for_defaults(...)), permitted_classes: [Regexp, Symbol]
+        YAML.safe_load http_client.get(url_for_defaults(spec)), permitted_classes: [Regexp, Symbol]
       end
 
       # @param [LockFileInspector::Spec] spec
       def index(spec)
-        doc         = load_doc(extension: spec.short_name, version: spec.version)
+        doc         = load_doc(spec)
         dept_blocks = doc.query(context: :section) { |s| s.title.start_with? 'Department ' }
         dept_blocks.map { |section| link_text section.title }
       end
@@ -169,14 +164,12 @@ module RuboCop
         Asciidoctor.load http_client.get url_for_doc(...)
       end
 
-      def url_for_doc(department: nil, version: DEFAULT_VERSION, extension: nil)
-        version = "v#{version}" if version =~ /\A\d+\./
-        format(DOCS_URL_TEMPLATE, extension && "-#{extension}", version, department && "_#{department.to_s.downcase}")
+      def url_for_doc(spec, department: nil)
+        format DOCS_URL_TEMPLATE, spec.name, spec.version, department && "_#{department.to_s.downcase}"
       end
 
-      def url_for_defaults(version: DEFAULT_VERSION, extension: nil)
-        version = "v#{version}" if version =~ /\A\d+\./
-        format(DEFAULTS_URL_TEMPLATE, extension && "-#{extension}", version)
+      def url_for_defaults(spec)
+        format DEFAULTS_URL_TEMPLATE, spec.name, spec.version
       end
 
       def link_text(str)
