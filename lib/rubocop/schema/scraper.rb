@@ -1,7 +1,6 @@
 require 'asciidoctor'
 require 'nokogiri'
 
-require 'rubocop/schema/cached_http_client'
 require 'rubocop/schema/lockfile_inspector'
 require 'rubocop/schema/value_objects'
 require 'rubocop/schema/cop_schema'
@@ -22,13 +21,13 @@ module RuboCop
       EXCLUDE_ATTRIBUTES = Set.new(%w[Description VersionAdded VersionChanged StyleGuide]).freeze
 
       # @param [LockfileInspector] lockfile
-      # @param [CachedHTTPClient] http_client
-      def initialize(lockfile, http_client)
-        raise ArgumentError unless http_client.is_a? CachedHTTPClient
+      # @param [DocumentLoader] document_loader
+      def initialize(lockfile, document_loader)
+        raise ArgumentError unless document_loader.is_a? DocumentLoader
         raise ArgumentError unless lockfile.is_a? LockfileInspector
 
         @lockfile = lockfile
-        @loader   = DocumentLoader.new(http_client)
+        @loader   = document_loader
       end
 
       def schema

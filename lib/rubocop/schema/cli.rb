@@ -1,6 +1,11 @@
 require 'pathname'
 require 'json'
 
+require 'rubocop/schema/document_loader'
+require 'rubocop/schema/cached_http_client'
+require 'rubocop/schema/lockfile_inspector'
+require 'rubocop/schema/scraper'
+
 module RuboCop
   module Schema
     class CLI
@@ -20,7 +25,7 @@ module RuboCop
         lockfile = LockfileInspector.new(lockfile_path)
         fail 'RuboCop is not part of this project' unless lockfile.specs.any?
 
-        schema = report_duration { Scraper.new(lockfile, http_client).schema }
+        schema = report_duration { Scraper.new(lockfile, document_loader).schema }
         puts JSON.pretty_generate schema
       end
 
@@ -51,11 +56,14 @@ module RuboCop
         exit 1
       end
 
-      def http_client
-        @http_client ||= CachedHTTPClient.new(
-          Pathname(Dir.home) + '.rubocop-schema-cache',
-          &method(:handle_event)
-        )
+      def document_loader
+        @document_loader ||=
+          DocumentLoader.new(
+            CachedHTTPClient.new(
+              Pathname(Dir.home) + '.rubocop-schema-cache',
+              &method(:handle_event)
+            )
+          )
       end
     end
   end
