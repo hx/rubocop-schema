@@ -58,7 +58,6 @@ module RuboCop
         cop_blocks.map do |section|
           info = CopInfo.new(name: section.title)
 
-          description = []
           # Stats table
           stats_table_block =
             section
@@ -67,7 +66,7 @@ module RuboCop
 
           if stats_table_block
             stats_table = table_to_hash(stats_table_block).first
-            description << "Default: #{stats_table['Enabled by default']}"
+            info.enabled_by_default   = stats_table['Enabled by default'] == 'Enabled'
             info.supports_autocorrect = stats_table['Supports autocorrection'] == 'Yes'
           end
 
@@ -91,7 +90,7 @@ module RuboCop
             else
               raise "Don't know what to do with #{s.context}"
             end
-          end + description
+          end
 
           info.description = description.join("\n\n") unless description.empty?
 
@@ -165,6 +164,10 @@ module RuboCop
           json['properties'] = props = json.fetch('properties').dup
 
           props['AutoCorrect'] = { 'type' => 'boolean' } if info.supports_autocorrect
+
+          unless info.enabled_by_default.nil?
+            props['Enabled'] = props['Enabled'].merge('description' => "Default: #{info.enabled_by_default}")
+          end
 
           info.attributes&.each do |attr|
             props[attr.name] = prop = {}
