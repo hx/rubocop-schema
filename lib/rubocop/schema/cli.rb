@@ -24,7 +24,7 @@ module RuboCop
       private
 
       def report_duration
-        started  = Time.now
+        started = Time.now
         yield
       ensure
         finished = Time.now
