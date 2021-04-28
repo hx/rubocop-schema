@@ -41,6 +41,10 @@ definitions:
       - type: array
         items: { type: string }
 
+  attributeName:
+    type: string
+    pattern: '^[A-Z][A-Za-z]*$'
+
 properties:
   inherit_from: { type: string }
 

@@ -51,6 +51,10 @@
           }
         }
       ]
+    },
+    "attributeName": {
+      "type": "string",
+      "pattern": "^[A-Z][A-Za-z]*$"
     }
   },
   "properties": {
@@ -109,8 +113,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -141,8 +144,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -177,8 +179,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -213,8 +214,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -246,8 +246,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -279,8 +278,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -312,8 +310,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -348,8 +345,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -382,8 +378,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -418,8 +413,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -455,8 +449,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -491,8 +484,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -524,8 +516,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -557,8 +548,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -601,8 +591,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -634,8 +623,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -673,8 +661,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -706,8 +693,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -742,8 +728,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -782,8 +767,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -818,8 +802,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -854,8 +837,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -890,8 +872,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -926,8 +907,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -963,8 +943,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -1004,8 +983,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -1047,8 +1025,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -1084,8 +1061,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -1127,8 +1103,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -1160,8 +1135,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -1193,8 +1167,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -1238,8 +1211,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -1274,8 +1246,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -1318,8 +1289,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -1354,8 +1324,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -1387,8 +1356,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -1430,8 +1398,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -1474,8 +1441,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -1510,8 +1476,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -1547,8 +1512,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -1590,8 +1554,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -1623,8 +1586,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -1659,8 +1621,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -1692,8 +1653,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -1728,8 +1688,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -1761,8 +1720,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -1794,8 +1752,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -1834,8 +1791,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -1874,8 +1830,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -1907,8 +1862,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -1940,8 +1894,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -1977,8 +1930,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -2018,8 +1970,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -2054,8 +2005,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -2091,8 +2041,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -2128,8 +2077,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -2171,8 +2119,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -2204,8 +2151,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -2237,8 +2183,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -2285,8 +2230,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -2321,8 +2265,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -2357,8 +2300,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -2390,8 +2332,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -2423,8 +2364,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -2456,8 +2396,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -2489,8 +2428,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -2522,8 +2460,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -2565,8 +2502,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -2601,8 +2537,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -2634,8 +2569,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -2670,8 +2604,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -2706,8 +2639,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -2742,8 +2674,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -2775,8 +2706,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -2808,8 +2738,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -2841,8 +2770,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -2881,8 +2809,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -2925,8 +2852,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -2966,8 +2892,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -2999,8 +2924,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -3035,8 +2959,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -3067,8 +2990,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -3103,8 +3025,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -3143,8 +3064,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -3176,8 +3096,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -3208,8 +3127,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -3245,8 +3163,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -3289,8 +3206,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -3326,8 +3242,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -3358,8 +3273,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -3401,8 +3315,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -3433,8 +3346,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -3467,8 +3379,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -3509,8 +3420,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -3546,8 +3456,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -3591,8 +3500,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -3623,8 +3531,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -3660,8 +3567,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -3694,8 +3600,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -3739,8 +3644,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -3773,8 +3677,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -3807,8 +3710,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -3839,8 +3741,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -3886,8 +3787,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -3933,8 +3833,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -3980,8 +3879,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -4020,8 +3918,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -4064,8 +3961,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -4108,8 +4004,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -4144,8 +4039,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -4195,8 +4089,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -4238,8 +4131,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -4274,8 +4166,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -4310,8 +4201,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -4346,8 +4236,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -4382,8 +4271,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -4426,8 +4314,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -4469,8 +4356,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -4505,8 +4391,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -4549,8 +4434,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -4585,8 +4469,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -4621,8 +4504,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -4657,8 +4539,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -4713,8 +4594,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -4749,8 +4629,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -4792,8 +4671,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -4828,8 +4706,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -4872,8 +4749,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -4908,8 +4784,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -4951,8 +4826,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -4998,8 +4872,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -5034,8 +4907,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -5070,8 +4942,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -5115,8 +4986,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -5160,8 +5030,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -5201,8 +5070,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -5249,8 +5117,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -5298,8 +5165,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -5346,8 +5212,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -5382,8 +5247,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -5430,8 +5294,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -5466,8 +5329,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -5502,8 +5364,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -5538,8 +5399,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -5585,8 +5445,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -5646,8 +5505,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -5682,8 +5540,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -5718,8 +5575,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -5761,8 +5617,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -5808,8 +5663,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -5852,8 +5706,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -5888,8 +5741,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -5932,8 +5784,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -5968,8 +5819,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -6029,8 +5879,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -6073,8 +5922,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -6109,8 +5957,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -6152,8 +5999,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -6188,8 +6034,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -6232,8 +6077,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -6268,8 +6112,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -6304,8 +6147,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -6348,8 +6190,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -6396,8 +6237,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -6440,8 +6280,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -6487,8 +6326,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -6534,8 +6372,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -6574,8 +6411,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -6610,8 +6446,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -6646,8 +6481,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -6682,8 +6516,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -6718,8 +6551,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -6754,8 +6586,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -6790,8 +6621,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -6833,8 +6663,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -6876,8 +6705,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -6912,8 +6740,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -6948,8 +6775,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -6995,8 +6821,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -7045,8 +6870,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -7081,8 +6905,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -7117,8 +6940,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -7153,8 +6975,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -7193,8 +7014,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -7229,8 +7049,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -7272,8 +7091,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -7323,8 +7141,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -7359,8 +7176,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -7413,8 +7229,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -7464,8 +7279,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -7507,8 +7321,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -7543,8 +7356,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -7579,8 +7391,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -7629,8 +7440,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -7672,8 +7482,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -7715,8 +7524,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -7755,8 +7563,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -7787,8 +7594,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -7820,8 +7626,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -7857,8 +7662,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -7893,8 +7697,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -7929,8 +7732,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -7966,8 +7768,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -8002,8 +7803,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -8035,8 +7835,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -8068,8 +7867,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -8101,8 +7899,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -8138,8 +7935,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -8179,8 +7975,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -8219,8 +8014,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -8255,8 +8049,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -8294,8 +8087,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -8330,8 +8122,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -8363,8 +8154,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -8404,8 +8194,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -8437,8 +8226,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -8470,8 +8258,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -8503,8 +8290,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -8536,8 +8322,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -8572,8 +8357,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -8605,8 +8389,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -8638,8 +8421,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -8671,8 +8453,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -8707,8 +8488,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -8748,8 +8528,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -8785,8 +8564,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -8822,8 +8600,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -8858,8 +8635,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -8891,8 +8667,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -8928,8 +8703,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -8964,8 +8738,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -9001,8 +8774,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -9037,8 +8809,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -9073,8 +8844,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -9106,8 +8876,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -9139,8 +8908,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -9172,8 +8940,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -9205,8 +8972,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -9238,8 +9004,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -9274,8 +9039,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -9310,8 +9074,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -9343,8 +9106,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -9376,8 +9138,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -9419,8 +9180,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -9452,8 +9212,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -9488,8 +9247,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -9521,8 +9279,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -9557,8 +9314,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -9590,8 +9346,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -9629,8 +9384,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -9662,8 +9416,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -9695,8 +9448,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -9735,8 +9487,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -9768,8 +9519,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -9801,8 +9551,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -9834,8 +9583,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -9867,8 +9615,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -9900,8 +9647,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -9933,8 +9679,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -9974,8 +9719,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -10007,8 +9751,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -10040,8 +9783,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -10076,8 +9818,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -10109,8 +9850,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -10145,8 +9885,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -10178,8 +9917,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -10214,8 +9952,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -10251,8 +9988,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -10284,8 +10020,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -10320,8 +10055,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -10356,8 +10090,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -10392,8 +10125,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -10428,8 +10160,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -10465,8 +10196,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -10505,8 +10235,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -10541,8 +10270,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -10577,8 +10305,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -10613,8 +10340,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -10649,8 +10375,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -10682,8 +10407,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -10715,8 +10439,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -10751,8 +10474,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -10784,8 +10506,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -10821,8 +10542,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -10861,8 +10581,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -10897,8 +10616,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -10933,8 +10651,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -10966,8 +10683,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -11002,8 +10718,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -11039,8 +10754,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -11072,8 +10786,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -11105,8 +10818,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -11138,8 +10850,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -11179,8 +10890,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -11222,8 +10932,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -11255,8 +10964,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -11288,8 +10996,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -11324,8 +11031,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -11357,8 +11063,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -11393,8 +11098,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -11429,8 +11133,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -11466,8 +11169,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -11502,8 +11204,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -11538,8 +11239,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -11571,8 +11271,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -11604,8 +11303,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -11643,8 +11341,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -11687,8 +11384,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -11735,8 +11431,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -11768,8 +11463,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -11804,8 +11498,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -11848,8 +11541,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -11881,8 +11573,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -11914,8 +11605,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -11951,8 +11641,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -11984,8 +11673,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -12017,8 +11705,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -12054,8 +11741,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -12086,8 +11772,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -12131,8 +11816,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -12185,8 +11869,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -12226,8 +11909,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -12271,8 +11953,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -12312,8 +11993,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -12365,8 +12045,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -12410,8 +12089,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -12455,8 +12133,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -12496,8 +12173,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -12528,8 +12204,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -12564,8 +12239,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -12596,8 +12270,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -12629,8 +12302,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -12666,8 +12338,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -12702,8 +12373,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -12751,8 +12421,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -12788,8 +12457,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -12821,8 +12489,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -12874,8 +12541,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -12917,8 +12583,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -12960,8 +12625,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -13001,8 +12665,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -13045,8 +12708,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -13094,8 +12756,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -13144,8 +12805,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -13184,8 +12844,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -13228,8 +12887,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -13281,8 +12939,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -13313,8 +12970,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -13346,8 +13002,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -13383,8 +13038,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -13416,8 +13070,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -13449,8 +13102,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -13482,8 +13134,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -13514,8 +13165,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -13558,8 +13208,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -13601,8 +13250,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -13644,8 +13292,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -13687,8 +13334,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -13727,8 +13373,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -13760,8 +13405,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -13796,8 +13440,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -13833,8 +13476,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -13869,8 +13511,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -13902,8 +13543,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -13945,8 +13585,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -13978,8 +13617,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -14014,8 +13652,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -14050,8 +13687,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -14115,8 +13751,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -14155,8 +13790,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -14188,8 +13822,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -14224,8 +13857,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -14264,8 +13896,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -14307,8 +13938,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -14347,8 +13977,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -14383,8 +14012,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -14426,8 +14054,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -14459,8 +14086,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -14492,8 +14118,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -14532,8 +14157,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -14568,8 +14192,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -14604,8 +14227,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -14637,8 +14259,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -14685,8 +14306,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -14725,8 +14345,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -14761,8 +14380,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -14812,8 +14430,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -14849,8 +14466,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -14893,8 +14509,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -14930,8 +14545,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -14966,8 +14580,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -15002,8 +14615,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -15042,8 +14654,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -15075,8 +14686,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -15113,8 +14723,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -15151,8 +14760,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -15187,8 +14795,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -15227,8 +14834,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -15263,8 +14869,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -15299,8 +14904,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -15335,8 +14939,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -15371,8 +14974,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -15415,8 +15017,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -15451,8 +15052,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -15487,8 +15087,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -15530,8 +15129,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -15566,8 +15164,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -15602,8 +15199,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -15646,8 +15242,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -15682,8 +15277,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -15718,8 +15312,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -15754,8 +15347,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -15790,8 +15382,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -15831,8 +15422,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -15873,8 +15463,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -15916,8 +15505,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -15960,8 +15548,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -16009,8 +15596,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -16050,8 +15636,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -16083,8 +15668,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -16120,8 +15704,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -16157,8 +15740,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -16200,8 +15782,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -16240,8 +15821,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -16273,8 +15853,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -16309,8 +15888,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -16346,8 +15924,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -16399,8 +15976,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -16432,8 +16008,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -16465,8 +16040,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -16498,8 +16072,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -16538,8 +16111,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -16574,8 +16146,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -16610,8 +16181,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -16647,8 +16217,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -16683,8 +16252,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -16716,8 +16284,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -16749,8 +16316,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -16782,8 +16348,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -16821,8 +16386,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -16859,8 +16423,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -16895,8 +16458,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -16939,8 +16501,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -16982,8 +16543,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -17015,8 +16575,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -17090,8 +16649,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -17130,8 +16688,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -17163,8 +16720,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -17207,8 +16763,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -17243,8 +16798,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -17284,8 +16838,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -17317,8 +16870,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -17360,8 +16912,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -17393,8 +16944,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -17438,8 +16988,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -17471,8 +17020,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -17507,8 +17055,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -17543,8 +17090,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -17586,8 +17132,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -17622,8 +17167,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -17658,8 +17202,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -17694,8 +17237,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -17730,8 +17272,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -17770,8 +17311,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -17814,8 +17354,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -17850,8 +17389,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -17894,8 +17432,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -17930,8 +17467,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -17966,8 +17502,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -18006,8 +17541,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -18042,8 +17576,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -18089,8 +17622,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -18132,8 +17664,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -18168,8 +17699,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -18208,8 +17738,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -18244,8 +17773,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -18287,8 +17815,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -18331,8 +17858,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -18376,8 +17902,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -18416,8 +17941,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -18453,8 +17977,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -18486,8 +18009,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -18523,8 +18045,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -18559,8 +18080,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -18595,8 +18115,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -18639,8 +18158,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -18678,8 +18196,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -18721,8 +18238,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -18757,8 +18273,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -18797,8 +18312,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -18833,8 +18347,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -18880,8 +18393,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -18916,8 +18428,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -18952,8 +18463,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -18988,8 +18498,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -19024,8 +18533,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -19060,8 +18568,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -19096,8 +18603,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -19132,8 +18638,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -19168,8 +18673,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -19205,8 +18709,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -19241,8 +18744,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -19277,8 +18779,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -19313,8 +18814,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -19349,8 +18849,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -19385,8 +18884,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -19421,8 +18919,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -19457,8 +18954,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -19497,8 +18993,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -19533,8 +19028,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -19566,8 +19060,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -19602,8 +19095,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -19638,8 +19130,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -19686,8 +19177,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -19722,8 +19212,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -19765,8 +19254,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -19808,8 +19296,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -19849,8 +19336,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -19885,8 +19371,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -19921,8 +19406,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -19961,8 +19445,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -19994,8 +19477,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -20038,8 +19520,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -20071,8 +19552,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -20111,8 +19591,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -20151,8 +19630,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -20184,8 +19662,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -20224,8 +19701,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -20264,8 +19740,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -20307,8 +19782,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -20340,8 +19814,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -20376,8 +19849,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -20409,8 +19881,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -20442,8 +19913,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -20475,8 +19945,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -20522,8 +19991,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -20565,8 +20033,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -20604,8 +20071,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -20640,8 +20106,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -20676,8 +20141,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -20709,8 +20173,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -20756,8 +20219,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -20792,8 +20254,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -20833,8 +20294,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -20881,8 +20341,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -20917,8 +20376,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -20953,8 +20411,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -20989,8 +20446,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -21033,8 +20489,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -21077,8 +20532,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -21110,8 +20564,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -21154,8 +20607,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -21190,8 +20642,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -21230,8 +20681,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -21286,8 +20736,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -21322,8 +20771,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -21362,8 +20810,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -21398,8 +20845,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -21434,8 +20880,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -21470,8 +20915,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -21506,8 +20950,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -21542,8 +20985,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -21598,8 +21040,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {
@@ -21640,8 +21081,7 @@
       "type": "object",
       "additionalProperties": true,
       "propertyNames": {
-        "type": "string",
-        "pattern": "^[A-Z][A-Za-z]*$"
+        "$ref": "#/definitions/attributeName"
       },
       "properties": {
         "Enabled": {

@@ -1,9 +1,7 @@
 type: object
 additionalProperties: true
 
-propertyNames:
-  type: string
-  pattern: '^[A-Z][A-Za-z]*$'
+propertyNames: { $ref: '#/definitions/attributeName' }
 
 properties:
   Enabled: { type: boolean }
