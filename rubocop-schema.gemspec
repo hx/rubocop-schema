@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.authors = ['Neil E. Pearson']
   spec.email   = ['neil@helium.net.au']
 
-  spec.summary     = 'Generate JSON schemas for IDE integration with Rubocop'
+  spec.summary     = 'Generate JSON schemas for IDE integration with RuboCop'
   spec.description = spec.summary
   spec.homepage    = 'https://github.com/hx/rubocop-schema'
   spec.license     = 'MIT'
