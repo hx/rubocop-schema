@@ -43,6 +43,10 @@ module RuboCop
           @stringifier ||= Stringifier.new
           @stringifier.stringify section
         end
+
+        def presence(str)
+          str unless str.strip == ''
+        end
       end
     end
   end

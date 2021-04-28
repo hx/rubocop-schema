@@ -20,6 +20,10 @@ module RuboCop
         # @return [Array<Attribute>]
         attr_reader :attributes
 
+        def to_h
+          (public_methods(false) - [:to_h]).to_h { |k| [k, __send__(k)] }
+        end
+
         protected
 
         def scan
@@ -49,8 +53,8 @@ module RuboCop
           @attributes = table_to_hash(attr_table_block).map do |row|
             Attribute.new(
               name:    row['Name'],
-              default: row['Default value'],
-              type:    row['Configurable values'] # TODO: downcase
+              default: presence(row['Default value']),
+              type:    presence(row['Configurable values'])
             )
           end
         end

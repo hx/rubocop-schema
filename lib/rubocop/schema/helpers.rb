@@ -18,6 +18,20 @@ module RuboCop
         end
       end
 
+      def deep_merge(old, new, &block)
+        return old if old.class != new.class
+
+        case old
+        when Hash
+          old.merge(new.to_h { |k, v| [k, old.key?(k) ? deep_merge(old[k], v, &block) : v] })
+            .tap { |merged| yield merged if block_given? }
+        when Array
+          old | new
+        else
+          old
+        end
+      end
+
       def boolean
         { 'type' => 'boolean' }
       end

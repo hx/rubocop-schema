@@ -8,6 +8,7 @@ require 'rubocop/schema/helpers'
 require 'rubocop/schema/ascii_doc/index'
 require 'rubocop/schema/ascii_doc/department'
 require 'rubocop/schema/document_loader'
+require 'rubocop/schema/defaults_ripper'
 
 module RuboCop
   module Schema
@@ -38,38 +39,79 @@ module RuboCop
           properties = json.fetch('properties')
 
           lockfile.specs.each do |spec|
+            info = {}
+
             AsciiDoc::Index.new(@loader.doc(spec)).department_names.each do |department_name|
-              dept_info = CopInfo.new(
+              info[department_name] = CopInfo.new(
                 name:        department_name,
                 description: department_description(spec, department_name)
               )
-              properties[department_name] = cop_schema(dept_info)
 
               AsciiDoc::Department.new(@loader.doc(spec, department_name)).cops.each do |cop_info|
-                properties[cop_info.name] = cop_schema(cop_info)
+                info[cop_info.name] = CopInfo.new(**cop_info.to_h)
               end
             end
 
-            @loader.defaults(spec)&.each do |cop_name, attributes|
-              cop = properties[cop_name] ||= cop_schema(CopInfo.new(name: cop_name))
-              cop['description'] ||= attributes['Description'] if attributes['Description']
-              cop['description'] ||= department_description(spec, cop_name) unless cop_name.include?('/')
-              attributes.each do |attr_name, attr_default|
-                next if EXCLUDE_ATTRIBUTES.include? attr_name
-
-                attr = cop['properties'][attr_name] ||= {}
-                attr['type'] ||= TYPE_MAP.find { |_, v| v.any? { |c| attr_default.is_a? c } }&.first unless attr['$ref']
-                unless attr_default.nil?
-                  attr['description'] = "Default: #{attr_default.is_a?(Array) ? attr_default.join(', ') : attr_default}"
-                end
-                attr.compact!
+            if (defaults = @loader.defaults(spec))
+              DefaultsRipper.new(defaults).cops.each do |cop_info|
+                name = cop_info.name
+                info[name] = info.key?(name) ? merge_cops(info[name], cop_info) : cop_info
               end
+            end
+
+            info.each do |cop_name, cop_info|
+              schema = cop_schema(cop_info)
+              properties[cop_name] = properties.key?(cop_name) ? merge_schemas(properties[cop_name], schema) : schema
             end
           end
         end
       end
 
       private
+
+      # @param [CopInfo] old
+      # @param [CopInfo] new
+      # @return [CopInfo]
+      def merge_cops(old, new)
+        old.dup.tap do |merged|
+          merged.supports_autocorrect = new.supports_autocorrect if merged.supports_autocorrect.nil?
+          merged.enabled_by_default   = new.enabled_by_default if merged.enabled_by_default.nil?
+          merged.attributes           = merge_attribute_sets(merged.attributes, new.attributes)
+          merged.description          ||= new.description
+        end
+      end
+
+      # @param [Array<Attribute>] old
+      # @param [Array<Attribute>] new
+      # @return [Array<Attribute>]
+      def merge_attribute_sets(old, new)
+        return old || new unless old && new
+
+        merged = old.to_h { |attr| [attr.name, attr] }
+        new.each do |attr|
+          merged[attr.name] = merged.key?(attr.name) ? merge_attributes(merged[attr.name], attr) : attr
+        end
+
+        merged.values
+      end
+
+      # @param [Attribute] old
+      # @param [Attribute] new
+      # @return [Attribute]
+      def merge_attributes(old, new)
+        old.dup.tap do |merged|
+          merged.type    ||= new.type
+          merged.default ||= new.default
+        end
+      end
+
+      # @param [Hash] old
+      # @param [Hash] new
+      def merge_schemas(old, new)
+        deep_merge(old, new) do |merged|
+          merged.delete 'type' if merged.key? '$ref'
+        end
+      end
 
       # @return [LockfileInspector]
       attr_reader :lockfile
