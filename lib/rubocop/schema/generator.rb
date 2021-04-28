@@ -13,7 +13,7 @@ require 'rubocop/schema/cop_info_merger'
 
 module RuboCop
   module Schema
-    class Scraper
+    class Generator
       include Helpers
 
       # @param [Array<Spec>] specs

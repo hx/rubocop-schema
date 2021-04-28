@@ -4,7 +4,7 @@ require 'json'
 require 'rubocop/schema/document_loader'
 require 'rubocop/schema/cached_http_client'
 require 'rubocop/schema/lockfile_inspector'
-require 'rubocop/schema/scraper'
+require 'rubocop/schema/generator'
 
 module RuboCop
   module Schema
@@ -25,7 +25,7 @@ module RuboCop
         lockfile = LockfileInspector.new(lockfile_path)
         fail 'RuboCop is not part of this project' unless lockfile.specs.any?
 
-        schema = report_duration { Scraper.new(lockfile.specs, document_loader).schema }
+        schema = report_duration { Generator.new(lockfile.specs, document_loader).schema }
         puts JSON.pretty_generate schema
       end
 
