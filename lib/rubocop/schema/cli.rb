@@ -22,10 +22,10 @@ module RuboCop
         lockfile_path = @working_dir + 'Gemfile.lock'
         fail "Cannot read #{lockfile_path}" unless lockfile_path.readable?
 
-        lockfile = LockfileInspector.new(lockfile_path)
-        fail 'RuboCop is not part of this project' unless lockfile.specs.any?
+        specs = LockfileInspector.new(lockfile_path).specs
+        fail 'RuboCop is not part of this project' unless specs.any?
 
-        schema = report_duration { Generator.new(lockfile.specs, document_loader).schema }
+        schema = report_duration { Generator.new(specs, document_loader).schema }
         puts JSON.pretty_generate schema
       end
 
