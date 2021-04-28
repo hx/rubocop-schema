@@ -14,7 +14,10 @@ module RuboCop
       end
 
       def run
+        lockfile_path = @working_dir + 'Gemfile.lock'
         fail "Cannot read #{lockfile_path}" unless lockfile_path.readable?
+
+        lockfile = LockfileInspector.new(lockfile_path)
         fail 'RuboCop is not part of this project' unless lockfile.specs.any?
 
         schema = report_duration { Scraper.new(lockfile, http_client).schema }
@@ -48,20 +51,11 @@ module RuboCop
         exit 1
       end
 
-      def lockfile
-        @lockfile ||= LockfileInspector.new(lockfile_path)
-      end
-
-      def lockfile_path
-        @lockfile_path ||= @working_dir + 'Gemfile.lock'
-      end
-
       def http_client
-        @http_client ||= CachedHTTPClient.new(cache_dir, &method(:handle_event))
-      end
-
-      def cache_dir
-        @cache_dir ||= Pathname(Dir.home) + '.rubocop-schema-cache'
+        @http_client ||= CachedHTTPClient.new(
+          Pathname(Dir.home) + '.rubocop-schema-cache',
+          &method(:handle_event)
+        )
       end
     end
   end
