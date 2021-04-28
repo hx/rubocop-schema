@@ -36,3 +36,6 @@ Style/StringConcatenation:
 
 Style/StderrPuts:
   Enabled: false
+
+Lint/AmbiguousOperator:
+  Enabled: false

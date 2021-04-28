@@ -172,7 +172,7 @@
         },
         "Include": {
           "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "description": "Default: **/*_spec.rb, **/spec/**/*"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -207,8 +207,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -243,8 +242,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -279,8 +277,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -312,8 +309,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -345,8 +341,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -378,8 +373,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -415,8 +409,7 @@
           "type": "array"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -448,8 +441,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -484,8 +476,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -521,8 +512,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -557,8 +547,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -590,8 +579,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -623,8 +611,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -676,8 +663,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -709,8 +695,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -748,8 +733,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -781,8 +765,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -817,8 +800,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -857,8 +839,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -893,8 +874,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -929,8 +909,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -965,8 +944,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -1001,8 +979,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -1038,8 +1015,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -1084,8 +1060,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -1128,8 +1103,7 @@
           "type": "array"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -1164,8 +1138,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -1212,8 +1185,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -1245,8 +1217,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -1322,8 +1293,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -1358,8 +1328,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -1407,8 +1376,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -1443,8 +1411,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -1476,8 +1443,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -1524,8 +1490,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -1573,8 +1538,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -1609,8 +1573,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -1646,8 +1609,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -1694,8 +1656,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -1727,8 +1688,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -1763,8 +1723,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -1796,8 +1755,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -1832,8 +1790,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -1865,8 +1822,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -1898,8 +1854,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -1943,8 +1898,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -1988,8 +1942,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -2021,8 +1974,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -2054,8 +2006,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -2091,8 +2042,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -2132,8 +2082,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -2168,8 +2117,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -2205,8 +2153,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -2242,8 +2189,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -2290,8 +2236,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -2323,8 +2268,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -2356,8 +2300,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -2413,8 +2356,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -2449,8 +2391,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -2485,8 +2426,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -2518,8 +2458,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -2551,8 +2490,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -2584,8 +2522,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -2617,8 +2554,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -2650,8 +2586,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -2698,8 +2633,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -2734,8 +2668,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -2767,8 +2700,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -2803,8 +2735,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -2839,8 +2770,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -2875,8 +2805,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -2908,8 +2837,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -2941,8 +2869,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -2974,8 +2901,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -3019,8 +2945,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -3068,8 +2993,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -3109,8 +3033,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -3142,8 +3065,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -3171,15 +3093,13 @@
       },
       "properties": {
         "Enabled": {
-          "type": "boolean",
-          "description": "Default: true"
+          "type": "boolean"
         },
         "Exclude": {
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -3211,8 +3131,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -3247,8 +3166,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -3287,8 +3205,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -3313,15 +3230,13 @@
       },
       "properties": {
         "Enabled": {
-          "type": "boolean",
-          "description": "Default: true"
+          "type": "boolean"
         },
         "Exclude": {
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -3466,15 +3381,13 @@
       },
       "properties": {
         "Enabled": {
-          "type": "boolean",
-          "description": "Default: true"
+          "type": "boolean"
         },
         "Exclude": {
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -3506,8 +3419,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -3587,8 +3499,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -3620,8 +3531,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -3653,8 +3563,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -3686,8 +3595,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -3719,8 +3627,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -3745,15 +3652,13 @@
       },
       "properties": {
         "Enabled": {
-          "type": "boolean",
-          "description": "Default: true"
+          "type": "boolean"
         },
         "Exclude": {
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -3932,15 +3837,13 @@
       },
       "properties": {
         "Enabled": {
-          "type": "boolean",
-          "description": "Default: true"
+          "type": "boolean"
         },
         "Exclude": {
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -4144,15 +4047,13 @@
       },
       "properties": {
         "Enabled": {
-          "type": "boolean",
-          "description": "Default: true"
+          "type": "boolean"
         },
         "Exclude": {
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -4184,8 +4085,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -4236,8 +4136,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -4288,8 +4187,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -4340,8 +4238,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -4380,8 +4277,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "description": "Default: warning",
@@ -4429,8 +4325,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -4478,8 +4373,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -4514,8 +4408,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -4570,8 +4463,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -4613,8 +4505,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -4649,8 +4540,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -4685,8 +4575,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -4721,8 +4610,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -4757,8 +4645,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "description": "Default: warning",
@@ -4806,8 +4693,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -4854,8 +4740,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -4890,8 +4775,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -4934,8 +4818,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -4970,8 +4853,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -5006,8 +4888,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -5046,8 +4927,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -5102,8 +4982,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -5138,8 +5017,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -5190,8 +5068,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -5226,8 +5103,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -5270,8 +5146,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -5306,8 +5181,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -5354,8 +5228,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -5406,8 +5279,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -5442,8 +5314,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -5478,8 +5349,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -5528,8 +5398,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "description": "Default: warning",
@@ -5578,8 +5447,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -5624,8 +5492,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -5672,8 +5539,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -5726,8 +5592,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -5779,8 +5644,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -5815,8 +5679,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -5868,8 +5731,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -5904,8 +5766,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -5940,8 +5801,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -5976,8 +5836,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -6028,8 +5887,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -6108,8 +5966,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -6144,8 +6001,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -6180,8 +6036,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -6232,8 +6087,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -6284,8 +6138,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -6328,8 +6181,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -6364,8 +6216,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -6408,8 +6259,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -6444,8 +6294,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -6505,8 +6354,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -6554,8 +6402,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -6590,8 +6437,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -6642,8 +6488,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -6678,8 +6523,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -6727,8 +6571,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -6763,8 +6606,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -6799,8 +6641,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -6848,8 +6689,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -6901,8 +6741,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -6950,8 +6789,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -7002,8 +6840,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -7054,8 +6891,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -7094,8 +6930,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -7130,8 +6965,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -7166,8 +7000,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -7202,8 +7035,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -7238,8 +7070,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -7274,8 +7105,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -7310,8 +7140,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -7358,8 +7187,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -7406,8 +7234,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -7442,8 +7269,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -7478,8 +7304,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -7530,8 +7355,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -7590,8 +7414,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -7626,8 +7449,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -7662,8 +7484,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -7698,8 +7519,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -7738,8 +7558,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -7774,8 +7593,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -7822,8 +7640,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -7883,8 +7700,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -7919,8 +7735,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -7983,8 +7798,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -8044,8 +7858,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -8092,8 +7905,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -8128,8 +7940,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -8164,8 +7975,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -8224,8 +8034,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -8272,8 +8081,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -8320,8 +8128,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -8353,15 +8160,13 @@
       },
       "properties": {
         "Enabled": {
-          "type": "boolean",
-          "description": "Default: true"
+          "type": "boolean"
         },
         "Exclude": {
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -8393,8 +8198,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -8426,8 +8230,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -8463,8 +8266,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -8499,8 +8301,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -8535,8 +8336,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -8572,8 +8372,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -8608,8 +8407,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -8645,8 +8443,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -8682,8 +8479,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -8715,8 +8511,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -8752,8 +8547,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -8793,8 +8587,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -8833,8 +8626,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -8869,8 +8661,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -8908,8 +8699,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -8944,8 +8734,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -8981,8 +8770,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -9022,8 +8810,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -9055,8 +8842,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -9088,8 +8874,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -9121,8 +8906,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -9154,8 +8938,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -9190,8 +8973,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -9223,8 +9005,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -9256,8 +9037,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -9289,8 +9069,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -9325,8 +9104,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -9366,8 +9144,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -9403,8 +9180,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -9440,8 +9216,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -9476,8 +9251,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -9509,8 +9283,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -9546,8 +9319,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -9582,8 +9354,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -9619,8 +9390,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -9655,8 +9425,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -9691,8 +9460,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -9724,8 +9492,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -9757,8 +9524,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -9790,8 +9556,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -9823,8 +9588,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -9860,8 +9624,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -9896,8 +9659,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -9932,8 +9694,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -9965,8 +9726,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -9998,8 +9758,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -10046,8 +9805,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -10083,8 +9841,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -10119,8 +9876,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -10152,8 +9908,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -10188,8 +9943,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -10225,8 +9979,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -10265,8 +10018,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -10298,8 +10050,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -10331,8 +10082,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -10371,8 +10121,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -10404,8 +10153,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -10437,8 +10185,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -10470,8 +10217,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -10503,8 +10249,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -10540,8 +10285,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -10573,8 +10317,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -10618,8 +10361,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -10651,8 +10393,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -10688,8 +10429,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -10724,8 +10464,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -10761,8 +10500,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -10797,8 +10535,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -10834,8 +10571,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -10870,8 +10606,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -10911,8 +10646,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -10944,8 +10678,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -10980,8 +10713,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -11016,8 +10748,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -11052,8 +10783,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -11088,8 +10818,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -11129,8 +10858,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -11169,8 +10897,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -11205,8 +10932,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -11241,8 +10967,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -11277,8 +11002,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -11313,8 +11037,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -11346,8 +11069,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -11379,8 +11101,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -11415,8 +11136,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -11448,8 +11168,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -11485,8 +11204,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -11525,8 +11243,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -11561,8 +11278,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -11597,8 +11313,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -11630,8 +11345,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -11666,8 +11380,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -11703,8 +11416,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -11736,8 +11448,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -11769,8 +11480,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -11802,8 +11512,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -11843,8 +11552,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -11891,8 +11599,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -11924,8 +11631,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -11957,8 +11663,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -11993,8 +11698,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -12026,8 +11730,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -12062,8 +11765,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -12098,8 +11800,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -12135,8 +11836,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -12175,8 +11875,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -12211,8 +11910,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -12244,8 +11942,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -12277,8 +11974,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -12317,8 +12013,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -12361,8 +12056,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -12409,8 +12103,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -12442,8 +12135,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -12478,8 +12170,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -12522,8 +12213,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -12555,8 +12245,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -12588,8 +12277,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -12629,8 +12317,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -12670,8 +12357,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -12707,8 +12393,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -12737,15 +12422,13 @@
       },
       "properties": {
         "Enabled": {
-          "type": "boolean",
-          "description": "Default: true"
+          "type": "boolean"
         },
         "Exclude": {
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -12777,8 +12460,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -12827,8 +12509,7 @@
           "type": "array"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -12880,8 +12561,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -12921,8 +12601,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -12966,8 +12645,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -13007,8 +12685,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -13060,8 +12737,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -13105,8 +12781,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -13150,8 +12825,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -13184,15 +12858,13 @@
       },
       "properties": {
         "Enabled": {
-          "type": "boolean",
-          "description": "Default: true"
+          "type": "boolean"
         },
         "Exclude": {
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -13224,8 +12896,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -13253,15 +12924,13 @@
       },
       "properties": {
         "Enabled": {
-          "type": "boolean",
-          "description": "Default: true"
+          "type": "boolean"
         },
         "Exclude": {
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -13293,8 +12962,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -13326,8 +12994,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -13363,8 +13030,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -13399,8 +13065,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -13448,8 +13113,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -13485,8 +13149,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -13519,8 +13182,7 @@
           "type": "array"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -13571,8 +13233,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -13619,8 +13280,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -13663,8 +13323,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -13713,8 +13372,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -13762,8 +13420,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -13812,8 +13469,7 @@
           "type": "array"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -13861,8 +13517,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -13901,8 +13556,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -13950,8 +13604,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -14001,15 +13654,13 @@
       },
       "properties": {
         "Enabled": {
-          "type": "boolean",
-          "description": "Default: true"
+          "type": "boolean"
         },
         "Exclude": {
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -14041,8 +13692,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -14074,8 +13724,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -14119,8 +13768,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -14156,8 +13804,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -14193,8 +13840,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -14227,15 +13873,13 @@
       },
       "properties": {
         "Enabled": {
-          "type": "boolean",
-          "description": "Default: true"
+          "type": "boolean"
         },
         "Exclude": {
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -14267,8 +13911,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -14316,8 +13959,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -14364,8 +14006,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -14412,8 +14053,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -14460,8 +14100,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -14500,8 +14139,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -14537,8 +14175,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -14573,8 +14210,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -14610,8 +14246,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -14646,8 +14281,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -14679,8 +14313,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -14727,8 +14360,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -14760,8 +14392,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -14796,8 +14427,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -14832,8 +14462,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -14902,8 +14531,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -14942,8 +14570,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -14979,8 +14606,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -15015,8 +14641,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -15064,8 +14689,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -15112,8 +14736,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -15152,8 +14775,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -15188,8 +14810,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -15236,8 +14857,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -15269,8 +14889,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -15306,8 +14925,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -15350,8 +14968,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -15386,8 +15003,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -15422,8 +15038,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -15459,8 +15074,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -15512,8 +15126,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -15552,8 +15165,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -15588,8 +15200,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -15644,8 +15255,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -15681,8 +15291,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -15725,8 +15334,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -15766,8 +15374,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -15802,8 +15409,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -15838,8 +15444,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -15878,8 +15483,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -15912,8 +15516,7 @@
           "type": "array"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -15950,8 +15553,7 @@
           "type": "array"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -15987,8 +15589,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -16023,8 +15624,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -16072,8 +15672,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -16108,8 +15707,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -16144,8 +15742,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -16180,8 +15777,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -16216,8 +15812,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -16265,8 +15860,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -16301,8 +15895,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -16337,8 +15930,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -16385,8 +15977,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -16421,8 +16012,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -16457,8 +16047,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -16506,8 +16095,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -16542,8 +16130,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -16578,8 +16165,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -16614,8 +16200,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -16650,8 +16235,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -16696,8 +16280,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -16751,8 +16334,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -16799,8 +16381,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -16848,8 +16429,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -16902,8 +16482,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -16952,8 +16531,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -16989,8 +16567,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -17030,8 +16607,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -17067,8 +16643,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -17115,8 +16690,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -17155,8 +16729,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -17192,8 +16765,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -17228,8 +16800,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -17265,8 +16836,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -17323,8 +16893,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -17360,8 +16929,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -17397,8 +16965,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -17430,8 +16997,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -17470,8 +17036,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -17506,8 +17071,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -17542,8 +17106,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -17583,8 +17146,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -17619,8 +17181,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -17652,8 +17213,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -17689,8 +17249,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -17722,8 +17281,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -17766,8 +17324,7 @@
           "type": "array"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -17803,8 +17360,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -17839,8 +17395,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -17888,8 +17443,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -17936,8 +17490,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -17973,8 +17526,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -18053,8 +17605,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -18093,8 +17644,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -18126,8 +17676,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -18175,8 +17724,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -18211,8 +17759,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -18257,8 +17804,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -18290,8 +17836,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -18338,8 +17883,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -18371,8 +17915,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -18425,8 +17968,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -18458,8 +18000,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -18494,8 +18035,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -18530,8 +18070,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -18578,8 +18117,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -18614,8 +18152,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -18650,8 +18187,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -18686,8 +18222,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -18722,8 +18257,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -18771,8 +18305,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -18820,8 +18353,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -18856,8 +18388,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -18905,8 +18436,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -18941,8 +18471,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -18977,8 +18506,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -19017,8 +18545,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -19053,8 +18580,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -19105,8 +18631,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -19153,8 +18678,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -19189,8 +18713,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -19229,8 +18752,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -19265,8 +18787,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -19313,8 +18834,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -19358,8 +18878,7 @@
           "type": "array"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -19415,8 +18934,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -19455,8 +18973,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -19492,8 +19009,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -19529,8 +19045,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -19570,8 +19085,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -19606,8 +19120,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -19642,8 +19155,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -19686,8 +19198,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -19725,8 +19236,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -19773,8 +19283,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -19809,8 +19318,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -19858,8 +19366,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -19894,8 +19401,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -19946,8 +19452,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -19982,8 +19487,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -20022,8 +19526,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -20058,8 +19561,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -20094,8 +19596,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -20130,8 +19631,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -20166,8 +19666,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -20202,8 +19701,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -20238,8 +19736,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -20283,8 +19780,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -20319,8 +19815,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -20355,8 +19850,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -20391,8 +19885,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -20427,8 +19920,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -20463,8 +19955,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -20499,8 +19990,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -20535,8 +20025,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -20575,8 +20064,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -20611,8 +20099,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -20648,8 +20135,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -20684,8 +20170,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -20720,8 +20205,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -20773,8 +20257,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -20809,8 +20292,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -20857,8 +20339,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -20905,8 +20386,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -20950,8 +20430,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -20990,8 +20469,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -21026,8 +20504,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -21066,8 +20543,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -21099,8 +20575,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -21148,8 +20623,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -21185,8 +20659,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -21225,8 +20698,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -21265,8 +20737,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -21302,8 +20773,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -21342,8 +20812,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -21391,8 +20860,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -21439,8 +20907,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -21476,8 +20943,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -21512,8 +20978,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -21549,8 +21014,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -21586,8 +21050,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -21623,8 +21086,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -21675,8 +21137,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -21723,8 +21184,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -21762,8 +21222,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -21798,8 +21257,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -21834,8 +21292,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -21871,8 +21328,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -21923,8 +21379,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -21959,8 +21414,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -22004,8 +21458,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -22057,8 +21510,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -22093,8 +21545,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -22129,8 +21580,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -22165,8 +21615,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -22214,8 +21663,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -22263,8 +21711,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -22300,8 +21747,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -22349,8 +21795,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -22385,8 +21830,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -22425,8 +21869,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -22481,8 +21924,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -22517,8 +21959,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -22562,8 +22003,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -22598,8 +22038,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -22634,8 +22073,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -22670,8 +22108,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -22706,8 +22143,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -22742,8 +22178,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -22803,8 +22238,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"
@@ -22858,8 +22292,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "$ref": "#/definitions/listOfFiles",
-          "description": "Default: Rakefile, **/*.rake"
+          "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
           "$ref": "#/definitions/severity"

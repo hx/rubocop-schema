@@ -3,12 +3,15 @@ require 'nokogiri'
 
 require 'rubocop/schema/cached_http_client'
 require 'rubocop/schema/lockfile_inspector'
-require 'rubocop/schema/templates'
 require 'rubocop/schema/value_objects'
+require 'rubocop/schema/cop_schema'
+require 'rubocop/schema/helpers'
 
 module RuboCop
   module Schema
     class Scraper
+      include Helpers
+
       DEFAULT_VERSION = -'master'
       DOCS_URL_TEMPLATE =
         -'https://raw.githubusercontent.com/rubocop/rubocop%s/%s/docs/modules/ROOT/pages/cops%s.adoc'
@@ -33,7 +36,7 @@ module RuboCop
       end
 
       def schema
-        Schema.template('schema').tap do |json|
+        template('schema').tap do |json|
           properties = json.fetch('properties')
 
           lockfile.specs.each do |spec|
@@ -199,30 +202,10 @@ module RuboCop
         end
       end
 
-      KNOWN_TYPES = Set.new(%w[boolean integer array string]).freeze
-
       # @param [CopInfo] info
+      # @return [Hash]
       def cop_schema(info)
-        Schema.template('cop_schema').tap do |json|
-          json['description'] = info.description unless [nil, ''].include?(info.description)
-          json['properties'] = props = json.fetch('properties').dup
-
-          props['AutoCorrect'] = { 'type' => 'boolean' } if info.supports_autocorrect
-
-          unless info.enabled_by_default.nil?
-            props['Enabled'] = props['Enabled'].merge('description' => "Default: #{info.enabled_by_default}")
-          end
-
-          info.attributes&.each do |attr|
-            props[attr.name] = prop = {}
-            prop['description'] = "Default: #{attr.default}" unless attr.default.blank?
-            if KNOWN_TYPES.include? attr.type.downcase
-              prop['type'] = attr.type.downcase
-            elsif attr.type != ''
-              prop['enum'] = attr.type.split(/\s*,\s*/)
-            end
-          end
-        end
+        CopSchema.new(info).as_json
       end
     end
   end
