@@ -16,15 +16,6 @@ module RuboCop
     class Scraper
       include Helpers
 
-      TYPE_MAP = {
-        integer: [Integer],
-        number:  [Float],
-        boolean: [TrueClass, FalseClass],
-        string:  [String],
-        array:   [Array]
-      }.freeze
-      EXCLUDE_ATTRIBUTES = Set.new(%w[Description VersionAdded VersionChanged StyleGuide]).freeze
-
       # @param [LockfileInspector] lockfile
       # @param [DocumentLoader] document_loader
       def initialize(lockfile, document_loader)
