@@ -83,11 +83,11 @@ module RuboCop
             when :literal
               s.lines.map { |l| "  #{l}" }.join("\n")
             when :ulist
-              s.blocks.map { |b| " - #{reverse_html b.text}" }
+              s.blocks.map { |b| " - #{strip_html b.text}" }
             when :olist
-              s.blocks.map.with_index { |b, i| "  #{i + 1}. #{reverse_html b.text}" }
+              s.blocks.map.with_index { |b, i| "  #{i + 1}. #{strip_html b.text}" }
             when :dlist
-              reverse_html s.convert # Too hard, just go HTML for now
+              strip_html s.convert # Too hard, just go HTML for now
             else
               raise "Don't know what to do with #{s.context}"
             end
@@ -104,7 +104,6 @@ module RuboCop
           if attr_table_block
             info.attributes = table_to_hash(attr_table_block).map do |row|
               type = row['Configurable values']
-              type = type.scan(/\w+/) if type.start_with? '`'
               Attribute.new(
                 name:    row['Name'],
                 default: row['Default value'],
@@ -140,8 +139,10 @@ module RuboCop
         Nokogiri::HTML(str).at_css('a')&.text
       end
 
-      def reverse_html(str)
-        str = str.gsub(%r{</?code>}, '`')
+      # Used for stripping HTML from Asciidoctor output, where raw output is not available, or not
+      # appropriate to use.
+      # TODO: look into the Asciidoctor for a way to do a non-HTML conversion
+      def strip_html(str)
         Nokogiri::HTML(str).text
       end
 
@@ -150,7 +151,7 @@ module RuboCop
         headings = table.rows.head.first.map(&:text)
         table.rows.body.map do |row|
           headings.each_with_index.to_h do |heading, i|
-            [heading, reverse_html(row[i].text)]
+            [heading, strip_html(row[i].text)]
           end
         end
       end
@@ -168,12 +169,10 @@ module RuboCop
           info.attributes&.each do |attr|
             props[attr.name] = prop = {}
             prop['description'] = "Default: #{attr.default}" unless attr.default.blank?
-            case attr.type
-            when Array
-              prop['enum'] = attr.type
-            when String
-              type = attr.type.downcase
-              prop['type'] = type if KNOWN_TYPES.include? type
+            if KNOWN_TYPES.include? attr.type.downcase
+              prop['type'] = attr.type.downcase
+            elsif attr.type != ''
+              prop['enum'] = attr.type.split(/\s*,\s*/)
             end
           end
         end

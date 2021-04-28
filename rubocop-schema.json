@@ -350,7 +350,7 @@
           "type": "boolean"
         },
         "Exclude": {
-          "description": "Default: `spec/spec_helper.rb`, `spec/rails_helper.rb`, `spec/support/*/.rb`",
+          "description": "Default: spec/spec_helper.rb, spec/rails_helper.rb, spec/support/*/.rb",
           "type": "array"
         },
         "Include": {
@@ -436,7 +436,7 @@
           "type": "string"
         },
         "Prefixes": {
-          "description": "Default: `when`, `with`, `without`",
+          "description": "Default: when, with, without",
           "type": "array"
         }
       },
@@ -472,7 +472,7 @@
           "type": "string"
         },
         "IgnoredMetadata": {
-          "description": "Default: `{\"type\"⇒[\"channel\", \"controller\", \"helper\", \"job\", \"mailer\", \"model\", \"request\", \"routing\", \"view\", \"feature\", \"system\", \"mailbox\", \"aruba\"]}`"
+          "description": "Default: {\"type\"⇒[\"channel\", \"controller\", \"helper\", \"job\", \"mailer\", \"model\", \"request\", \"routing\", \"view\", \"feature\", \"system\", \"mailbox\", \"aruba\"]}"
         }
       },
       "description": "Check that the first argument to the top-level describe is a constant.\n\nIt can be configured to ignore strings when certain metadata is passed.\n\nIgnores Rails and Aruba `type` metadata by default.\n\nDefault: Enabled"
@@ -571,11 +571,11 @@
           "type": "string"
         },
         "SkipBlocks": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `described_class`",
+          "description": "Default: described_class",
           "enum": [
             "described_class",
             "explicit"
@@ -649,7 +649,7 @@
           "type": "boolean"
         },
         "PreferredMethods": {
-          "description": "Default: `{}`"
+          "description": "Default: {}"
         }
       },
       "description": "This cop enforces custom RSpec dialects.\n\nA dialect can be based on the following RSpec methods:\n\n - describe, context, feature, example_group\n\n - xdescribe, xcontext, xfeature\n\n - fdescribe, fcontext, ffeature\n\n - shared_examples, shared_examples_for, shared_context\n\n - it, specify, example, scenario, its\n\n - fit, fspecify, fexample, fscenario, focus\n\n - xit, xspecify, xexample, xscenario, skip\n\n - pending\n\n - prepend_before, before, append_before,\n\n - around\n\n - prepend_after, after, append_after\n\n - let, let!\n\n - subject, subject!\n\n - expect, is_expected, expect_any_instance_of\n\nBy default all of the RSpec methods and aliases are allowed. By setting a config like:\n\n  RSpec/Dialect:\n    PreferredMethods:\n      context: describe\n\nYou can expect the following behavior:\n\nDefault: Disabled"
@@ -754,7 +754,7 @@
           "type": "boolean"
         },
         "AllowConsecutiveOneLiners": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         }
       },
@@ -930,7 +930,7 @@
           "type": "string"
         },
         "Max": {
-          "description": "Default: `5`",
+          "description": "Default: 5",
           "type": "integer"
         }
       },
@@ -966,7 +966,7 @@
           "type": "string"
         },
         "EnforcedStyle": {
-          "description": "Default: `always_allow`",
+          "description": "Default: always_allow",
           "enum": [
             "always_allow",
             "single_line_only",
@@ -1009,10 +1009,10 @@
           "type": "boolean"
         },
         "CustomTransform": {
-          "description": "Default: `{\"be\"⇒\"is\", \"BE\"⇒\"IS\", \"have\"⇒\"has\", \"HAVE\"⇒\"HAS\"}`"
+          "description": "Default: {\"be\"⇒\"is\", \"BE\"⇒\"IS\", \"have\"⇒\"has\", \"HAVE\"⇒\"HAS\"}"
         },
         "IgnoredWords": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         }
       },
@@ -1030,7 +1030,7 @@
           "type": "boolean"
         },
         "Exclude": {
-          "description": "Default: `spec/routing/*/`",
+          "description": "Default: spec/routing/*/",
           "type": "array"
         },
         "Include": {
@@ -1087,7 +1087,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `method_call`",
+          "description": "Default: method_call",
           "enum": [
             "method_call",
             "block"
@@ -1175,7 +1175,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "description": "Default: `**/*_spec*rb*`, `**/spec/**/*`",
+          "description": "Default: **/*_spec*rb*, **/spec/**/*",
           "type": "array"
         },
         "Severity": {
@@ -1191,14 +1191,14 @@
           "type": "string"
         },
         "CustomTransform": {
-          "description": "Default: `{\"RuboCop\"⇒\"rubocop\", \"RSpec\"⇒\"rspec\"}`"
+          "description": "Default: {\"RuboCop\"⇒\"rubocop\", \"RSpec\"⇒\"rspec\"}"
         },
         "IgnoreMethods": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         },
         "SpecSuffixOnly": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -1272,7 +1272,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `implicit`",
+          "description": "Default: implicit",
           "enum": [
             "implicit",
             "each",
@@ -1382,7 +1382,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `is_expected`",
+          "description": "Default: is_expected",
           "enum": [
             "is_expected",
             "should"
@@ -1424,7 +1424,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `single_line_only`",
+          "description": "Default: single_line_only",
           "enum": [
             "single_line_only",
             "single_statement_only",
@@ -1499,7 +1499,7 @@
           "type": "string"
         },
         "AssignmentOnly": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -1538,7 +1538,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `it_behaves_like`",
+          "description": "Default: it_behaves_like",
           "enum": [
             "it_behaves_like",
             "it_should_behave_like"
@@ -1775,7 +1775,7 @@
           "type": "string"
         },
         "EnforcedStyle": {
-          "description": "Default: `allow`",
+          "description": "Default: allow",
           "enum": [
             "allow",
             "expect"
@@ -1814,7 +1814,7 @@
           "type": "string"
         },
         "EnforcedStyle": {
-          "description": "Default: `have_received`",
+          "description": "Default: have_received",
           "enum": [
             "have_received",
             "receive"
@@ -1917,7 +1917,7 @@
           "type": "string"
         },
         "Max": {
-          "description": "Default: `1`",
+          "description": "Default: 1",
           "type": "integer"
         }
       },
@@ -1953,11 +1953,11 @@
           "type": "string"
         },
         "AllowSubject": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         },
         "Max": {
-          "description": "Default: `5`",
+          "description": "Default: 5",
           "type": "integer"
         }
       },
@@ -1996,7 +1996,7 @@
           "type": "boolean"
         }
       },
-      "description": "Checks if an example group defines `subject` multiple times.\n\nThe autocorrect behavior for this cop depends on the type of duplication:\n\n - If multiple named subjects are defined then this probably indicates\nthat the overwritten subjects (all subjects except the last\ndefinition) are effectively being used to define helpers. In this\ncase they are replaced with `let`.\n\n - If multiple unnamed subjects are defined though then this can only\nbe dead code and we remove the overwritten subject definitions.\n\n - If subjects are defined with `subject!` then we don’t autocorrect.\nThis is enough of an edge case that people can just move this to\na `before` hook on their own\n\nDefault: Enabled"
+      "description": "Checks if an example group defines `subject` multiple times.\n\nThe autocorrect behavior for this cop depends on the type of duplication:\n\n - If multiple named subjects are defined then this probably indicates\nthat the overwritten subjects (all subjects except the last\ndefinition) are effectively being used to define helpers. In this\ncase they are replaced with let.\n\n - If multiple unnamed subjects are defined though then this can only\nbe dead code and we remove the overwritten subject definitions.\n\n - If subjects are defined with subject! then we don’t autocorrect.\nThis is enough of an edge case that people can just move this to\na before hook on their own\n\nDefault: Enabled"
     },
     "RSpec/NamedSubject": {
       "type": "object",
@@ -2028,7 +2028,7 @@
           "type": "string"
         },
         "IgnoreSharedExamples": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         }
       },
@@ -2064,7 +2064,7 @@
           "type": "string"
         },
         "Max": {
-          "description": "Default: `3`",
+          "description": "Default: 3",
           "type": "integer"
         }
       },
@@ -2103,7 +2103,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `not_to`",
+          "description": "Default: not_to",
           "enum": [
             "not_to",
             "to_not"
@@ -2206,18 +2206,18 @@
           "type": "string"
         },
         "Strict": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `inflected`",
+          "description": "Default: inflected",
           "enum": [
             "inflected",
             "explicit"
           ]
         },
         "AllowedExplicitMatchers": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         }
       },
@@ -2486,7 +2486,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `and_return`",
+          "description": "Default: and_return",
           "enum": [
             "and_return",
             "block"
@@ -2793,7 +2793,7 @@
           "type": "string"
         },
         "EnforcedStyle": {
-          "description": "Default: `symbols`",
+          "description": "Default: symbols",
           "enum": [
             "symbols",
             "strings"
@@ -2832,14 +2832,14 @@
           "type": "string"
         },
         "EnforcedStyle": {
-          "description": "Default: `snake_case`",
+          "description": "Default: snake_case",
           "enum": [
             "snake_case",
             "camelCase"
           ]
         },
         "IgnoredPatterns": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         }
       },
@@ -2875,11 +2875,11 @@
           "type": "string"
         },
         "IgnoreNameless": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         },
         "IgnoreSymbolicNames": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -3052,7 +3052,7 @@
           "type": "boolean"
         },
         "EnabledMethods": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         }
       },
@@ -3137,7 +3137,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "description": "Default: `spec/factories.rb`, `spec/factories//.rb`, `features/support/factories//.rb`",
+          "description": "Default: spec/factories.rb, spec/factories//.rb, features/support/factories//.rb",
           "type": "array"
         },
         "Severity": {
@@ -3173,7 +3173,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "description": "Default: `**/*_spec.rb`, `**/spec/**/*`, `spec/factories.rb`, `spec/factories//.rb`, `features/support/factories//.rb`",
+          "description": "Default: **/*_spec.rb, **/spec/**/*, spec/factories.rb, spec/factories//.rb, features/support/factories//.rb",
           "type": "array"
         },
         "Severity": {
@@ -3192,7 +3192,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `create_list`",
+          "description": "Default: create_list",
           "enum": [
             "create_list",
             "n_times"
@@ -3216,7 +3216,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "description": "Default: `spec/factories.rb`, `spec/factories//.rb`, `features/support/factories//.rb`",
+          "description": "Default: spec/factories.rb, spec/factories//.rb, features/support/factories//.rb",
           "type": "array"
         },
         "Severity": {
@@ -3302,7 +3302,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `symbolic`",
+          "description": "Default: symbolic",
           "enum": [
             "numeric",
             "symbolic"
@@ -3358,7 +3358,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "description": "Default: `**/*.gemfile`, `**/Gemfile`, `**/gems.rb`",
+          "description": "Default: **/*.gemfile, **/Gemfile, **/gems.rb",
           "type": "array"
         },
         "Severity": {
@@ -3391,7 +3391,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "description": "Default: `**/*.gemfile`, `**/Gemfile`, `**/gems.rb`",
+          "description": "Default: **/*.gemfile, **/Gemfile, **/gems.rb",
           "type": "array"
         },
         "Severity": {
@@ -3407,15 +3407,15 @@
           "type": "string"
         },
         "IgnoredGems": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         },
         "OnlyFor": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         }
       },
-      "description": "Each gem in the Gemfile should have a comment explaining its purpose in the project, or the reason for its version or source.\n\nThe optional \"OnlyFor\" configuration array can be used to only register offenses when the gems use certain options or have version specifiers.\n\nWhen \"version_specifiers\" is included, a comment will be enforced if the gem has any version specifier.\n\nWhen \"restrictive_version_specifiers\" is included, a comment will be enforced if the gem has a version specifier that holds back the version of the gem.\n\nFor any other value in the array, a comment will be enforced for a gem if an option by the same name is present. A useful use case is to enforce a comment when using options that change the source of a gem:\n\n - `bitbucket`\n\n - `gist`\n\n - `git`\n\n - `github`\n\n - `source`\n\nFor a full list of options supported by bundler, see https://bundler.io/man/gemfile.5.html .\n\nDefault: Disabled"
+      "description": "Each gem in the Gemfile should have a comment explaining its purpose in the project, or the reason for its version or source.\n\nThe optional \"OnlyFor\" configuration array can be used to only register offenses when the gems use certain options or have version specifiers.\n\nWhen \"version_specifiers\" is included, a comment will be enforced if the gem has any version specifier.\n\nWhen \"restrictive_version_specifiers\" is included, a comment will be enforced if the gem has a version specifier that holds back the version of the gem.\n\nFor any other value in the array, a comment will be enforced for a gem if an option by the same name is present. A useful use case is to enforce a comment when using options that change the source of a gem:\n\n - bitbucket\n\n - gist\n\n - git\n\n - github\n\n - source\n\nFor a full list of options supported by bundler, see https://bundler.io/man/gemfile.5.html .\n\nDefault: Disabled"
     },
     "Bundler/InsecureProtocolSource": {
       "type": "object",
@@ -3432,7 +3432,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "description": "Default: `**/*.gemfile`, `**/Gemfile`, `**/gems.rb`",
+          "description": "Default: **/*.gemfile, **/Gemfile, **/gems.rb",
           "type": "array"
         },
         "Severity": {
@@ -3468,7 +3468,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "description": "Default: `**/*.gemfile`, `**/Gemfile`, `**/gems.rb`",
+          "description": "Default: **/*.gemfile, **/Gemfile, **/gems.rb",
           "type": "array"
         },
         "Severity": {
@@ -3487,11 +3487,11 @@
           "type": "boolean"
         },
         "TreatCommentsAsGroupSeparators": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         },
         "ConsiderPunctuation": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -3544,7 +3544,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "description": "Default: `**/*.gemspec`",
+          "description": "Default: **/*.gemspec",
           "type": "array"
         },
         "Severity": {
@@ -3580,7 +3580,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "description": "Default: `**/*.gemspec`",
+          "description": "Default: **/*.gemspec",
           "type": "array"
         },
         "Severity": {
@@ -3613,7 +3613,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "description": "Default: `**/*.gemspec`",
+          "description": "Default: **/*.gemspec",
           "type": "array"
         },
         "Severity": {
@@ -3632,11 +3632,11 @@
           "type": "boolean"
         },
         "TreatCommentsAsGroupSeparators": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         },
         "ConsiderPunctuation": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -3657,7 +3657,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "description": "Default: `**/*.gemspec`",
+          "description": "Default: **/*.gemspec",
           "type": "array"
         },
         "Severity": {
@@ -3690,7 +3690,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Include": {
-          "description": "Default: `**/*.gemspec`",
+          "description": "Default: **/*.gemspec",
           "type": "array"
         },
         "Severity": {
@@ -3773,14 +3773,14 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `indent`",
+          "description": "Default: indent",
           "enum": [
             "outdent",
             "indent"
           ]
         },
         "IndentationWidth": {
-          "description": "Default: `<none>`",
+          "description": "Default: <none>",
           "type": "integer"
         }
       },
@@ -3819,14 +3819,14 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `with_first_argument`",
+          "description": "Default: with_first_argument",
           "enum": [
             "with_first_argument",
             "with_fixed_indentation"
           ]
         },
         "IndentationWidth": {
-          "description": "Default: `<none>`",
+          "description": "Default: <none>",
           "type": "integer"
         }
       },
@@ -3865,14 +3865,14 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `with_first_element`",
+          "description": "Default: with_first_element",
           "enum": [
             "with_first_element",
             "with_fixed_indentation"
           ]
         },
         "IndentationWidth": {
-          "description": "Default: `<none>`",
+          "description": "Default: <none>",
           "type": "integer"
         }
       },
@@ -3911,7 +3911,7 @@
           "type": "boolean"
         },
         "IndentationWidth": {
-          "description": "Default: `<none>`",
+          "description": "Default: <none>",
           "type": "integer"
         }
       },
@@ -3935,7 +3935,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
-          "description": "Default: `warning`",
+          "description": "Default: warning",
           "type": "string"
         },
         "Details": {
@@ -3951,7 +3951,7 @@
           "type": "boolean"
         },
         "EnforcedStyleAlignWith": {
-          "description": "Default: `start_of_line`",
+          "description": "Default: start_of_line",
           "enum": [
             "start_of_line",
             "begin"
@@ -3993,7 +3993,7 @@
           "type": "boolean"
         },
         "EnforcedStyleAlignWith": {
-          "description": "Default: `either`",
+          "description": "Default: either",
           "enum": [
             "either",
             "start_of_block",
@@ -4071,18 +4071,18 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `case`",
+          "description": "Default: case",
           "enum": [
             "case",
             "end"
           ]
         },
         "IndentOneStep": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         },
         "IndentationWidth": {
-          "description": "Default: `<none>`",
+          "description": "Default: <none>",
           "type": "integer"
         }
       },
@@ -4121,10 +4121,10 @@
           "type": "boolean"
         },
         "Categories": {
-          "description": "Default: `{\"module_inclusion\"⇒[\"include\", \"prepend\", \"extend\"]}`"
+          "description": "Default: {\"module_inclusion\"⇒[\"include\", \"prepend\", \"extend\"]}"
         },
         "ExpectedOrder": {
-          "description": "Default: `module_inclusion`, `constants`, `public_class_methods`, `initializer`, `public_methods`, `protected_methods`, `private_methods`",
+          "description": "Default: module_inclusion, constants, public_class_methods, initializer, public_methods, protected_methods, private_methods",
           "type": "array"
         }
       },
@@ -4288,7 +4288,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
-          "description": "Default: `warning`",
+          "description": "Default: warning",
           "type": "string"
         },
         "Details": {
@@ -4304,7 +4304,7 @@
           "type": "boolean"
         },
         "EnforcedStyleAlignWith": {
-          "description": "Default: `start_of_line`",
+          "description": "Default: start_of_line",
           "enum": [
             "start_of_line",
             "def"
@@ -4346,7 +4346,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `leading`",
+          "description": "Default: leading",
           "enum": [
             "leading",
             "trailing"
@@ -4423,11 +4423,11 @@
           "type": "boolean"
         },
         "AllowBorderComment": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         },
         "AllowMarginComment": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         }
       },
@@ -4571,23 +4571,23 @@
           "type": "boolean"
         },
         "EmptyLineBetweenMethodDefs": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         },
         "EmptyLineBetweenClassDefs": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         },
         "EmptyLineBetweenModuleDefs": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         },
         "AllowAdjacentOneLineDefs": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         },
         "NumberOfEmptyLines": {
-          "description": "Default: `1`",
+          "description": "Default: 1",
           "type": "integer"
         }
       },
@@ -4661,7 +4661,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `around`",
+          "description": "Default: around",
           "enum": [
             "around",
             "only_before"
@@ -4738,11 +4738,11 @@
           "type": "boolean"
         },
         "AllowAliasSyntax": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         },
         "AllowedMethods": {
-          "description": "Default: `alias_method`, `public`, `protected`, `private`",
+          "description": "Default: alias_method, public, protected, private",
           "type": "array"
         }
       },
@@ -4816,7 +4816,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `no_empty_lines`",
+          "description": "Default: no_empty_lines",
           "enum": [
             "empty_lines",
             "no_empty_lines"
@@ -4858,7 +4858,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `no_empty_lines`",
+          "description": "Default: no_empty_lines",
           "enum": [
             "empty_lines",
             "empty_lines_except_namespace",
@@ -4974,7 +4974,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `no_empty_lines`",
+          "description": "Default: no_empty_lines",
           "enum": [
             "empty_lines",
             "empty_lines_except_namespace",
@@ -5003,7 +5003,7 @@
           "$ref": "#/definitions/listOfFiles"
         },
         "Severity": {
-          "description": "Default: `warning`",
+          "description": "Default: warning",
           "type": "string"
         },
         "Details": {
@@ -5019,7 +5019,7 @@
           "type": "boolean"
         },
         "EnforcedStyleAlignWith": {
-          "description": "Default: `keyword`",
+          "description": "Default: keyword",
           "enum": [
             "keyword",
             "variable",
@@ -5059,7 +5059,7 @@
           "type": "string"
         },
         "EnforcedStyle": {
-          "description": "Default: `native`",
+          "description": "Default: native",
           "enum": [
             "native",
             "lf",
@@ -5102,15 +5102,15 @@
           "type": "boolean"
         },
         "AllowForAlignment": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         },
         "AllowBeforeTrailingComments": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         },
         "ForceEqualSignAlignment": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -5149,7 +5149,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `special_for_inner_method_call_in_parentheses`",
+          "description": "Default: special_for_inner_method_call_in_parentheses",
           "enum": [
             "consistent",
             "consistent_relative_to_receiver",
@@ -5158,7 +5158,7 @@
           ]
         },
         "IndentationWidth": {
-          "description": "Default: `<none>`",
+          "description": "Default: <none>",
           "type": "integer"
         }
       },
@@ -5197,7 +5197,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `special_inside_parentheses`",
+          "description": "Default: special_inside_parentheses",
           "enum": [
             "special_inside_parentheses",
             "consistent",
@@ -5205,7 +5205,7 @@
           ]
         },
         "IndentationWidth": {
-          "description": "Default: `<none>`",
+          "description": "Default: <none>",
           "type": "integer"
         }
       },
@@ -5279,7 +5279,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `special_inside_parentheses`",
+          "description": "Default: special_inside_parentheses",
           "enum": [
             "special_inside_parentheses",
             "consistent",
@@ -5287,7 +5287,7 @@
           ]
         },
         "IndentationWidth": {
-          "description": "Default: `<none>`",
+          "description": "Default: <none>",
           "type": "integer"
         }
       },
@@ -5431,14 +5431,14 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `consistent`",
+          "description": "Default: consistent",
           "enum": [
             "consistent",
             "align_parentheses"
           ]
         },
         "IndentationWidth": {
-          "description": "Default: `<none>`",
+          "description": "Default: <none>",
           "type": "integer"
         }
       },
@@ -5477,7 +5477,7 @@
           "type": "boolean"
         },
         "EnforcedHashRocketStyle": {
-          "description": "Default: `key`",
+          "description": "Default: key",
           "enum": [
             "key",
             "separator",
@@ -5485,7 +5485,7 @@
           ]
         },
         "EnforcedColonStyle": {
-          "description": "Default: `key`",
+          "description": "Default: key",
           "enum": [
             "key",
             "separator",
@@ -5493,7 +5493,7 @@
           ]
         },
         "EnforcedLastArgumentHashStyle": {
-          "description": "Default: `always_inspect`",
+          "description": "Default: always_inspect",
           "enum": [
             "always_inspect",
             "always_ignore",
@@ -5607,7 +5607,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `normal`",
+          "description": "Default: normal",
           "enum": [
             "normal",
             "indented_internal_methods"
@@ -5649,11 +5649,11 @@
           "type": "boolean"
         },
         "IndentationWidth": {
-          "description": "Default: `<none>`",
+          "description": "Default: <none>",
           "type": "integer"
         },
         "EnforcedStyle": {
-          "description": "Default: `spaces`",
+          "description": "Default: spaces",
           "enum": [
             "spaces",
             "tabs"
@@ -5695,11 +5695,11 @@
           "type": "boolean"
         },
         "Width": {
-          "description": "Default: `2`",
+          "description": "Default: 2",
           "type": "integer"
         },
         "IgnoredPatterns": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         }
       },
@@ -5773,11 +5773,11 @@
           "type": "boolean"
         },
         "AllowDoxygenCommentStyle": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         },
         "AllowGemfileRubyComment": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -5848,31 +5848,31 @@
           "type": "string"
         },
         "AutoCorrect": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         },
         "Max": {
-          "description": "Default: `120`",
+          "description": "Default: 120",
           "type": "integer"
         },
         "AllowHeredoc": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         },
         "AllowURI": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         },
         "URISchemes": {
-          "description": "Default: `http`, `https`",
+          "description": "Default: http, https",
           "type": "array"
         },
         "IgnoreCopDirectives": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         },
         "IgnoredPatterns": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         }
       },
@@ -5911,7 +5911,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `symmetrical`",
+          "description": "Default: symmetrical",
           "enum": [
             "symmetrical",
             "new_line",
@@ -5989,7 +5989,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `new_line`",
+          "description": "Default: new_line",
           "enum": [
             "same_line",
             "new_line"
@@ -6066,7 +6066,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `symmetrical`",
+          "description": "Default: symmetrical",
           "enum": [
             "symmetrical",
             "new_line",
@@ -6179,7 +6179,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `symmetrical`",
+          "description": "Default: symmetrical",
           "enum": [
             "symmetrical",
             "new_line",
@@ -6222,7 +6222,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `aligned`",
+          "description": "Default: aligned",
           "enum": [
             "aligned",
             "indented",
@@ -6230,7 +6230,7 @@
           ]
         },
         "IndentationWidth": {
-          "description": "Default: `<none>`",
+          "description": "Default: <none>",
           "type": "integer"
         }
       },
@@ -6269,7 +6269,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `symmetrical`",
+          "description": "Default: symmetrical",
           "enum": [
             "symmetrical",
             "new_line",
@@ -6312,14 +6312,14 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `aligned`",
+          "description": "Default: aligned",
           "enum": [
             "aligned",
             "indented"
           ]
         },
         "IndentationWidth": {
-          "description": "Default: `<none>`",
+          "description": "Default: <none>",
           "type": "integer"
         }
       },
@@ -6358,14 +6358,14 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `with_first_parameter`",
+          "description": "Default: with_first_parameter",
           "enum": [
             "with_first_parameter",
             "with_fixed_indentation"
           ]
         },
         "IndentationWidth": {
-          "description": "Default: `<none>`",
+          "description": "Default: <none>",
           "type": "integer"
         }
       },
@@ -6404,7 +6404,7 @@
           "type": "boolean"
         },
         "InspectBlocks": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -6653,7 +6653,7 @@
           "type": "boolean"
         },
         "EnforcedStyleInsidePipes": {
-          "description": "Default: `no_space`",
+          "description": "Default: no_space",
           "enum": [
             "space",
             "no_space"
@@ -6695,7 +6695,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `space`",
+          "description": "Default: space",
           "enum": [
             "space",
             "no_space"
@@ -6807,11 +6807,11 @@
           "type": "boolean"
         },
         "AllowForAlignment": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         },
         "EnforcedStyleForExponentOperator": {
-          "description": "Default: `no_space`",
+          "description": "Default: no_space",
           "enum": [
             "space",
             "no_space"
@@ -6853,14 +6853,14 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `space`",
+          "description": "Default: space",
           "enum": [
             "space",
             "no_space"
           ]
         },
         "EnforcedStyleForEmptyBraces": {
-          "description": "Default: `space`",
+          "description": "Default: space",
           "enum": [
             "space",
             "no_space"
@@ -7007,7 +7007,7 @@
           "type": "boolean"
         },
         "AllowForAlignment": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         }
       },
@@ -7081,7 +7081,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `require_no_space`",
+          "description": "Default: require_no_space",
           "enum": [
             "require_no_space",
             "require_space"
@@ -7123,7 +7123,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `no_space`",
+          "description": "Default: no_space",
           "enum": [
             "space",
             "no_space",
@@ -7131,7 +7131,7 @@
           ]
         },
         "EnforcedStyleForEmptyBrackets": {
-          "description": "Default: `no_space`",
+          "description": "Default: no_space",
           "enum": [
             "space",
             "no_space"
@@ -7208,21 +7208,21 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `space`",
+          "description": "Default: space",
           "enum": [
             "space",
             "no_space"
           ]
         },
         "EnforcedStyleForEmptyBraces": {
-          "description": "Default: `no_space`",
+          "description": "Default: no_space",
           "enum": [
             "space",
             "no_space"
           ]
         },
         "SpaceBeforeBlockParameters": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         }
       },
@@ -7261,7 +7261,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `space`",
+          "description": "Default: space",
           "enum": [
             "space",
             "no_space",
@@ -7269,7 +7269,7 @@
           ]
         },
         "EnforcedStyleForEmptyBraces": {
-          "description": "Default: `no_space`",
+          "description": "Default: no_space",
           "enum": [
             "space",
             "no_space"
@@ -7311,7 +7311,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `no_space`",
+          "description": "Default: no_space",
           "enum": [
             "space",
             "no_space"
@@ -7423,14 +7423,14 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `no_space`",
+          "description": "Default: no_space",
           "enum": [
             "space",
             "no_space"
           ]
         },
         "EnforcedStyleForEmptyBrackets": {
-          "description": "Default: `no_space`",
+          "description": "Default: no_space",
           "enum": [
             "space",
             "no_space"
@@ -7472,7 +7472,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `no_space`",
+          "description": "Default: no_space",
           "enum": [
             "space",
             "no_space"
@@ -7514,7 +7514,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `final_newline`",
+          "description": "Default: final_newline",
           "enum": [
             "final_newline",
             "final_blank_line"
@@ -7556,7 +7556,7 @@
           "type": "boolean"
         },
         "AllowInHeredoc": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -7656,7 +7656,7 @@
           "type": "string"
         },
         "IgnoredMethods": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         }
       },
@@ -7762,7 +7762,7 @@
           "type": "string"
         },
         "AllowSafeAssignment": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         }
       },
@@ -7929,7 +7929,7 @@
           "type": "string"
         },
         "AllowedMethods": {
-          "description": "Default: `enums`",
+          "description": "Default: enums",
           "type": "array"
         }
       },
@@ -7965,11 +7965,11 @@
           "type": "string"
         },
         "Only": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         },
         "Ignore": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         }
       },
@@ -8005,11 +8005,11 @@
           "type": "string"
         },
         "DebuggerReceivers": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         },
         "DebuggerMethods": {
-          "description": "Default: `{\"Kernel\"⇒[\"binding.irb\"], \"Byebug\"⇒[\"byebug\", \"remote_byebug\", \"Kernel.byebug\", \"Kernel.remote_byebug\"], \"Capybara\"⇒[\"save_and_open_page\", \"save_and_open_screenshot\"], \"Pry\"⇒[\"binding.pry\", \"binding.remote_pry\", \"binding.pry_remote\", \"Pry.rescue\"], \"Rails\"⇒[\"debugger\", \"Kernel.debugger\"], \"WebConsole\"⇒[\"binding.console\"]}`"
+          "description": "Default: {\"Kernel\"⇒[\"binding.irb\"], \"Byebug\"⇒[\"byebug\", \"remote_byebug\", \"Kernel.byebug\", \"Kernel.remote_byebug\"], \"Capybara\"⇒[\"save_and_open_page\", \"save_and_open_screenshot\"], \"Pry\"⇒[\"binding.pry\", \"binding.remote_pry\", \"binding.pry_remote\", \"Pry.rescue\"], \"Rails\"⇒[\"debugger\", \"Kernel.debugger\"], \"WebConsole\"⇒[\"binding.console\"]}"
         }
       },
       "description": "This cop checks for debug calls (such as `debugger` or `binding.pry`) that should not be kept for production code.\n\nThe cop can be configured using `DebuggerMethods`. By default, a number of gems debug entrypoints are configured (`Kernel`, `Byebug`, `Capybara`, `Pry`, `Rails`, and `WebConsole`). Additional methods can be added.\n\nSpecific default groups can be disabled if necessary:\n\nLint/Debugger:   WebConsole: ~\n\nDefault: Enabled"
@@ -8082,7 +8082,7 @@
           "type": "boolean"
         },
         "DeprecatedConstants": {
-          "description": "Default: `{\"NIL\"⇒{\"Alternative\"⇒\"nil\", \"DeprecatedVersion\"⇒\"2.4\"}, \"TRUE\"⇒{\"Alternative\"⇒\"true\", \"DeprecatedVersion\"⇒\"2.4\"}, \"FALSE\"⇒{\"Alternative\"⇒\"false\", \"DeprecatedVersion\"⇒\"2.4\"}, \"Random::DEFAULT\"⇒{\"Alternative\"⇒\"Random.new\", \"DeprecatedVersion\"⇒\"3.0\"}}`"
+          "description": "Default: {\"NIL\"⇒{\"Alternative\"⇒\"nil\", \"DeprecatedVersion\"⇒\"2.4\"}, \"TRUE\"⇒{\"Alternative\"⇒\"true\", \"DeprecatedVersion\"⇒\"2.4\"}, \"FALSE\"⇒{\"Alternative\"⇒\"false\", \"DeprecatedVersion\"⇒\"2.4\"}, \"Random::DEFAULT\"⇒{\"Alternative\"⇒\"Random.new\", \"DeprecatedVersion\"⇒\"3.0\"}}"
         }
       },
       "description": "This cop checks for deprecated constants.\n\nIt has `DeprecatedConstants` config. If there is an alternative method, you can set alternative value as `Alternative`. And you can set the deprecated version as `DeprecatedVersion`. These options can be omitted if they are not needed.\n\n  DeprecatedConstants:\n    'DEPRECATED_CONSTANT':\n      Alternative: 'alternative_value'\n      DeprecatedVersion: 'deprecated_version'\n\nBy default, `NIL`, `TRUE`, `FALSE` and `Random::DEFAULT` are configured.\n\nDefault: Pending"
@@ -8184,11 +8184,11 @@
           "type": "string"
         },
         "IgnoreLiteralBranches": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         },
         "IgnoreConstantBranches": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -8518,11 +8518,11 @@
           "type": "string"
         },
         "AllowComments": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         },
         "AllowEmptyLambdas": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         }
       },
@@ -8558,7 +8558,7 @@
           "type": "string"
         },
         "AllowComments": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -8594,7 +8594,7 @@
           "type": "string"
         },
         "AllowComments": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         }
       },
@@ -8697,7 +8697,7 @@
           "type": "string"
         },
         "AllowComments": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         }
       },
@@ -8768,7 +8768,7 @@
           "type": "string"
         },
         "AllowComments": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         }
       },
@@ -9171,7 +9171,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `runtime_error`",
+          "description": "Default: runtime_error",
           "enum": [
             "runtime_error",
             "standard_error"
@@ -9376,7 +9376,10 @@
           "type": "string"
         },
         "MaximumRangeSize": {
-          "description": "Default: `Infinity`"
+          "description": "Default: Infinity",
+          "enum": [
+            "Float"
+          ]
         }
       },
       "description": "This cop checks that there is an `# rubocop:enable ...` statement after a `# rubocop:disable ...` statement. This will prevent leaving cop disables on wide ranges of code, that latter contributors to a file wouldn't be aware of.\n\nDefault: Enabled"
@@ -9478,7 +9481,7 @@
           "type": "boolean"
         },
         "AllowMethodComparison": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         }
       },
@@ -9674,7 +9677,7 @@
           "type": "string"
         }
       },
-      "description": "This cop checks for non-local exits from iterators without a return value. It registers an offense under these conditions:\n\n - No value is returned,\n\n - the block is preceded by a method chain,\n\n - the block has arguments,\n\n - the method which receives the block is not `define_method`\nor `define_singleton_method`,\n\n - the return is not contained in an inner scope, e.g. a lambda or a\nmethod definition.\n\nDefault: Enabled"
+      "description": "This cop checks for non-local exits from iterators without a return value. It registers an offense under these conditions:\n\n - No value is returned,\n\n - the block is preceded by a method chain,\n\n - the block has arguments,\n\n - the method which receives the block is not define_method\nor define_singleton_method,\n\n - the return is not contained in an inner scope, e.g. a lambda or a\nmethod definition.\n\nDefault: Enabled"
     },
     "Lint/NumberConversion": {
       "type": "object",
@@ -9706,11 +9709,11 @@
           "type": "string"
         },
         "IgnoredMethods": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         },
         "IgnoredClasses": {
-          "description": "Default: `Time`, `DateTime`",
+          "description": "Default: Time, DateTime",
           "type": "array"
         }
       },
@@ -9979,7 +9982,7 @@
           "type": "string"
         },
         "AllowedImplicitNamespaces": {
-          "description": "Default: `Gem`",
+          "description": "Default: Gem",
           "type": "array"
         }
       },
@@ -10187,7 +10190,7 @@
           "type": "string"
         },
         "AllowedMethods": {
-          "description": "Default: `instance_of?`, `kind_of?`, `is_a?`, `eql?`, `respond_to?`, `equal?`",
+          "description": "Default: instance_of?, kind_of?, is_a?, eql?, respond_to?, equal?",
           "type": "array"
         }
       },
@@ -10226,7 +10229,7 @@
           "type": "boolean"
         },
         "AllowPercentLiteralArrayArgument": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         }
       },
@@ -10533,7 +10536,7 @@
           "type": "string"
         },
         "AllowedMethods": {
-          "description": "Default: `present?`, `blank?`, `presence`, `try`, `try!`, `in?`",
+          "description": "Default: present?, blank?, presence, try, try!, in?",
           "type": "array"
         }
       },
@@ -10572,7 +10575,7 @@
           "type": "boolean"
         },
         "AllowedMethods": {
-          "description": "Default: `present?`, `blank?`, `presence`, `try`, `try!`",
+          "description": "Default: present?, blank?, presence, try, try!",
           "type": "array"
         }
       },
@@ -10745,7 +10748,7 @@
           "type": "string"
         },
         "IgnoreImplicitReferences": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -10877,11 +10880,11 @@
           "type": "string"
         },
         "AllowComments": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         },
         "AllowNil": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         }
       },
@@ -10920,7 +10923,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `strict`",
+          "description": "Default: strict",
           "enum": [
             "strict",
             "consistent"
@@ -11160,7 +11163,7 @@
           "type": "string"
         },
         "AllowKeywordBlockArguments": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -11196,7 +11199,7 @@
           "type": "string"
         },
         "Methods": {
-          "description": "Default: `{\"chunk_while\"⇒2, \"each_with_index\"⇒2, \"each_with_object\"⇒2, \"inject\"⇒2, \"max\"⇒2, \"min\"⇒2, \"minmax\"⇒2, \"reduce\"⇒2, \"slice_when\"⇒2, \"sort\"⇒2}`"
+          "description": "Default: {\"chunk_while\"⇒2, \"each_with_index\"⇒2, \"each_with_object\"⇒2, \"inject\"⇒2, \"max\"⇒2, \"min\"⇒2, \"minmax\"⇒2, \"reduce\"⇒2, \"slice_when\"⇒2, \"sort\"⇒2}"
         }
       },
       "description": "This cop checks for a block that is known to need more positional block arguments than are given (by default this is configured for `Enumerable` methods needing 2 arguments). Optional arguments are allowed, although they don't generally make sense as the default value will be used. Blocks that have no receiver, or take splatted arguments (ie. `*args`) are always accepted.\n\nKeyword arguments (including `**kwargs`) do not get counted towards this, as they are not used by the methods in question.\n\nThis cop matches for method names only and hence cannot tell apart methods with same name in different classes.\n\nMethod names and their expected arity can be configured like this:\n\nMethods:   inject: 2   reduce: 2\n\nDefault: Pending"
@@ -11330,7 +11333,10 @@
           "type": "string"
         },
         "IgnoredPatterns": {
-          "description": "Default: `(?-mix:(exactly"
+          "description": "Default: `(?-mix:(exactly",
+          "enum": [
+            "at_least"
+          ]
         }
       },
       "description": "This cop checks for loops that will have at most one iteration.\n\nA loop that can never reach the second iteration is a possible error in the code. In rare cases where only one iteration (or at most one iteration) is intended behavior, the code should be refactored to use `if` conditionals.\n\nBlock methods that are used with `Enumerable`s are considered to be loops.\n\n`IgnoredPatterns` can be used to match against the block receiver in order to allow code that would otherwise be registered as an offense (eg. `times` used not in an `Enumerable` context).\n\nDefault: Enabled"
@@ -11368,11 +11374,11 @@
           "type": "boolean"
         },
         "IgnoreEmptyBlocks": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         },
         "AllowUnusedKeywordArguments": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -11411,15 +11417,15 @@
           "type": "boolean"
         },
         "AllowUnusedKeywordArguments": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         },
         "IgnoreEmptyMethods": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         },
         "IgnoreNotImplementedMethods": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         }
       },
@@ -11525,11 +11531,11 @@
           "type": "boolean"
         },
         "ContextCreatingMethods": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         },
         "MethodCreatingMethods": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         }
       },
@@ -11629,7 +11635,7 @@
           "type": "string"
         },
         "AllowComments": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         }
       },
@@ -11729,7 +11735,7 @@
           "type": "string"
         },
         "CheckForMethodsWithNoSideEffects": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -11797,15 +11803,15 @@
           "type": "string"
         },
         "IgnoredMethods": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         },
         "CountRepeatedAttributes": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         },
         "Max": {
-          "description": "Default: `17`",
+          "description": "Default: 17",
           "type": "integer"
         }
       },
@@ -11823,7 +11829,7 @@
           "type": "boolean"
         },
         "Exclude": {
-          "description": "Default: `*/.gemspec`",
+          "description": "Default: */.gemspec",
           "type": "array"
         },
         "Include": {
@@ -11842,23 +11848,23 @@
           "type": "string"
         },
         "CountComments": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         },
         "Max": {
-          "description": "Default: `25`",
+          "description": "Default: 25",
           "type": "integer"
         },
         "CountAsOne": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         },
         "ExcludedMethods": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         },
         "IgnoredMethods": {
-          "description": "Default: `refine`",
+          "description": "Default: refine",
           "type": "array"
         }
       },
@@ -11894,11 +11900,11 @@
           "type": "string"
         },
         "CountBlocks": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         },
         "Max": {
-          "description": "Default: `3`",
+          "description": "Default: 3",
           "type": "integer"
         }
       },
@@ -11934,15 +11940,15 @@
           "type": "string"
         },
         "CountComments": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         },
         "Max": {
-          "description": "Default: `100`",
+          "description": "Default: 100",
           "type": "integer"
         },
         "CountAsOne": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         }
       },
@@ -11978,11 +11984,11 @@
           "type": "string"
         },
         "IgnoredMethods": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         },
         "Max": {
-          "description": "Default: `7`",
+          "description": "Default: 7",
           "type": "integer"
         }
       },
@@ -12018,23 +12024,23 @@
           "type": "string"
         },
         "CountComments": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         },
         "Max": {
-          "description": "Default: `10`",
+          "description": "Default: 10",
           "type": "integer"
         },
         "CountAsOne": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         },
         "ExcludedMethods": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         },
         "IgnoredMethods": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         }
       },
@@ -12070,15 +12076,15 @@
           "type": "string"
         },
         "CountComments": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         },
         "Max": {
-          "description": "Default: `100`",
+          "description": "Default: 100",
           "type": "integer"
         },
         "CountAsOne": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         }
       },
@@ -12114,15 +12120,15 @@
           "type": "string"
         },
         "Max": {
-          "description": "Default: `5`",
+          "description": "Default: 5",
           "type": "integer"
         },
         "CountKeywordArgs": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         },
         "MaxOptionalParameters": {
-          "description": "Default: `3`",
+          "description": "Default: 3",
           "type": "integer"
         }
       },
@@ -12158,11 +12164,11 @@
           "type": "string"
         },
         "IgnoredMethods": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         },
         "Max": {
-          "description": "Default: `8`",
+          "description": "Default: 8",
           "type": "integer"
         }
       },
@@ -12329,7 +12335,7 @@
           "type": "string"
         },
         "AsciiConstants": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         }
       },
@@ -12400,19 +12406,19 @@
           "type": "string"
         },
         "MinNameLength": {
-          "description": "Default: `1`",
+          "description": "Default: 1",
           "type": "integer"
         },
         "AllowNamesEndingInNumbers": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         },
         "AllowedNames": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         },
         "ForbiddenNames": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         }
       },
@@ -12448,7 +12454,7 @@
           "type": "string"
         },
         "AllowedNames": {
-          "description": "Default: `module_parent`",
+          "description": "Default: module_parent",
           "type": "array"
         }
       },
@@ -12498,7 +12504,7 @@
           "type": "boolean"
         },
         "Exclude": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         },
         "Include": {
@@ -12517,22 +12523,22 @@
           "type": "string"
         },
         "ExpectMatchingDefinition": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         },
         "CheckDefinitionPathHierarchy": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         },
         "Regex": {
-          "description": "Default: `<none>`"
+          "description": "Default: <none>"
         },
         "IgnoreExecutableScripts": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         },
         "AllowedAcronyms": {
-          "description": "Default: `CLI`, `DSL`, `ACL`, `API`, `ASCII`, `CPU`, `CSS`, `DNS`, `EOF`, `GUID`, `HTML`, `HTTP`, `HTTPS`, `ID`, `IP`, `JSON`, `LHS`, `QPS`, `RAM`, `RHS`, `RPC`, `SLA`, `SMTP`, `SQL`, `SSH`, `TCP`, `TLS`, `TTL`, `UDP`, `UI`, `UID`, `UUID`, `URI`, `URL`, `UTF8`, `VM`, `XML`, `XMPP`, `XSRF`, `XSS`",
+          "description": "Default: CLI, DSL, ACL, API, ASCII, CPU, CSS, DNS, EOF, GUID, HTML, HTTP, HTTPS, ID, IP, JSON, LHS, QPS, RAM, RHS, RPC, SLA, SMTP, SQL, SSH, TCP, TLS, TTL, UDP, UI, UID, UUID, URI, URL, UTF8, VM, XML, XMPP, XSRF, XSS",
           "type": "array"
         }
       },
@@ -12571,7 +12577,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `uppercase`",
+          "description": "Default: uppercase",
           "enum": [
             "lowercase",
             "uppercase"
@@ -12610,7 +12616,10 @@
           "type": "string"
         },
         "ForbiddenDelimiters": {
-          "description": "Default: `(?-mix:(^"
+          "description": "Default: `(?-mix:(^",
+          "enum": [
+            "\\s)(EO[A-Z]{1}"
+          ]
         },
         "END)(\\s": {
           "description": "Default: $))`",
@@ -12649,7 +12658,7 @@
           "type": "string"
         },
         "EnforcedStyleForLeadingUnderscores": {
-          "description": "Default: `disallowed`",
+          "description": "Default: disallowed",
           "enum": [
             "disallowed",
             "required",
@@ -12689,14 +12698,14 @@
           "type": "string"
         },
         "EnforcedStyle": {
-          "description": "Default: `snake_case`",
+          "description": "Default: snake_case",
           "enum": [
             "snake_case",
             "camelCase"
           ]
         },
         "IgnoredPatterns": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         }
       },
@@ -12732,19 +12741,19 @@
           "type": "string"
         },
         "MinNameLength": {
-          "description": "Default: `3`",
+          "description": "Default: 3",
           "type": "integer"
         },
         "AllowNamesEndingInNumbers": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         },
         "AllowedNames": {
-          "description": "Default: `at`, `by`, `db`, `id`, `in`, `io`, `ip`, `of`, `on`, `os`, `pp`, `to`",
+          "description": "Default: at, by, db, id, in, io, ip, of, on, os, pp, to",
           "type": "array"
         },
         "ForbiddenNames": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         }
       },
@@ -12762,7 +12771,7 @@
           "type": "boolean"
         },
         "Exclude": {
-          "description": "Default: `spec/*/`",
+          "description": "Default: spec/*/",
           "type": "array"
         },
         "Include": {
@@ -12781,19 +12790,19 @@
           "type": "string"
         },
         "NamePrefix": {
-          "description": "Default: `is_`, `has_`, `have_`",
+          "description": "Default: is_, has_, have_",
           "type": "array"
         },
         "ForbiddenPrefixes": {
-          "description": "Default: `is_`, `has_`, `have_`",
+          "description": "Default: is_, has_, have_",
           "type": "array"
         },
         "AllowedMethods": {
-          "description": "Default: `is_a?`",
+          "description": "Default: is_a?",
           "type": "array"
         },
         "MethodDefinitionMacros": {
-          "description": "Default: `define_method`, `define_singleton_method`",
+          "description": "Default: define_method, define_singleton_method",
           "type": "array"
         }
       },
@@ -12832,7 +12841,7 @@
           "type": "boolean"
         },
         "PreferredName": {
-          "description": "Default: `e`",
+          "description": "Default: e",
           "type": "string"
         }
       },
@@ -12868,14 +12877,14 @@
           "type": "string"
         },
         "EnforcedStyle": {
-          "description": "Default: `snake_case`",
+          "description": "Default: snake_case",
           "enum": [
             "snake_case",
             "camelCase"
           ]
         },
         "AllowedIdentifiers": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         }
       },
@@ -12911,7 +12920,7 @@
           "type": "string"
         },
         "EnforcedStyle": {
-          "description": "Default: `normalcase`",
+          "description": "Default: normalcase",
           "enum": [
             "snake_case",
             "normalcase",
@@ -12919,15 +12928,15 @@
           ]
         },
         "CheckMethodNames": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         },
         "CheckSymbols": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         },
         "AllowedIdentifiers": {
-          "description": "Default: `capture3`, `iso8601`, `rfc1123_date`, `rfc822`, `rfc2822`, `rfc3339`",
+          "description": "Default: capture3, iso8601, rfc1123_date, rfc822, rfc2822, rfc3339",
           "type": "array"
         }
       },
@@ -13027,7 +13036,7 @@
           "type": "string"
         },
         "AutoCorrect": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -13191,14 +13200,14 @@
           "type": "string"
         },
         "EnforcedStyle": {
-          "description": "Default: `group`",
+          "description": "Default: group",
           "enum": [
             "inline",
             "group"
           ]
         },
         "AllowModifiersOnSymbols": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         }
       },
@@ -13237,7 +13246,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `grouped`",
+          "description": "Default: grouped",
           "enum": [
             "separated",
             "grouped"
@@ -13279,7 +13288,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `prefer_alias`",
+          "description": "Default: prefer_alias",
           "enum": [
             "prefer_alias",
             "prefer_alias_method"
@@ -13321,7 +13330,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `conditionals`",
+          "description": "Default: conditionals",
           "enum": [
             "always",
             "conditionals"
@@ -13363,7 +13372,7 @@
           "type": "boolean"
         },
         "AllowOnlyRestArgument": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         }
       },
@@ -13466,7 +13475,7 @@
           "type": "string"
         },
         "AllowedChars": {
-          "description": "Default: `©`",
+          "description": "Default: ©",
           "type": "array"
         }
       },
@@ -13572,7 +13581,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `bare_percent`",
+          "description": "Default: bare_percent",
           "enum": [
             "percent_q",
             "bare_percent"
@@ -13716,7 +13725,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `line_count_based`",
+          "description": "Default: line_count_based",
           "enum": [
             "line_count_based",
             "semantic",
@@ -13725,23 +13734,23 @@
           ]
         },
         "ProceduralMethods": {
-          "description": "Default: `benchmark`, `bm`, `bmbm`, `create`, `each_with_object`, `measure`, `new`, `realtime`, `tap`, `with_object`",
+          "description": "Default: benchmark, bm, bmbm, create, each_with_object, measure, new, realtime, tap, with_object",
           "type": "array"
         },
         "FunctionalMethods": {
-          "description": "Default: `let`, `let!`, `subject`, `watch`",
+          "description": "Default: let, let!, subject, watch",
           "type": "array"
         },
         "IgnoredMethods": {
-          "description": "Default: `lambda`, `proc`, `it`",
+          "description": "Default: lambda, proc, it",
           "type": "array"
         },
         "AllowBracesOnProceduralOneLiners": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         },
         "BracesRequiredMethods": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         }
       },
@@ -13780,7 +13789,7 @@
           "type": "boolean"
         },
         "AllowOnConstant": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -13883,7 +13892,7 @@
           "type": "string"
         },
         "EnforcedStyle": {
-          "description": "Default: `nested`",
+          "description": "Default: nested",
           "enum": [
             "nested",
             "compact"
@@ -13925,10 +13934,10 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `is_a?`",
+          "description": "Default: is_a?",
           "enum": [
-            "is_a",
-            "kind_of"
+            "is_a?",
+            "kind_of?"
           ]
         }
       },
@@ -13967,7 +13976,7 @@
           "type": "boolean"
         },
         "IgnoredMethods": {
-          "description": "Default: `==`, `equal?`, `eql?`",
+          "description": "Default: ==, equal?, eql?",
           "type": "array"
         }
       },
@@ -14041,7 +14050,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `def_self`",
+          "description": "Default: def_self",
           "enum": [
             "def_self",
             "self_class"
@@ -14144,10 +14153,10 @@
           "type": "string"
         },
         "PreferredMethods": {
-          "description": "Default: `{\"collect\"⇒\"map\", \"collect!\"⇒\"map!\", \"inject\"⇒\"reduce\", \"detect\"⇒\"find\", \"find_all\"⇒\"select\", \"member?\"⇒\"include?\"}`"
+          "description": "Default: {\"collect\"⇒\"map\", \"collect!\"⇒\"map!\", \"inject\"⇒\"reduce\", \"detect\"⇒\"find\", \"find_all\"⇒\"select\", \"member?\"⇒\"include?\"}"
         },
         "MethodsAcceptingSymbol": {
-          "description": "Default: `inject`, `reduce`",
+          "description": "Default: inject, reduce",
           "type": "array"
         }
       },
@@ -14288,7 +14297,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `backticks`",
+          "description": "Default: backticks",
           "enum": [
             "backticks",
             "percent_x",
@@ -14296,7 +14305,7 @@
           ]
         },
         "AllowInnerBackticks": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -14335,7 +14344,7 @@
           "type": "boolean"
         },
         "Keywords": {
-          "description": "Default: `TODO`, `FIXME`, `OPTIMIZE`, `HACK`, `REVIEW`, `NOTE`",
+          "description": "Default: TODO, FIXME, OPTIMIZE, HACK, REVIEW, NOTE",
           "type": "array"
         }
       },
@@ -14409,18 +14418,18 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `assign_to_condition`",
+          "description": "Default: assign_to_condition",
           "enum": [
             "assign_to_condition",
             "assign_inside_condition"
           ]
         },
         "SingleLineConditionsOnly": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         },
         "IncludeTernaryExpressions": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         }
       },
@@ -14456,7 +14465,7 @@
           "type": "string"
         },
         "IgnoreModules": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -14495,7 +14504,7 @@
           "type": "boolean"
         },
         "Notice": {
-          "description": "Default: `^Copyright (\\(c\\) )?2[0-9]{3} .+`",
+          "description": "Default: ^Copyright (\\(c\\) )?2[0-9]{3} .+",
           "type": "string"
         },
         "AutocorrectNotice": {
@@ -14535,7 +14544,7 @@
           "type": "string"
         },
         "AllowCoercion": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -14644,7 +14653,7 @@
           "type": "boolean"
         },
         "AllowedCops": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         }
       },
@@ -14694,7 +14703,7 @@
           "type": "boolean"
         },
         "Exclude": {
-          "description": "Default: `spec//`, `test//`",
+          "description": "Default: spec//, test//",
           "type": "array"
         },
         "Include": {
@@ -14713,7 +14722,7 @@
           "type": "string"
         },
         "AllowedConstants": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         }
       },
@@ -14731,7 +14740,7 @@
           "type": "boolean"
         },
         "Exclude": {
-          "description": "Default: `spec//`, `test//`",
+          "description": "Default: spec//, test//",
           "type": "array"
         },
         "Include": {
@@ -14750,7 +14759,7 @@
           "type": "string"
         },
         "RequireForNonPublicMethods": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -14821,7 +14830,7 @@
           "type": "string"
         },
         "EnforcedStyle": {
-          "description": "Default: `allowed_in_returns`",
+          "description": "Default: allowed_in_returns",
           "enum": [
             "allowed_in_returns",
             "forbidden"
@@ -15003,7 +15012,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `both`",
+          "description": "Default: both",
           "enum": [
             "empty",
             "nil",
@@ -15116,7 +15125,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `compact`",
+          "description": "Default: compact",
           "enum": [
             "compact",
             "expanded"
@@ -15228,7 +15237,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `allow_single_line`",
+          "description": "Default: allow_single_line",
           "enum": [
             "allow_single_line",
             "allow_always",
@@ -15408,7 +15417,7 @@
           "type": "string"
         },
         "EnforcedStyle": {
-          "description": "Default: `scientific`",
+          "description": "Default: scientific",
           "enum": [
             "scientific",
             "engineering",
@@ -15416,7 +15425,7 @@
           ]
         }
       },
-      "description": "This cop enforces consistency when using exponential notation for numbers in the code (eg 1.2e4). Different styles are supported:\n\n - `scientific` which enforces a mantissa between 1 (inclusive) and 10 (exclusive).\n\n - `engineering` which enforces the exponent to be a multiple of 3 and the mantissa\nto be between 0.1 (inclusive) and 10 (exclusive).\n\n - `integral` which enforces the mantissa to always be a whole number without\ntrailing zeroes.\n\nDefault: Enabled"
+      "description": "This cop enforces consistency when using exponential notation for numbers in the code (eg 1.2e4). Different styles are supported:\n\n - scientific which enforces a mantissa between 1 (inclusive) and 10 (exclusive).\n\n - engineering which enforces the exponent to be a multiple of 3 and the mantissa\nto be between 0.1 (inclusive) and 10 (exclusive).\n\n - integral which enforces the mantissa to always be a whole number without\ntrailing zeroes.\n\nDefault: Enabled"
     },
     "Style/FloatDivision": {
       "type": "object",
@@ -15448,7 +15457,7 @@
           "type": "string"
         },
         "EnforcedStyle": {
-          "description": "Default: `single_coerce`",
+          "description": "Default: single_coerce",
           "enum": [
             "left_coerce",
             "right_coerce",
@@ -15492,7 +15501,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `each`",
+          "description": "Default: each",
           "enum": [
             "each",
             "for"
@@ -15534,7 +15543,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `format`",
+          "description": "Default: format",
           "enum": [
             "format",
             "sprintf",
@@ -15574,7 +15583,7 @@
           "type": "string"
         },
         "EnforcedStyle": {
-          "description": "Default: `annotated`",
+          "description": "Default: annotated",
           "enum": [
             "annotated",
             "template",
@@ -15582,11 +15591,11 @@
           ]
         },
         "MaxUnannotatedPlaceholdersAllowed": {
-          "description": "Default: `1`",
+          "description": "Default: 1",
           "type": "integer"
         },
         "IgnoredMethods": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         }
       },
@@ -15622,7 +15631,7 @@
           "type": "string"
         },
         "EnforcedStyle": {
-          "description": "Default: `always`",
+          "description": "Default: always",
           "enum": [
             "always",
             "always_true",
@@ -15694,7 +15703,7 @@
           "type": "string"
         },
         "AllowedVariables": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         }
       },
@@ -15730,7 +15739,7 @@
           "type": "string"
         },
         "MinBodyLength": {
-          "description": "Default: `1`",
+          "description": "Default: 1",
           "type": "integer"
         }
       },
@@ -15769,7 +15778,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `braces`",
+          "description": "Default: braces",
           "enum": [
             "braces",
             "no_braces"
@@ -15811,7 +15820,7 @@
           "type": "boolean"
         },
         "AllowSplatArgument": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         }
       },
@@ -15914,7 +15923,7 @@
           "type": "string"
         },
         "MinBranchesCount": {
-          "description": "Default: `3`",
+          "description": "Default: 3",
           "type": "integer"
         }
       },
@@ -15953,7 +15962,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `ruby19`",
+          "description": "Default: ruby19",
           "enum": [
             "ruby19",
             "hash_rockets",
@@ -15962,15 +15971,15 @@
           ]
         },
         "UseHashRocketsWithSymbolValues": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         },
         "PreferHashRocketsForNonAlnumEndingSymbols": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         }
       },
-      "description": "This cop checks hash literal syntax.\n\nIt can enforce either the use of the class hash rocket syntax or the use of the newer Ruby 1.9 syntax (when applicable).\n\nA separate offense is registered for each problematic pair.\n\nThe supported styles are:\n\n - ruby19 - forces use of the 1.9 syntax (e.g. `{a: 1}`) when hashes have\nall symbols for keys\n\n - hash_rockets - forces use of hash rockets for all hashes\n\n - no_mixed_keys - simply checks for hashes with mixed syntaxes\n\n - ruby19_no_mixed_keys - forces use of ruby 1.9 syntax and forbids mixed\nsyntax hashes\n\nDefault: Enabled"
+      "description": "This cop checks hash literal syntax.\n\nIt can enforce either the use of the class hash rocket syntax or the use of the newer Ruby 1.9 syntax (when applicable).\n\nA separate offense is registered for each problematic pair.\n\nThe supported styles are:\n\n - ruby19 - forces use of the 1.9 syntax (e.g. {a: 1}) when hashes have\nall symbols for keys\n\n - hash_rockets - forces use of hash rockets for all hashes\n\n - no_mixed_keys - simply checks for hashes with mixed syntaxes\n\n - ruby19_no_mixed_keys - forces use of ruby 1.9 syntax and forbids mixed\nsyntax hashes\n\nDefault: Enabled"
     },
     "Style/HashTransformKeys": {
       "type": "object",
@@ -16101,7 +16110,7 @@
           "type": "boolean"
         },
         "AllowIfModifier": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -16207,7 +16216,7 @@
           "type": "string"
         },
         "AllowedMethods": {
-          "description": "Default: `nonzero?`",
+          "description": "Default: nonzero?",
           "type": "array"
         }
       },
@@ -16374,10 +16383,10 @@
           "type": "string"
         },
         "InverseMethods": {
-          "description": "Default: `{:any?⇒:none?, :even?⇒:odd?, :==⇒:!=, :=⇒:!, :<⇒:>=, :>⇒:⇐}`"
+          "description": "Default: {:any?⇒:none?, :even?⇒:odd?, :==⇒:!=, :=⇒:!, :<⇒:>=, :>⇒:⇐}"
         },
         "InverseBlocks": {
-          "description": "Default: `{:select⇒:reject, :select!⇒:reject!}`"
+          "description": "Default: {:select⇒:reject, :select!⇒:reject!}"
         }
       },
       "description": "This cop check for usages of not (`not` or `!`) called on a method when an inverse of that method can be used instead. Methods that can be inverted by a not (`not` or `!`) should be defined in `InverseMethods` Methods that are inverted by inverting the return of the block that is passed to the method should be defined in `InverseBlocks`\n\nDefault: Enabled"
@@ -16394,7 +16403,7 @@
           "type": "boolean"
         },
         "Exclude": {
-          "description": "Default: `/.gemfile`, `/Gemfile`, `/gems.rb`, `/.gemspec`",
+          "description": "Default: /.gemfile, /Gemfile, /gems.rb, /.gemspec",
           "type": "array"
         },
         "Include": {
@@ -16413,7 +16422,7 @@
           "type": "string"
         },
         "AllowedAddresses": {
-          "description": "Default: `::`",
+          "description": "Default: ::",
           "type": "array"
         }
       },
@@ -16487,7 +16496,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `line_count_dependent`",
+          "description": "Default: line_count_dependent",
           "enum": [
             "line_count_dependent",
             "lambda",
@@ -16530,7 +16539,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `call`",
+          "description": "Default: call",
           "enum": [
             "call",
             "braces"
@@ -16604,46 +16613,46 @@
           "type": "boolean"
         },
         "IgnoreMacros": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         },
         "IgnoredMethods": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         },
         "IgnoredPatterns": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         },
         "IncludedMacros": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         },
         "AllowParenthesesInMultilineCall": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         },
         "AllowParenthesesInChaining": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         },
         "AllowParenthesesInCamelCaseMethod": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         },
         "AllowParenthesesInStringInterpolation": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `require_parentheses`",
+          "description": "Default: require_parentheses",
           "enum": [
             "require_parentheses",
             "omit_parentheses"
           ]
         }
       },
-      "description": "This cop enforces the presence (default) or absence of parentheses in method calls containing parameters.\n\nIn the default style (require_parentheses), macro methods are ignored. Additional methods can be added to the `IgnoredMethods` or `IgnoredPatterns` list. These options are valid only in the default style. Macros can be included by either setting `IgnoreMacros` to false or adding specific macros to the `IncludedMacros` list.\n\nPrecedence of options is all follows:\n\n  1. `IgnoredMethods`\n\n  2. `IgnoredPatterns`\n\n  3. `IncludedMacros`\n\neg. If a method is listed in both `IncludedMacros` and `IgnoredMethods`, then the latter takes precedence (that is, the method is ignored).\n\nIn the alternative style (omit_parentheses), there are three additional options.\n\n  1. `AllowParenthesesInChaining` is `false` by default. Setting it to\n`true` allows the presence of parentheses in the last call during\nmethod chaining.\n\n  2. `AllowParenthesesInMultilineCall` is `false` by default. Setting it\nto `true` allows the presence of parentheses in multi-line method\ncalls.\n\n  3. `AllowParenthesesInCamelCaseMethod` is `false` by default. This\nallows the presence of parentheses when calling a method whose name\nbegins with a capital letter and which has no arguments. Setting it\nto `true` allows the presence of parentheses in such a method call\neven with arguments.\n\nParentheses are still allowed in cases where omitting them results in ambiguous or syntactically incorrect code. For example, parentheses are required around a method with arguments when inside an endless method definition introduced in Ruby 3.0.  Parentheses are also allowed when forwarding arguments with the triple-dot syntax introduced in Ruby 2.7 as omitting them starts an endless range.\n\nDefault: Disabled"
+      "description": "This cop enforces the presence (default) or absence of parentheses in method calls containing parameters.\n\nIn the default style (require_parentheses), macro methods are ignored. Additional methods can be added to the `IgnoredMethods` or `IgnoredPatterns` list. These options are valid only in the default style. Macros can be included by either setting `IgnoreMacros` to false or adding specific macros to the `IncludedMacros` list.\n\nPrecedence of options is all follows:\n\n  1. IgnoredMethods\n\n  2. IgnoredPatterns\n\n  3. IncludedMacros\n\neg. If a method is listed in both `IncludedMacros` and `IgnoredMethods`, then the latter takes precedence (that is, the method is ignored).\n\nIn the alternative style (omit_parentheses), there are three additional options.\n\n  1. AllowParenthesesInChaining is false by default. Setting it to\ntrue allows the presence of parentheses in the last call during\nmethod chaining.\n\n  2. AllowParenthesesInMultilineCall is false by default. Setting it\nto true allows the presence of parentheses in multi-line method\ncalls.\n\n  3. AllowParenthesesInCamelCaseMethod is false by default. This\nallows the presence of parentheses when calling a method whose name\nbegins with a capital letter and which has no arguments. Setting it\nto true allows the presence of parentheses in such a method call\neven with arguments.\n\nParentheses are still allowed in cases where omitting them results in ambiguous or syntactically incorrect code. For example, parentheses are required around a method with arguments when inside an endless method definition introduced in Ruby 3.0.  Parentheses are also allowed when forwarding arguments with the triple-dot syntax introduced in Ruby 2.7 as omitting them starts an endless range.\n\nDefault: Disabled"
     },
     "Style/MethodCallWithoutArgsParentheses": {
       "type": "object",
@@ -16678,7 +16687,7 @@
           "type": "boolean"
         },
         "IgnoredMethods": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         }
       },
@@ -16749,7 +16758,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `require_parentheses`",
+          "description": "Default: require_parentheses",
           "enum": [
             "require_parentheses",
             "require_no_parentheses",
@@ -16824,7 +16833,7 @@
           "type": "string"
         },
         "EnforcedStyle": {
-          "description": "Default: `both`",
+          "description": "Default: both",
           "enum": [
             "if",
             "case",
@@ -16899,7 +16908,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `separated`",
+          "description": "Default: separated",
           "enum": [
             "separated",
             "grouped"
@@ -16970,7 +16979,7 @@
           "type": "string"
         },
         "EnforcedStyle": {
-          "description": "Default: `module_function`",
+          "description": "Default: module_function",
           "enum": [
             "module_function",
             "extend_self",
@@ -16978,7 +16987,7 @@
           ]
         },
         "Autocorrect": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -17119,7 +17128,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `keyword`",
+          "description": "Default: keyword",
           "enum": [
             "keyword",
             "braces"
@@ -17298,7 +17307,7 @@
           "type": "string"
         },
         "EnforcedStyle": {
-          "description": "Default: `literals`",
+          "description": "Default: literals",
           "enum": [
             "literals",
             "strict"
@@ -17340,7 +17349,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `both`",
+          "description": "Default: both",
           "enum": [
             "both",
             "prefix",
@@ -17418,7 +17427,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `both`",
+          "description": "Default: both",
           "enum": [
             "both",
             "prefix",
@@ -17531,7 +17540,7 @@
           "type": "boolean"
         },
         "AllowedMethods": {
-          "description": "Default: `be`, `be_a`, `be_an`, `be_between`, `be_falsey`, `be_kind_of`, `be_instance_of`, `be_truthy`, `be_within`, `eq`, `eql`, `end_with`, `include`, `match`, `raise_error`, `respond_to`, `start_with`",
+          "description": "Default: be, be_a, be_an, be_between, be_falsey, be_kind_of, be_instance_of, be_truthy, be_within, eq, eql, end_with, include, match, raise_error, respond_to, start_with",
           "type": "array"
         }
       },
@@ -17605,14 +17614,14 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `skip_modifier_ifs`",
+          "description": "Default: skip_modifier_ifs",
           "enum": [
             "skip_modifier_ifs",
             "always"
           ]
         },
         "MinBodyLength": {
-          "description": "Default: `3`",
+          "description": "Default: 3",
           "type": "integer"
         }
       },
@@ -17651,7 +17660,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `predicate`",
+          "description": "Default: predicate",
           "enum": [
             "predicate",
             "comparison"
@@ -17728,7 +17737,7 @@
           "type": "boolean"
         },
         "IncludeSemanticChanges": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -17802,7 +17811,7 @@
           "type": "boolean"
         },
         "EnforcedOctalStyle": {
-          "description": "Default: `zero_with_o`",
+          "description": "Default: zero_with_o",
           "enum": [
             "zero_with_o",
             "zero_only"
@@ -17844,11 +17853,11 @@
           "type": "boolean"
         },
         "MinDigits": {
-          "description": "Default: `5`",
+          "description": "Default: 5",
           "type": "integer"
         },
         "Strict": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -17866,7 +17875,7 @@
           "type": "boolean"
         },
         "Exclude": {
-          "description": "Default: `spec/*/`",
+          "description": "Default: spec/*/",
           "type": "array"
         },
         "Include": {
@@ -17885,14 +17894,14 @@
           "type": "string"
         },
         "EnforcedStyle": {
-          "description": "Default: `predicate`",
+          "description": "Default: predicate",
           "enum": [
             "predicate",
             "comparison"
           ]
         },
         "IgnoredMethods": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         }
       },
@@ -17931,7 +17940,7 @@
           "type": "boolean"
         },
         "AlwaysCorrectToMultiline": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -17967,7 +17976,7 @@
           "type": "string"
         },
         "SuspiciousParamNames": {
-          "description": "Default: `options`, `opts`, `args`, `params`, `parameters`",
+          "description": "Default: options, opts, args, params, parameters",
           "type": "array"
         }
       },
@@ -18035,7 +18044,7 @@
           "type": "string"
         },
         "AllowedMethods": {
-          "description": "Default: `respond_to_missing?`",
+          "description": "Default: respond_to_missing?",
           "type": "array"
         }
       },
@@ -18144,11 +18153,11 @@
           "type": "boolean"
         },
         "AllowSafeAssignment": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         },
         "AllowInMultilineConditions": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -18187,7 +18196,7 @@
           "type": "boolean"
         },
         "PreferredDelimiters": {
-          "description": "Default: `{\"default\"⇒\"()\", \"%i\"⇒\"[]\", \"%I\"⇒\"[]\", \"%r\"⇒\"{}\", \"%w\"⇒\"[]\", \"%W\"⇒\"[]\"}`"
+          "description": "Default: {\"default\"⇒\"()\", \"%i\"⇒\"[]\", \"%I\"⇒\"[]\", \"%r\"⇒\"{}\", \"%w\"⇒\"[]\", \"%W\"⇒\"[]\"}"
         }
       },
       "description": "This cop enforces the consistent usage of `%`-literal delimiters.\n\nSpecify the 'default' key to set all preferred delimiters at once. You can continue to specify individual preferred delimiters to override the default.\n\nDefault: Enabled"
@@ -18225,7 +18234,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `lower_case_q`",
+          "description": "Default: lower_case_q",
           "enum": [
             "lower_case_q",
             "upper_case_q"
@@ -18299,7 +18308,7 @@
           "type": "string"
         },
         "EnforcedStyle": {
-          "description": "Default: `short`",
+          "description": "Default: short",
           "enum": [
             "short",
             "verbose"
@@ -18376,14 +18385,14 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `exploded`",
+          "description": "Default: exploded",
           "enum": [
             "compact",
             "exploded"
           ]
         },
         "AllowedCompactTypes": {
-          "description": "Default: `[]`",
+          "description": "Default: []",
           "type": "array"
         }
       },
@@ -18454,10 +18463,10 @@
           "type": "string"
         },
         "Methods": {
-          "description": "Default: `{\"join\"⇒\"\", \"split\"⇒\" \", \"chomp\"⇒\"\\n\", \"chomp!\"⇒\"\\n\"}`"
+          "description": "Default: {\"join\"⇒\"\", \"split\"⇒\" \", \"chomp\"⇒\"\\n\", \"chomp!\"⇒\"\\n\"}"
         }
       },
-      "description": "This cop checks for a redundant argument passed to certain methods.\n\nLimitations:\n\n  1. This cop matches for method names only and hence cannot tell apart\nmethods with same name in different classes.\n\n  2. This cop is limited to methods with single parameter.\n\n  3. This cop is unsafe if certain special global variables (e.g. `$;`, `$/`) are set.\nThat depends on the nature of the target methods, of course.\n\nMethod names and their redundant arguments can be configured like this:\n\nMethods:   join: ''   split: ' '   chomp: \"\\n\"   chomp!: \"\\n\"   foo: 2\n\nDefault: Pending"
+      "description": "This cop checks for a redundant argument passed to certain methods.\n\nLimitations:\n\n  1. This cop matches for method names only and hence cannot tell apart\nmethods with same name in different classes.\n\n  2. This cop is limited to methods with single parameter.\n\n  3. This cop is unsafe if certain special global variables (e.g. $;, $/) are set.\nThat depends on the nature of the target methods, of course.\n\nMethod names and their redundant arguments can be configured like this:\n\nMethods:   join: ''   split: ' '   chomp: \"\\n\"   chomp!: \"\\n\"   foo: 2\n\nDefault: Pending"
     },
     "Style/RedundantAssignment": {
       "type": "object",
@@ -18699,7 +18708,7 @@
           "type": "string"
         },
         "SafeForConstants": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -18983,7 +18992,7 @@
           "type": "boolean"
         },
         "AllowMultipleReturnValues": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -19159,7 +19168,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `slashes`",
+          "description": "Default: slashes",
           "enum": [
             "slashes",
             "percent_r",
@@ -19167,7 +19176,7 @@
           ]
         },
         "AllowInnerSlashes": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -19206,7 +19215,7 @@
           "type": "boolean"
         }
       },
-      "description": "This cop checks for uses of rescue in its modifier form.\n\nThe cop to check `rescue` in its modifier form is added for following reasons:\n\n - The syntax of modifier form `rescue` can be misleading because it\nmight led us to believe that `rescue` handles the given exception\nbut it actually rescue all exceptions to return the given rescue\nblock. In this case, value returned by handle_error or\nSomeException.\n\n - Modifier form `rescue` would rescue all the exceptions. It would\nsilently skip all exception or errors and handle the error.\nExample: If `NoMethodError` is raised, modifier form rescue would\nhandle the exception.\n\nDefault: Enabled"
+      "description": "This cop checks for uses of rescue in its modifier form.\n\nThe cop to check `rescue` in its modifier form is added for following reasons:\n\n - The syntax of modifier form rescue can be misleading because it\nmight led us to believe that rescue handles the given exception\nbut it actually rescue all exceptions to return the given rescue\nblock. In this case, value returned by handle_error or\nSomeException.\n\n - Modifier form rescue would rescue all the exceptions. It would\nsilently skip all exception or errors and handle the error.\nExample: If NoMethodError is raised, modifier form rescue would\nhandle the exception.\n\nDefault: Enabled"
     },
     "Style/RescueStandardError": {
       "type": "object",
@@ -19241,7 +19250,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `explicit`",
+          "description": "Default: explicit",
           "enum": [
             "implicit",
             "explicit"
@@ -19283,7 +19292,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `return`",
+          "description": "Default: return",
           "enum": [
             "return",
             "return_nil"
@@ -19322,11 +19331,11 @@
           "type": "string"
         },
         "ConvertCodeThatCanStartToReturnNil": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         },
         "AllowedMethods": {
-          "description": "Default: `present?`, `blank?`, `presence`, `try`, `try!`",
+          "description": "Default: present?, blank?, presence, try, try!",
           "type": "array"
         }
       },
@@ -19435,7 +19444,7 @@
           "type": "boolean"
         },
         "AllowAsExpressionSeparator": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -19506,7 +19515,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `only_raise`",
+          "description": "Default: only_raise",
           "enum": [
             "only_raise",
             "only_fail",
@@ -19581,7 +19590,7 @@
           "type": "boolean"
         },
         "Methods": {
-          "description": "Default: `{\"reduce\"⇒[\"acc\", \"elem\"]}`, `{\"inject\"⇒[\"acc\", \"elem\"]}`",
+          "description": "Default: {\"reduce\"⇒[\"acc\", \"elem\"]}, {\"inject\"⇒[\"acc\", \"elem\"]}",
           "type": "array"
         }
       },
@@ -19620,7 +19629,7 @@
           "type": "boolean"
         },
         "AllowIfMethodIsEmpty": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         }
       },
@@ -19691,7 +19700,7 @@
           "type": "boolean"
         },
         "AllowModifier": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -19727,7 +19736,7 @@
           "type": "string"
         },
         "EnforcedStyle": {
-          "description": "Default: `use_english_names`",
+          "description": "Default: use_english_names",
           "enum": [
             "use_perl_names",
             "use_english_names"
@@ -19769,7 +19778,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `require_parentheses`",
+          "description": "Default: require_parentheses",
           "enum": [
             "require_parentheses",
             "require_no_parentheses"
@@ -19974,14 +19983,14 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `single_quotes`",
+          "description": "Default: single_quotes",
           "enum": [
             "single_quotes",
             "double_quotes"
           ]
         },
         "ConsistentQuotesInMultiline": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         }
       },
@@ -20020,7 +20029,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `single_quotes`",
+          "description": "Default: single_quotes",
           "enum": [
             "single_quotes",
             "double_quotes"
@@ -20062,7 +20071,7 @@
           "type": "boolean"
         },
         "PreferredMethods": {
-          "description": "Default: `{\"intern\"⇒\"to_sym\"}`"
+          "description": "Default: {\"intern\"⇒\"to_sym\"}"
         }
       },
       "description": "This cop enforces the use of consistent method names from the String class.\n\nDefault: Disabled"
@@ -20202,14 +20211,14 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `percent`",
+          "description": "Default: percent",
           "enum": [
             "percent",
             "brackets"
           ]
         },
         "MinSize": {
-          "description": "Default: `2`",
+          "description": "Default: 2",
           "type": "integer"
         }
       },
@@ -20280,11 +20289,11 @@
           "type": "string"
         },
         "AllowMethodsWithArguments": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         },
         "IgnoredMethods": {
-          "description": "Default: `respond_to`, `define_method`",
+          "description": "Default: respond_to, define_method",
           "type": "array"
         }
       },
@@ -20323,7 +20332,7 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `require_no_parentheses`",
+          "description": "Default: require_no_parentheses",
           "enum": [
             "require_parentheses",
             "require_no_parentheses",
@@ -20331,7 +20340,7 @@
           ]
         },
         "AllowSafeAssignment": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         }
       },
@@ -20475,7 +20484,7 @@
           "type": "boolean"
         },
         "EnforcedStyleForMultiline": {
-          "description": "Default: `no_comma`",
+          "description": "Default: no_comma",
           "enum": [
             "comma",
             "consistent_comma",
@@ -20483,7 +20492,7 @@
           ]
         }
       },
-      "description": "This cop checks for trailing comma in argument lists. The supported styles are:\n\n - `consistent_comma`: Requires a comma after the last argument,\nfor all parenthesized method calls with arguments.\n\n - `comma`: Requires a comma after the last argument, but only for\nparenthesized method calls where each argument is on its own line.\n\n - `no_comma`: Requires that there is no comma after the last\nargument.\n\nDefault: Enabled"
+      "description": "This cop checks for trailing comma in argument lists. The supported styles are:\n\n - consistent_comma: Requires a comma after the last argument,\nfor all parenthesized method calls with arguments.\n\n - comma: Requires a comma after the last argument, but only for\nparenthesized method calls where each argument is on its own line.\n\n - no_comma: Requires that there is no comma after the last\nargument.\n\nDefault: Enabled"
     },
     "Style/TrailingCommaInArrayLiteral": {
       "type": "object",
@@ -20518,7 +20527,7 @@
           "type": "boolean"
         },
         "EnforcedStyleForMultiline": {
-          "description": "Default: `no_comma`",
+          "description": "Default: no_comma",
           "enum": [
             "comma",
             "consistent_comma",
@@ -20526,7 +20535,7 @@
           ]
         }
       },
-      "description": "This cop checks for trailing comma in array literals. The configuration options are:\n\n - `consistent_comma`: Requires a comma after the\nlast item of all non-empty, multiline array literals.\n\n - `comma`: Requires a comma after last item in an array,\nbut only when each item is on its own line.\n\n - `no_comma`: Does not requires a comma after the\nlast item in an array\n\nDefault: Enabled"
+      "description": "This cop checks for trailing comma in array literals. The configuration options are:\n\n - consistent_comma: Requires a comma after the\nlast item of all non-empty, multiline array literals.\n\n - comma: Requires a comma after last item in an array,\nbut only when each item is on its own line.\n\n - no_comma: Does not requires a comma after the\nlast item in an array\n\nDefault: Enabled"
     },
     "Style/TrailingCommaInBlockArgs": {
       "type": "object",
@@ -20593,7 +20602,7 @@
           "type": "boolean"
         },
         "EnforcedStyleForMultiline": {
-          "description": "Default: `no_comma`",
+          "description": "Default: no_comma",
           "enum": [
             "comma",
             "consistent_comma",
@@ -20601,7 +20610,7 @@
           ]
         }
       },
-      "description": "This cop checks for trailing comma in hash literals. The configuration options are:\n\n - `consistent_comma`: Requires a comma after the\nlast item of all non-empty, multiline hash literals.\n\n - `comma`: Requires a comma after the last item in a hash,\nbut only when each item is on its own line.\n\n - `no_comma`: Does not requires a comma after the\nlast item in a hash\n\nDefault: Enabled"
+      "description": "This cop checks for trailing comma in hash literals. The configuration options are:\n\n - consistent_comma: Requires a comma after the\nlast item of all non-empty, multiline hash literals.\n\n - comma: Requires a comma after the last item in a hash,\nbut only when each item is on its own line.\n\n - no_comma: Does not requires a comma after the\nlast item in a hash\n\nDefault: Enabled"
     },
     "Style/TrailingMethodEndStatement": {
       "type": "object",
@@ -20671,7 +20680,7 @@
           "type": "boolean"
         },
         "AllowNamedUnderscoreVariables": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         }
       },
@@ -20710,23 +20719,23 @@
           "type": "boolean"
         },
         "ExactNameMatch": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         },
         "AllowPredicates": {
-          "description": "Default: `true`",
+          "description": "Default: true",
           "type": "boolean"
         },
         "AllowDSLWriters": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         },
         "IgnoreClassMethods": {
-          "description": "Default: `false`",
+          "description": "Default: false",
           "type": "boolean"
         },
         "AllowedMethods": {
-          "description": "Default: `to_ary`, `to_a`, `to_c`, `to_enum`, `to_h`, `to_hash`, `to_i`, `to_int`, `to_io`, `to_open`, `to_path`, `to_proc`, `to_r`, `to_regexp`, `to_str`, `to_s`, `to_sym`",
+          "description": "Default: to_ary, to_a, to_c, to_enum, to_h, to_hash, to_i, to_int, to_io, to_open, to_path, to_proc, to_r, to_regexp, to_str, to_s, to_sym",
           "type": "array"
         }
       },
@@ -20797,7 +20806,7 @@
           "type": "string"
         },
         "EnforcedStyle": {
-          "description": "Default: `forbid_mixed_logical_operators`",
+          "description": "Default: forbid_mixed_logical_operators",
           "enum": [
             "forbid_mixed_logical_operators",
             "forbid_logical_operators"
@@ -21014,18 +21023,21 @@
           "type": "boolean"
         },
         "EnforcedStyle": {
-          "description": "Default: `percent`",
+          "description": "Default: percent",
           "enum": [
             "percent",
             "brackets"
           ]
         },
         "MinSize": {
-          "description": "Default: `2`",
+          "description": "Default: 2",
           "type": "integer"
         },
         "WordRegex": {
-          "description": "Default: `(?-mix:\\A(?:\\p{Word}"
+          "description": "Default: `(?-mix:\\A(?:\\p{Word}",
+          "enum": [
+            "\\p{Word}-\\p{Word}"
+          ]
         },
         "\\n": {
           "description": "Default: \\t)+\\z)`"
@@ -21063,7 +21075,7 @@
           "type": "string"
         },
         "EnforcedStyle": {
-          "description": "Default: `forbid_for_all_comparison_operators`",
+          "description": "Default: forbid_for_all_comparison_operators",
           "enum": [
             "forbid_for_all_comparison_operators",
             "forbid_for_equality_operators_only",
