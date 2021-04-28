@@ -10,8 +10,17 @@ module RuboCop
   module Schema
     class Scraper
       DEFAULT_VERSION = -'master'
-      URL_TEMPLATE    =
+      DOCS_URL_TEMPLATE =
         -'https://raw.githubusercontent.com/rubocop/rubocop%s/%s/docs/modules/ROOT/pages/cops%s.adoc'
+      DEFAULTS_URL_TEMPLATE =
+        -'https://raw.githubusercontent.com/rubocop/rubocop%s/%s/config/default.yml'
+      TYPE_MAP = {
+        number:  [Numeric],
+        boolean: [TrueClass, FalseClass],
+        string:  [String],
+        array:   [Array]
+      }.freeze
+      EXCLUDE_ATTRIBUTES = Set.new(%w[Description VersionAdded VersionChanged StyleGuide]).freeze
 
       # @param [LockfileInspector] lockfile
       # @param [Object] cache
@@ -38,6 +47,21 @@ module RuboCop
 
               info_for(spec, department_name).each do |cop_info|
                 properties[cop_info.name] = cop_schema(cop_info)
+              end
+            end
+
+            defaults(spec)&.each do |cop_name, attributes|
+              cop = properties[cop_name] ||= cop_schema(CopInfo.new(name: cop_name))
+              cop['description'] ||= attributes['Description'] if attributes['Description']
+              attributes.each do |attr_name, attr_default|
+                next if EXCLUDE_ATTRIBUTES.include? attr_name
+
+                attr = cop['properties'][attr_name] ||= {}
+                attr['type'] ||= TYPE_MAP.find { |_, v| v.any? { |c| attr_default.is_a? c } }&.first unless attr['$ref']
+                unless attr_default.nil?
+                  attr['description'] = "Default: #{attr_default.is_a?(Array) ? attr_default.join(', ') : attr_default}"
+                end
+                attr.compact!
               end
             end
           end
@@ -116,6 +140,15 @@ module RuboCop
       end
 
       # @param [LockFileInspector::Spec] spec
+      def defaults(spec)
+        load_defaults extension: spec.short_name, version: spec.version
+      end
+
+      def load_defaults(...)
+        YAML.safe_load cache.get(url_for_defaults(...)), permitted_classes: [Regexp, Symbol]
+      end
+
+      # @param [LockFileInspector::Spec] spec
       def index(spec)
         doc         = load_doc(extension: spec.short_name, version: spec.version)
         dept_blocks = doc.query(context: :section) { |s| s.title.start_with? 'Department ' }
@@ -124,12 +157,17 @@ module RuboCop
 
       def load_doc(...)
         # noinspection RubyResolve
-        Asciidoctor.load cache.get url_for(...)
+        Asciidoctor.load cache.get url_for_doc(...)
       end
 
-      def url_for(department: nil, version: DEFAULT_VERSION, extension: nil)
+      def url_for_doc(department: nil, version: DEFAULT_VERSION, extension: nil)
         version = "v#{version}" if version =~ /\A\d+\./
-        format(URL_TEMPLATE, extension && "-#{extension}", version, department && "_#{department.to_s.downcase}")
+        format(DOCS_URL_TEMPLATE, extension && "-#{extension}", version, department && "_#{department.to_s.downcase}")
+      end
+
+      def url_for_defaults(version: DEFAULT_VERSION, extension: nil)
+        version = "v#{version}" if version =~ /\A\d+\./
+        format(DEFAULTS_URL_TEMPLATE, extension && "-#{extension}", version)
       end
 
       def link_text(str)
@@ -160,7 +198,7 @@ module RuboCop
       # @param [CopInfo] info
       def cop_schema(info)
         Schema.template('cop_schema').tap do |json|
-          json['description'] = info.description
+          json['description'] = info.description unless [nil, ''].include?(info.description)
           json['properties'] = props = json.fetch('properties').dup
 
           props['AutoCorrect'] = { 'type' => 'boolean' } if info.supports_autocorrect
