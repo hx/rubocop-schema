@@ -5,7 +5,13 @@ module RuboCop
     class CopSchema
       include Helpers
 
-      KNOWN_TYPES = Set.new(%w[boolean integer array string]).freeze
+      KNOWN_TYPES = {
+        'Boolean' => 'boolean',
+        'Integer' => 'integer',
+        'Array'   => 'array',
+        'String'  => 'string',
+        'Float'   => 'number'
+      }.freeze
 
       # @param [CopInfo] info
       def initialize(info)
@@ -53,8 +59,8 @@ module RuboCop
       # @param [Attribute] attr
       def assign_attribute(prop, attr)
         prop['description'] = "Default: #{attr.default}" unless attr.default.blank?
-        if KNOWN_TYPES.include? attr.type.downcase
-          prop['type'] = attr.type.downcase
+        if KNOWN_TYPES.key? attr.type
+          prop['type'] = KNOWN_TYPES[attr.type]
         elsif attr.type != ''
           prop['enum'] = attr.type.split(/\s*,\s*/)
         end

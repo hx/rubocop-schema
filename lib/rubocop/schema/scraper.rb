@@ -15,7 +15,8 @@ module RuboCop
       include Helpers
 
       TYPE_MAP = {
-        number:  [Numeric],
+        integer: [Integer],
+        number:  [Float],
         boolean: [TrueClass, FalseClass],
         string:  [String],
         array:   [Array]
