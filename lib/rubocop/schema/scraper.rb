@@ -6,16 +6,13 @@ require 'rubocop/schema/lockfile_inspector'
 require 'rubocop/schema/value_objects'
 require 'rubocop/schema/cop_schema'
 require 'rubocop/schema/helpers'
+require 'rubocop/schema/document_loader'
 
 module RuboCop
   module Schema
     class Scraper
       include Helpers
 
-      DOCS_URL_TEMPLATE =
-        -'https://raw.githubusercontent.com/rubocop/%s/v%s/docs/modules/ROOT/pages/cops%s.adoc'
-      DEFAULTS_URL_TEMPLATE =
-        -'https://raw.githubusercontent.com/rubocop/%s/v%s/config/default.yml'
       TYPE_MAP = {
         number:  [Numeric],
         boolean: [TrueClass, FalseClass],
@@ -30,8 +27,8 @@ module RuboCop
         raise ArgumentError unless http_client.is_a? CachedHTTPClient
         raise ArgumentError unless lockfile.is_a? LockfileInspector
 
-        @http_client = http_client
-        @lockfile    = lockfile
+        @lockfile = lockfile
+        @loader   = DocumentLoader.new(http_client)
       end
 
       def schema
@@ -51,7 +48,7 @@ module RuboCop
               end
             end
 
-            defaults(spec)&.each do |cop_name, attributes|
+            @loader.defaults(spec)&.each do |cop_name, attributes|
               cop = properties[cop_name] ||= cop_schema(CopInfo.new(name: cop_name))
               cop['description'] ||= attributes['Description'] if attributes['Description']
               cop['description'] ||= department_description(spec, cop_name) unless cop_name.include?('/')
@@ -75,9 +72,6 @@ module RuboCop
       # @return [LockfileInspector]
       attr_reader :lockfile
 
-      # @return [CachedHTTPClient]
-      attr_reader :http_client
-
       def department_description(spec, department)
         str = "'#{department}' department"
         str << " (#{spec.short_name} extension)" if spec.short_name
@@ -85,7 +79,7 @@ module RuboCop
       end
 
       def info_for(spec, department)
-        doc = load_doc(spec, department: department)
+        doc = @loader.doc(spec, department)
         cop_blocks = doc.query(context: :section) { |s| s.title.start_with? "#{department}/" }
         cop_blocks.map do |section|
           info = CopInfo.new(name: section.title)
@@ -148,28 +142,10 @@ module RuboCop
       end
 
       # @param [LockFileInspector::Spec] spec
-      def defaults(spec)
-        YAML.safe_load http_client.get(url_for_defaults(spec)), permitted_classes: [Regexp, Symbol]
-      end
-
-      # @param [LockFileInspector::Spec] spec
       def index(spec)
-        doc         = load_doc(spec)
+        doc         = @loader.doc(spec)
         dept_blocks = doc.query(context: :section) { |s| s.title.start_with? 'Department ' }
         dept_blocks.map { |section| link_text section.title }
-      end
-
-      def load_doc(...)
-        # noinspection RubyResolve
-        Asciidoctor.load http_client.get url_for_doc(...)
-      end
-
-      def url_for_doc(spec, department: nil)
-        format DOCS_URL_TEMPLATE, spec.name, spec.version, department && "_#{department.to_s.downcase}"
-      end
-
-      def url_for_defaults(spec)
-        format DEFAULTS_URL_TEMPLATE, spec.name, spec.version
       end
 
       def link_text(str)
