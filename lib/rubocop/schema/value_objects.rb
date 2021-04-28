@@ -6,5 +6,12 @@ module RuboCop
     )
     Attribute = Struct.new(:name, :type, :default, keyword_init: true)
     Event     = Struct.new(:type, :message, keyword_init: true)
+    Spec      = Struct.new(:name, :version, keyword_init: true) do
+      def short_name
+        return nil if name == 'rubocop'
+
+        name[8..]
+      end
+    end
   end
 end

@@ -16,21 +16,18 @@ module RuboCop
     class Scraper
       include Helpers
 
-      # @param [LockfileInspector] lockfile
+      # @param [Array<Spec>] specs
       # @param [DocumentLoader] document_loader
-      def initialize(lockfile, document_loader)
-        raise ArgumentError unless document_loader.is_a? DocumentLoader
-        raise ArgumentError unless lockfile.is_a? LockfileInspector
-
-        @lockfile = lockfile
-        @loader   = document_loader
+      def initialize(specs, document_loader)
+        @specs  = specs
+        @loader = document_loader
       end
 
       def schema
         template('schema').tap do |json|
           properties = json.fetch('properties')
 
-          lockfile.specs.each do |spec|
+          @specs.each do |spec|
             info = {}
 
             AsciiDoc::Index.new(@loader.doc(spec)).department_names.each do |department_name|
@@ -68,9 +65,6 @@ module RuboCop
           merged.delete 'type' if merged.key? '$ref'
         end
       end
-
-      # @return [LockfileInspector]
-      attr_reader :lockfile
 
       def department_description(spec, department)
         str = "'#{department}' department"

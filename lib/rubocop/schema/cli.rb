@@ -25,7 +25,7 @@ module RuboCop
         lockfile = LockfileInspector.new(lockfile_path)
         fail 'RuboCop is not part of this project' unless lockfile.specs.any?
 
-        schema = report_duration { Scraper.new(lockfile, document_loader).schema }
+        schema = report_duration { Scraper.new(lockfile.specs, document_loader).schema }
         puts JSON.pretty_generate schema
       end
 

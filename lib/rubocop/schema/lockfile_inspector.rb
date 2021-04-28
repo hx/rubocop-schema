@@ -1,17 +1,11 @@
 require 'bundler'
 require 'pathname'
 
+require 'rubocop/schema/value_objects'
+
 module RuboCop
   module Schema
     class LockfileInspector
-      Spec = Struct.new(:name, :version, keyword_init: true) do
-        def short_name
-          return nil if name == 'rubocop'
-
-          name[8..]
-        end
-      end
-
       KNOWN_GEMS = Set.new(
         %w[
           rubocop

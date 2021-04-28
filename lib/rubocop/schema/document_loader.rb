@@ -13,13 +13,13 @@ module RuboCop
         @defaults    = {}
       end
 
-      # @param [LockFileInspector::Spec] spec
+      # @param [Spec] spec
       def defaults(spec)
         @defaults[spec] ||=
           YAML.safe_load @http_client.get(url_for_defaults(spec)), permitted_classes: [Regexp, Symbol]
       end
 
-      # @param [LockFileInspector::Spec] spec
+      # @param [Spec] spec
       # @param [String] department
       # @return [Asciidoctor::Document]
       def doc(spec, department = nil)
