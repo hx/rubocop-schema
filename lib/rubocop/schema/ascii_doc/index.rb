@@ -10,7 +10,7 @@ module RuboCop
         protected
 
         def scan
-          @department_names = doc
+          @department_names = root
             .query(context: :section) { |s| s.title.start_with? 'Department ' }
             .map { |section| link_text section.title }
         end

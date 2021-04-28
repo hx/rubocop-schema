@@ -2,16 +2,16 @@ module RuboCop
   module Schema
     module AsciiDoc
       class Base
-        # @param [Asciidoctor::Document] ascii_doc
-        def initialize(ascii_doc)
-          @doc = ascii_doc
+        # @param [Asciidoctor::AbstractBlock] ascii_block
+        def initialize(ascii_block)
+          @root = ascii_block
           scan
         end
 
         protected
 
         # @return [Asciidoctor::Document]
-        attr_reader :doc
+        attr_reader :root
 
         def scan
           raise NotImplementedError
