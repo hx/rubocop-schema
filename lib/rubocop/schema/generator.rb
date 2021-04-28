@@ -25,39 +25,47 @@ module RuboCop
         @specs  = specs
         @loader = document_loader
         @schema = template('schema')
+        @props  = @schema.fetch('properties')
         generate
       end
 
       private
 
       def generate
-        properties = @schema.fetch('properties')
+        @specs.each &method(:generate_spec)
+      end
 
-        @specs.each do |spec|
-          info = {}
+      def generate_spec(spec)
+        info_map = read_docs(spec)
+        read_defaults(spec).each do |name, cop_info|
+          info_map[name] = info_map.key?(name) ? CopInfoMerger.merge(info_map[name], cop_info) : cop_info
+        end
+        apply_cop_info info_map
+      end
 
-          AsciiDoc::Index.new(@loader.doc(spec)).department_names.each do |department_name|
-            info[department_name] = CopInfo.new(
-              name:        department_name,
-              description: department_description(spec, department_name)
-            )
+      def read_docs(spec)
+        {}.tap do |info_map|
+          AsciiDoc::Index.new(@loader.doc(spec)).department_names.each do |department|
+            info_map[department] = department_info(spec, department)
 
-            AsciiDoc::Department.new(@loader.doc(spec, department_name)).cops.each do |cop_info|
-              info[cop_info.name] = CopInfo.new(**cop_info.to_h)
+            AsciiDoc::Department.new(@loader.doc(spec, department)).cops.each do |cop_info|
+              info_map[cop_info.name] = CopInfo.new(**cop_info.to_h)
             end
           end
+        end
+      end
 
-          if (defaults = @loader.defaults(spec))
-            DefaultsRipper.new(defaults).cops.each do |cop_info|
-              name       = cop_info.name
-              info[name] = info.key?(name) ? CopInfoMerger.merge(info[name], cop_info) : cop_info
-            end
-          end
+      def read_defaults(spec)
+        defaults = @loader.defaults(spec) or
+          return {}
 
-          info.each do |cop_name, cop_info|
-            schema               = cop_schema(cop_info)
-            properties[cop_name] = properties.key?(cop_name) ? merge_schemas(properties[cop_name], schema) : schema
-          end
+        DefaultsRipper.new(defaults).cops.to_h { |cop_info| [cop_info.name, cop_info] }
+      end
+
+      def apply_cop_info(info)
+        info.each do |cop_name, cop_info|
+          schema           = CopSchema.new(cop_info).as_json
+          @props[cop_name] = @props.key?(cop_name) ? merge_schemas(@props[cop_name], schema) : schema
         end
       end
 
@@ -69,16 +77,17 @@ module RuboCop
         end
       end
 
-      def department_description(spec, department)
-        str = "'#{department}' department"
-        str << " (#{spec.short_name} extension)" if spec.short_name
-        str
-      end
+      # @param [Spec] spec
+      # @param [String] department
+      # @return [CopInfo]
+      def department_info(spec, department)
+        description = "'#{department}' department"
+        description << " (#{spec.short_name} extension)" if spec.short_name
 
-      # @param [CopInfo] info
-      # @return [Hash]
-      def cop_schema(info)
-        CopSchema.new(info).as_json
+        CopInfo.new(
+          name:        department,
+          description: description
+        )
       end
     end
   end
