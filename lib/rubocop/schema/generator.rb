@@ -16,47 +16,50 @@ module RuboCop
     class Generator
       include Helpers
 
+      # @return Hash
+      attr_reader :schema
+
       # @param [Array<Spec>] specs
       # @param [DocumentLoader] document_loader
       def initialize(specs, document_loader)
         @specs  = specs
         @loader = document_loader
-      end
-
-      def schema
-        template('schema').tap do |json|
-          properties = json.fetch('properties')
-
-          @specs.each do |spec|
-            info = {}
-
-            AsciiDoc::Index.new(@loader.doc(spec)).department_names.each do |department_name|
-              info[department_name] = CopInfo.new(
-                name:        department_name,
-                description: department_description(spec, department_name)
-              )
-
-              AsciiDoc::Department.new(@loader.doc(spec, department_name)).cops.each do |cop_info|
-                info[cop_info.name] = CopInfo.new(**cop_info.to_h)
-              end
-            end
-
-            if (defaults = @loader.defaults(spec))
-              DefaultsRipper.new(defaults).cops.each do |cop_info|
-                name = cop_info.name
-                info[name] = info.key?(name) ? CopInfoMerger.merge(info[name], cop_info) : cop_info
-              end
-            end
-
-            info.each do |cop_name, cop_info|
-              schema = cop_schema(cop_info)
-              properties[cop_name] = properties.key?(cop_name) ? merge_schemas(properties[cop_name], schema) : schema
-            end
-          end
-        end
+        @schema = template('schema')
+        generate
       end
 
       private
+
+      def generate
+        properties = @schema.fetch('properties')
+
+        @specs.each do |spec|
+          info = {}
+
+          AsciiDoc::Index.new(@loader.doc(spec)).department_names.each do |department_name|
+            info[department_name] = CopInfo.new(
+              name:        department_name,
+              description: department_description(spec, department_name)
+            )
+
+            AsciiDoc::Department.new(@loader.doc(spec, department_name)).cops.each do |cop_info|
+              info[cop_info.name] = CopInfo.new(**cop_info.to_h)
+            end
+          end
+
+          if (defaults = @loader.defaults(spec))
+            DefaultsRipper.new(defaults).cops.each do |cop_info|
+              name       = cop_info.name
+              info[name] = info.key?(name) ? CopInfoMerger.merge(info[name], cop_info) : cop_info
+            end
+          end
+
+          info.each do |cop_name, cop_info|
+            schema               = cop_schema(cop_info)
+            properties[cop_name] = properties.key?(cop_name) ? merge_schemas(properties[cop_name], schema) : schema
+          end
+        end
+      end
 
       # @param [Hash] old
       # @param [Hash] new
