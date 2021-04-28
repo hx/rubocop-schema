@@ -9,6 +9,7 @@ require 'rubocop/schema/ascii_doc/index'
 require 'rubocop/schema/ascii_doc/department'
 require 'rubocop/schema/document_loader'
 require 'rubocop/schema/defaults_ripper'
+require 'rubocop/schema/cop_info_merger'
 
 module RuboCop
   module Schema
@@ -55,7 +56,7 @@ module RuboCop
             if (defaults = @loader.defaults(spec))
               DefaultsRipper.new(defaults).cops.each do |cop_info|
                 name = cop_info.name
-                info[name] = info.key?(name) ? merge_cops(info[name], cop_info) : cop_info
+                info[name] = info.key?(name) ? CopInfoMerger.merge(info[name], cop_info) : cop_info
               end
             end
 
@@ -68,42 +69,6 @@ module RuboCop
       end
 
       private
-
-      # @param [CopInfo] old
-      # @param [CopInfo] new
-      # @return [CopInfo]
-      def merge_cops(old, new)
-        old.dup.tap do |merged|
-          merged.supports_autocorrect = new.supports_autocorrect if merged.supports_autocorrect.nil?
-          merged.enabled_by_default   = new.enabled_by_default if merged.enabled_by_default.nil?
-          merged.attributes           = merge_attribute_sets(merged.attributes, new.attributes)
-          merged.description          ||= new.description
-        end
-      end
-
-      # @param [Array<Attribute>] old
-      # @param [Array<Attribute>] new
-      # @return [Array<Attribute>]
-      def merge_attribute_sets(old, new)
-        return old || new unless old && new
-
-        merged = old.to_h { |attr| [attr.name, attr] }
-        new.each do |attr|
-          merged[attr.name] = merged.key?(attr.name) ? merge_attributes(merged[attr.name], attr) : attr
-        end
-
-        merged.values
-      end
-
-      # @param [Attribute] old
-      # @param [Attribute] new
-      # @return [Attribute]
-      def merge_attributes(old, new)
-        old.dup.tap do |merged|
-          merged.type    ||= new.type
-          merged.default ||= new.default
-        end
-      end
 
       # @param [Hash] old
       # @param [Hash] new
