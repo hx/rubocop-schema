@@ -5,7 +5,7 @@ require 'rubocop/schema/lockfile_inspector'
 require 'rubocop/schema/value_objects'
 require 'rubocop/schema/cop_schema'
 require 'rubocop/schema/helpers'
-require 'rubocop/schema/cop_index'
+require 'rubocop/schema/ascii_doc/index'
 require 'rubocop/schema/document_loader'
 
 module RuboCop
@@ -36,7 +36,7 @@ module RuboCop
           properties = json.fetch('properties')
 
           lockfile.specs.each do |spec|
-            CopIndex.new(@loader.doc(spec)).department_names.each do |department_name|
+            AsciiDoc::Index.new(@loader.doc(spec)).department_names.each do |department_name|
               dept_info = CopInfo.new(
                 name:        department_name,
                 description: department_description(spec, department_name)
