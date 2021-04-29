@@ -7,4 +7,4 @@ require 'rubocop/schema'
 require 'rubocop/schema/cli'
 require 'json'
 
-RuboCop::Schema::CLI.new(Dir.pwd, ENV, ARGV).run
+RuboCop::Schema::CLI.new(Dir.pwd, ENV, ARGV, Dir.home).run

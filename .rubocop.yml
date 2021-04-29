@@ -51,3 +51,7 @@ Layout/SpaceInLambdaLiteral:
 
 Metrics/AbcSize:
   Max: 18
+
+Metrics/ParameterLists:
+  Exclude:
+    - lib/rubocop/schema/cli.rb

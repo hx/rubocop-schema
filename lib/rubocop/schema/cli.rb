@@ -12,10 +12,16 @@ module RuboCop
       # @param [Pathname] working_dir
       # @param [Hash] env
       # @param [Array<String>] args
-      def initialize(working_dir, env, args)
+      # @param [String] home
+      # @param [IO] out_file
+      # @param [IO] log_file
+      def initialize(working_dir, env, args, home, out_file: $stdout, log_file: $stderr)
         @working_dir = Pathname(working_dir)
+        @home_dir    = Pathname(home)
         @env         = env
         @args        = args
+        @out_file    = out_file
+        @log_file    = log_file
       end
 
       def run
@@ -26,7 +32,7 @@ module RuboCop
         fail 'RuboCop is not part of this project' unless specs.any?
 
         schema = report_duration { Generator.new(specs, document_loader).schema }
-        puts JSON.pretty_generate schema
+        @out_file.puts JSON.pretty_generate schema
       end
 
       private
@@ -42,17 +48,17 @@ module RuboCop
       def handle_event(event)
         case event.type
         when :request
-          $stderr << '.'
+          @log_file << '.'
           @line_dirty = true
         else
-          $stderr.puts '' if @line_dirty
+          @log_file.puts '' if @line_dirty
           @line_dirty = false
-          $stderr.puts event.message.to_s
+          @log_file.puts event.message.to_s
         end
       end
 
       def fail(msg)
-        $stderr.puts msg.to_s
+        @log_file.puts msg.to_s
         exit 1
       end
 
@@ -60,7 +66,7 @@ module RuboCop
         @document_loader ||=
           DocumentLoader.new(
             CachedHTTPClient.new(
-              Pathname(Dir.home) + '.rubocop-schema-cache',
+              @home_dir + '.rubocop-schema-cache',
               &method(:handle_event)
             )
           )
