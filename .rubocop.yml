@@ -40,6 +40,9 @@ Style/StderrPuts:
 Lint/AmbiguousOperator:
   Enabled: false
 
+Lint/AmbiguousRegexpLiteral:
+  Enabled: false
+
 Lint/AmbiguousBlockAssociation:
   Enabled: false
 
@@ -55,3 +58,13 @@ Metrics/AbcSize:
 Metrics/ParameterLists:
   Exclude:
     - lib/rubocop/schema/cli.rb
+
+Style/FormatStringToken:
+  Enabled: false
+
+RSpec/NamedSubject:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Exclude:
+    - spec/rubocop/schema/cli_spec.rb
