@@ -1,6 +1,8 @@
 #!/usr/bin/env ruby
 
-require 'bundler/setup'
+Dir.chdir File.expand_path('..', __dir__) do
+  require 'bundler/setup'
+end
 require 'rubocop/schema'
 require 'rubocop/schema/cli'
 require 'json'
