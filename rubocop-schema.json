@@ -3741,7 +3741,7 @@
           "description": "Default: []"
         }
       },
-      "description": "Each gem in the Gemfile should have a comment explaining its purpose in the project, or the reason for its version or source.\n\nThe optional \"OnlyFor\" configuration array can be used to only register offenses when the gems use certain options or have version specifiers.\n\nWhen \"version_specifiers\" is included, a comment will be enforced if the gem has any version specifier.\n\nWhen \"restrictive_version_specifiers\" is included, a comment will be enforced if the gem has a version specifier that holds back the version of the gem.\n\nFor any other value in the array, a comment will be enforced for a gem if an option by the same name is present. A useful use case is to enforce a comment when using options that change the source of a gem:\n\n - bitbucket\n\n - gist\n\n - git\n\n - github\n\n - source\n\nFor a full list of options supported by bundler, see https://bundler.io/man/gemfile.5.html ."
+      "description": "Add a comment describing each gem in your Gemfile.\n\nOptionally, the \"OnlyFor\" configuration can be used to only register offenses when the gems use certain options or have version specifiers. Add \"version_specifiers\" and/or the gem option names you want to check.\n\nA useful use-case is to enforce a comment when using options that change the source of a gem:\n\n - bitbucket\n\n - gist\n\n - git\n\n - github\n\n - source\n\nFor a full list of options supported by bundler, you can check the https://bundler.io/man/gemfile.5.html[official documentation]."
     },
     "Bundler/InsecureProtocolSource": {
       "type": "object",
@@ -6839,45 +6839,6 @@
       },
       "description": "Here we check if the parameters on a multi-line method call or definition are aligned.\n\nTo set the alignment of the first argument, use the cop FirstParameterIndentation."
     },
-    "Layout/RedundantLineBreak": {
-      "type": "object",
-      "additionalProperties": true,
-      "propertyNames": {
-        "$ref": "#/definitions/attributeName"
-      },
-      "properties": {
-        "Enabled": {
-          "type": "boolean",
-          "description": "Default: false"
-        },
-        "Exclude": {
-          "$ref": "#/definitions/listOfFiles"
-        },
-        "Include": {
-          "$ref": "#/definitions/listOfFiles"
-        },
-        "Severity": {
-          "$ref": "#/definitions/severity"
-        },
-        "Details": {
-          "type": "string"
-        },
-        "StyleGuideBaseURL": {
-          "type": "string"
-        },
-        "StyleGuide": {
-          "type": "string"
-        },
-        "AutoCorrect": {
-          "type": "boolean"
-        },
-        "InspectBlocks": {
-          "type": "boolean",
-          "description": "Default: false"
-        }
-      },
-      "description": "This cop checks whether certain expressions, e.g. method calls, that could fit completely on a single line, are broken up into multiple lines unnecessarily."
-    },
     "Layout/RescueEnsureAlignment": {
       "type": "object",
       "additionalProperties": true,
@@ -8189,13 +8150,9 @@
         },
         "StyleGuide": {
           "type": "string"
-        },
-        "IgnoredMethods": {
-          "type": "array",
-          "description": "Default: []"
         }
       },
-      "description": "This cop checks for ambiguous block association with method when param passed without parentheses.\n\nThis cop can customize ignored methods with `IgnoredMethods`."
+      "description": "This cop checks for ambiguous block association with method when param passed without parentheses."
     },
     "Lint/AmbiguousOperator": {
       "type": "object",

@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.homepage    = 'https://github.com/hx/rubocop-schema'
   spec.license     = 'MIT'
 
-  spec.required_ruby_version = Gem::Requirement.new('>= 3.0.0')
+  spec.required_ruby_version = Gem::Requirement.new('>= 2.4.0')
 
   spec.metadata['homepage_uri']    = spec.homepage
   spec.metadata['source_code_uri'] = spec.homepage
@@ -27,5 +27,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_dependency 'asciidoctor', '~> 2.0.14'
-  spec.add_dependency 'nokogiri', '~> 1.11'
+  spec.add_dependency 'bundler', '>= 1.17'
+  spec.add_dependency 'nokogiri', '~> 1'
 end

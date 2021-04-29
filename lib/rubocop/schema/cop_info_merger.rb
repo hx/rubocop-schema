@@ -32,7 +32,7 @@ module RuboCop
       def merge_attribute_sets(old, new)
         return old || new unless old && new
 
-        merged = old.to_h { |attr| [attr.name, attr] }
+        merged = old.map { |attr| [attr.name, attr] }.to_h
         new.each do |attr|
           merged[attr.name] = merged.key?(attr.name) ? merge_attributes(merged[attr.name], attr) : attr
         end

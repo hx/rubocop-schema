@@ -33,7 +33,7 @@ module RuboCop
 
       # @param [URI::HTTP] url
       def path_for_url(url)
-        @cache_dir + url.scheme + url.hostname + url.path[1..]
+        @cache_dir + url.scheme + url.hostname + url.path[1..-1]
       end
     end
   end

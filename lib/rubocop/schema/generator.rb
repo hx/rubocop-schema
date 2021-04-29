@@ -59,7 +59,7 @@ module RuboCop
         defaults = @loader.defaults(spec) or
           return {}
 
-        DefaultsRipper.new(defaults).cops.to_h { |cop_info| [cop_info.name, cop_info] }
+        DefaultsRipper.new(defaults).cops.map { |cop_info| [cop_info.name, cop_info] }.to_h
       end
 
       def apply_cop_info(info)

@@ -33,9 +33,9 @@ module RuboCop
         def table_to_hash(table)
           headings = table.rows.head.first.map(&:text)
           table.rows.body.map do |row|
-            headings.each_with_index.to_h do |heading, i|
+            headings.each_with_index.map do |heading, i|
               [heading, strip_html(row[i].text)]
-            end
+            end.to_h
           end
         end
 

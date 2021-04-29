@@ -20,8 +20,10 @@ module RuboCop
         # @return [Array<Attribute>]
         attr_reader :attributes
 
+        ATTRS = public_instance_methods(false).freeze
+
         def to_h
-          (public_methods(false) - [:to_h]).to_h { |k| [k, __send__(k)] }
+          ATTRS.map { |k| [k, __send__(k)] }.to_h
         end
 
         protected

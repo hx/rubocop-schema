@@ -23,7 +23,7 @@ module RuboCop
 
         case old
         when Hash
-          old.merge(new.to_h { |k, v| [k, old.key?(k) ? deep_merge(old[k], v, &block) : v] })
+          old.merge(new.map { |k, v| [k, old.key?(k) ? deep_merge(old[k], v, &block) : v] }.to_h)
             .tap { |merged| yield merged if block_given? }
         when Array
           old | new

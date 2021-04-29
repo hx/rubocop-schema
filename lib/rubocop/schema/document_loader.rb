@@ -16,7 +16,7 @@ module RuboCop
       # @param [Spec] spec
       def defaults(spec)
         @defaults[spec] ||=
-          YAML.safe_load @http_client.get(url_for_defaults(spec)), permitted_classes: [Regexp, Symbol]
+          YAML.safe_load @http_client.get(url_for_defaults(spec)), [Regexp, Symbol]
       end
 
       # @param [Spec] spec

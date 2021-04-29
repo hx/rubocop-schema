@@ -1,17 +1,23 @@
 module RuboCop
   module Schema
-    CopInfo = Struct.new(
-      :name, :description, :attributes, :supports_autocorrect, :enabled_by_default,
-      keyword_init: true
-    )
-    Attribute = Struct.new(:name, :type, :default, keyword_init: true)
-    Event     = Struct.new(:type, :message, keyword_init: true)
-    Spec      = Struct.new(:name, :version, keyword_init: true) do
+    CopInfo   = Struct.new(:name, :description, :attributes, :supports_autocorrect, :enabled_by_default)
+    Attribute = Struct.new(:name, :type, :default)
+    Event     = Struct.new(:type, :message)
+    Spec      = Struct.new(:name, :version) do
       def short_name
         return nil if name == 'rubocop'
 
-        name[8..]
+        name[8..-1]
       end
     end
+
+    # Support for Ruby 2.4
+    module KeywordInitPatch
+      def initialize(**attrs)
+        super *self.class.members.map { |k| attrs[k] }
+      end
+    end
+
+    [CopInfo, Attribute, Event, Spec].each { |klass| klass.include KeywordInitPatch }
   end
 end
