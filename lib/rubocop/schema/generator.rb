@@ -1,7 +1,6 @@
 require 'asciidoctor'
 require 'nokogiri'
 
-require 'rubocop/schema/lockfile_inspector'
 require 'rubocop/schema/value_objects'
 require 'rubocop/schema/cop_schema'
 require 'rubocop/schema/helpers'

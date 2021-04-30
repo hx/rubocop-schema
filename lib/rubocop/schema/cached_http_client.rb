@@ -19,7 +19,10 @@ module RuboCop
 
         path.parent.mkpath
         @event_handler&.call Event.new(type: :request)
-        Net::HTTP.get(url).force_encoding(Encoding::UTF_8).tap(&path.method(:write))
+
+        res = Net::HTTP.get_response(url)
+        res.body = '' unless res.is_a? Net::HTTPOK
+        res.body.force_encoding(Encoding::UTF_8).tap(&path.method(:write))
       end
 
       private

@@ -3,8 +3,8 @@ require 'json'
 
 require 'rubocop/schema/document_loader'
 require 'rubocop/schema/cached_http_client'
-require 'rubocop/schema/lockfile_inspector'
 require 'rubocop/schema/generator'
+require 'rubocop/schema/extension_spec'
 
 module RuboCop
   module Schema
@@ -28,7 +28,7 @@ module RuboCop
         lockfile_path = @working_dir + 'Gemfile.lock'
         fail "Cannot read #{lockfile_path}" unless lockfile_path.readable?
 
-        specs = LockfileInspector.new(lockfile_path).specs
+        specs = ExtensionSpec.from_lockfile(lockfile_path).specs
         fail 'RuboCop is not part of this project' unless specs.any?
 
         schema = report_duration { Generator.new(specs, document_loader).schema }

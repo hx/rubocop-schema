@@ -9,6 +9,10 @@ module RuboCop
 
         name[8..-1]
       end
+
+      def to_s
+        "#{short_name || name}-#{version}"
+      end
     end
 
     # Support for Ruby 2.4
