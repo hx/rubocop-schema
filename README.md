@@ -1,44 +1,39 @@
-# Rubocop::Schema
+# RuboCop Config Schema Generator
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/rubocop/schema`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This gem generates a JSON schema for your RuboCop configuration files, which you can use in your IDE (e.g. RubyMine) for autocompletion and validation.
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'rubocop-schema'
-```
-
-And then execute:
-
-    $ bundle install
-
-Or install it yourself as:
-
-    $ gem install rubocop-schema
+    $ gem install rubocop-schema-gem
 
 ## Usage
 
-TODO: Write usage instructions here
+Change to a directory containing a `Gemfile.lock`, which the generator will use to target your version of `rubocop`, and any extensions you may be using (e.g. `rubocop-rails`).
 
-## Development
+```
+$ cd ./my_project
+$ rubocop-schema-gen
+Generating rubocop-1.13.1-config-schema.json … complete in 5.2s
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+The name of the generated file is based on your gem version(s). You can override it with an argument.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+```
+$ rubocop-schema-gen rubocop-schema.json
+Generating rubocop-schema.json … complete in 0.7s
+```
+
+Pass `-` to write to standard output.
+
+The generator caches pages from https://raw.githubusercontent.com/rubocop in `~/.rubocop-schema-cache`.
+
+Please refer to your IDE's documentation regarding applying the schema to your `.rubocop.yml` file.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/rubocop-schema. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/rubocop-schema/blob/master/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/hx/rubocop-schema. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/hx/rubocop-schema/blob/master/CODE_OF_CONDUCT.md).
 
 
 ## License
 
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-## Code of Conduct
-
-Everyone interacting in the Rubocop::Schema project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/rubocop-schema/blob/master/CODE_OF_CONDUCT.md).
+The gem is available as open source under the terms of the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
