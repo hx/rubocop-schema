@@ -48,7 +48,11 @@ module RuboCop
       end
 
       def to_s
-        specs.join '-'
+        @specs.join '-'
+      end
+
+      def empty?
+        @specs.empty?
       end
     end
   end

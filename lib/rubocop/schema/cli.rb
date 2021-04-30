@@ -15,34 +15,56 @@ module RuboCop
       # @param [String] home
       # @param [IO] out_file
       # @param [IO] log_file
-      def initialize(working_dir: Dir.pwd, env: ENV, args: ARGV, home: Dir.home, out_file: $stdout, log_file: $stderr)
+      def initialize(working_dir: Dir.pwd, env: ENV, args: ARGV, home: Dir.home, out_file: nil, log_file: $stderr)
         @working_dir = Pathname(working_dir)
         @home_dir    = Pathname(home)
         @env         = env
         @args        = args
         @out_file    = out_file
         @log_file    = log_file
+        @out_path    = args.first
+
+        raise ArgumentError, 'Cannot accept an out_file and an argument' if @out_file && @out_path
       end
 
       def run
         lockfile_path = @working_dir + 'Gemfile.lock'
         fail "Cannot read #{lockfile_path}" unless lockfile_path.readable?
 
-        specs = ExtensionSpec.from_lockfile(lockfile_path).specs
-        fail 'RuboCop is not part of this project' unless specs.any?
+        spec = ExtensionSpec.from_lockfile(lockfile_path)
+        fail 'RuboCop is not part of this project' if spec.empty?
 
-        schema = report_duration { Generator.new(specs, document_loader).schema }
+        assign_outfile(spec)
+        print "Generating #{@out_path} … " if @out_path
+
+        schema = report_duration(lowercase: @out_path) { Generator.new(spec.specs, document_loader).schema }
         @out_file.puts JSON.pretty_generate schema
       end
 
       private
 
-      def report_duration
+      def assign_outfile(spec)
+        return if @out_file
+
+        case @out_path
+        when '-'
+          @out_file = $stdout
+          @out_path = nil
+        when nil
+          @out_path = "#{spec}-config-schema.json"
+        end
+
+        @out_file ||= File.open(@out_path, 'w') # rubocop:disable Naming/MemoizedInstanceVariableName
+      end
+
+      def report_duration(lowercase: false)
         started = Time.now
         yield
       ensure
         finished = Time.now
-        handle_event Event.new(message: "Complete in #{(finished - started).round 1}s")
+        message  = "Complete in #{(finished - started).round 1}s"
+        message.downcase! if lowercase
+        handle_event Event.new(message: message)
       end
 
       def handle_event(event)
