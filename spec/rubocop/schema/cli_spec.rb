@@ -1,7 +1,16 @@
 require 'tmpdir'
 
 describe RuboCop::Schema::CLI do
-  subject { described_class.new RuboCop::Schema::ROOT, {}, [], home, out_file: stdout, log_file: stderr }
+  subject do
+    described_class.new(
+      working_dir: RuboCop::Schema::ROOT,
+      env:         {},
+      args:        [],
+      home:        home,
+      out_file:    stdout,
+      log_file:    stderr
+    )
+  end
 
   around do |ex|
     Dir.mktmpdir do |dir|

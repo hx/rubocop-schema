@@ -15,7 +15,7 @@ module RuboCop
       # @param [String] home
       # @param [IO] out_file
       # @param [IO] log_file
-      def initialize(working_dir, env, args, home, out_file: $stdout, log_file: $stderr)
+      def initialize(working_dir: Dir.pwd, env: ENV, args: ARGV, home: Dir.home, out_file: $stdout, log_file: $stderr)
         @working_dir = Pathname(working_dir)
         @home_dir    = Pathname(home)
         @env         = env

@@ -59,6 +59,10 @@ Metrics/ParameterLists:
   Exclude:
     - lib/rubocop/schema/cli.rb
 
+Metrics/BlockLength:
+  IgnoredMethods:
+    - describe
+
 Style/FormatStringToken:
   Enabled: false
 
