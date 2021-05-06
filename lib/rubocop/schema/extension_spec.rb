@@ -28,16 +28,24 @@ module RuboCop
         end.compact)
       end
 
+      # @param [Pathname] lockfile
       def self.from_lockfile(lockfile)
-        new(Bundler::LockfileParser.new(lockfile.to_s).sources.flat_map do |source|
-          source.specs.map do |stub|
-            next unless KNOWN_GEMS.include? stub.name
+        new(lockfile.readlines.map do |line|
+          next unless line =~ /\A\s+(rubocop(?:-\w+)?) \((\d+(?:\.\d+)+)\)\s*\z/
+          next unless KNOWN_GEMS.include? $1
 
-            Spec.new(
-              name:    stub.name,
-              version: stub.version.to_s
-            )
-          end.compact
+          Spec.new(name: $1, version: $2)
+        end.compact)
+      end
+
+      def self.from_string(string)
+        new(string.split('-').each_slice(2).map do |(name, version)|
+          name = "rubocop-#{name}" unless name == 'rubocop'
+
+          raise ArgumentError, "Unknown gem '#{name}'" unless KNOWN_GEMS.include? name
+          raise ArgumentError, "Invalid version '#{version}'" unless version&.match? /\A\d+(?:\.\d+)+\z/
+
+          Spec.new(name: name, version: version)
         end)
       end
 

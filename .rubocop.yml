@@ -37,6 +37,9 @@ Style/StringConcatenation:
 Style/StderrPuts:
   Enabled: false
 
+Style/PerlBackrefs:
+  Enabled: false
+
 Lint/AmbiguousOperator:
   Enabled: false
 

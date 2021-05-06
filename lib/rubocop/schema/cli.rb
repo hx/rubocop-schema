@@ -22,19 +22,14 @@ module RuboCop
         @args        = args
         @out_file    = out_file
         @log_file    = log_file
-        @out_path    = args.first
 
-        raise ArgumentError, 'Cannot accept an out_file and an argument' if @out_file && @out_path
+        raise ArgumentError, 'Cannot accept an out_file and an argument' if @out_file && args.first
       end
 
       def run
-        lockfile_path = @working_dir + 'Gemfile.lock'
-        fail "Cannot read #{lockfile_path}" unless lockfile_path.readable?
+        read_flag while @args.first&.start_with?('--')
+        assign_outfile
 
-        spec = ExtensionSpec.from_lockfile(lockfile_path)
-        fail 'RuboCop is not part of this project' if spec.empty?
-
-        assign_outfile(spec)
         print "Generating #{@out_path} … " if @out_path
 
         schema = report_duration(lowercase: @out_path) { Generator.new(spec.specs, document_loader).schema }
@@ -43,18 +38,48 @@ module RuboCop
 
       private
 
-      def assign_outfile(spec)
+      def read_flag
+        case @args.shift
+        when '--version'
+          info VERSION
+        when '--spec'
+          info spec
+        when /\A--spec=(\S+)/
+          @spec = ExtensionSpec.from_string($1)
+        end
+      end
+
+      def spec
+        @spec ||=
+          begin
+            lockfile_path = @working_dir + 'Gemfile.lock'
+            fail "Cannot read #{lockfile_path}" unless lockfile_path.readable?
+
+            spec = ExtensionSpec.from_lockfile(lockfile_path)
+            fail 'RuboCop is not part of this project' if spec.empty?
+
+            spec
+          end
+      end
+
+      def assign_outfile
         return if @out_file
 
-        case @out_path
-        when '-'
-          @out_file = $stdout
-          @out_path = nil
-        when nil
-          @out_path = "#{spec}-config-schema.json"
-        end
+        @out_path = path_from_arg(@args.first)
 
         @out_file ||= File.open(@out_path, 'w') # rubocop:disable Naming/MemoizedInstanceVariableName
+      end
+
+      def path_from_arg(arg)
+        case arg
+        when '-'
+          @out_file = $stdout
+          nil
+        when nil
+          "#{spec}-config-schema.json"
+        else
+          arg
+        end
       end
 
       def report_duration(lowercase: false)
@@ -77,6 +102,11 @@ module RuboCop
           @line_dirty = false
           @log_file.puts event.message.to_s
         end
+      end
+
+      def info(msg)
+        $stdout.puts msg
+        exit
       end
 
       def fail(msg)
