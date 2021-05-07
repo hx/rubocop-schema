@@ -1,5 +1,4 @@
 require 'pathname'
-require 'rubocop'
 
 require 'rubocop/schema/version'
 
