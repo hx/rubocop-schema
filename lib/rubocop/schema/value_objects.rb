@@ -2,8 +2,14 @@ module RuboCop
   module Schema
     CopInfo   = Struct.new(:name, :description, :attributes, :supports_autocorrect, :enabled_by_default)
     Attribute = Struct.new(:name, :type, :default)
-    Event     = Struct.new(:type, :message)
-    Spec      = Struct.new(:name, :version) do
+
+    Event = Struct.new(:type, :message) do
+      def self.dispatch(**kwargs)
+        yield new(**kwargs) if block_given?
+      end
+    end
+
+    Spec = Struct.new(:name, :version) do
       def short_name
         return nil if name == 'rubocop'
 

@@ -1,3 +1,6 @@
+require 'nokogiri'
+require 'uri'
+
 module RuboCop
   module Schema
     module Helpers
@@ -45,6 +48,13 @@ module RuboCop
       # TODO: look into the Asciidoctor for a way to do a non-HTML conversion
       def strip_html(str)
         Nokogiri::HTML(str).text
+      end
+
+      def http_get(url)
+        url = URI(url)
+        res = Net::HTTP.get_response(url)
+        res.body = '' unless res.is_a? Net::HTTPOK
+        res.body.force_encoding Encoding::UTF_8
       end
     end
   end

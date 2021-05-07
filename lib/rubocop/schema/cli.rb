@@ -5,6 +5,7 @@ require 'rubocop/schema/document_loader'
 require 'rubocop/schema/cached_http_client'
 require 'rubocop/schema/generator'
 require 'rubocop/schema/extension_spec'
+require 'rubocop/schema/repo'
 
 module RuboCop
   module Schema
@@ -46,7 +47,14 @@ module RuboCop
           info spec
         when /\A--spec=(\S+)/
           @spec = ExtensionSpec.from_string($1)
+        when /\A--build-repo=(.+)/
+          build_repo $1
         end
+      end
+
+      def build_repo(dir)
+        Repo.new(dir, document_loader, &method(:handle_event)).build
+        exit
       end
 
       def spec

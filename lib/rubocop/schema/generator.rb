@@ -1,6 +1,3 @@
-require 'asciidoctor'
-require 'nokogiri'
-
 require 'rubocop/schema/value_objects'
 require 'rubocop/schema/cop_schema'
 require 'rubocop/schema/helpers'
@@ -32,6 +29,7 @@ module RuboCop
 
       def generate
         @specs.each &method(:generate_spec)
+        @props.delete 'AllCops' unless @specs.any? { |s| s.name == 'rubocop' }
       end
 
       def generate_spec(spec)

@@ -2,9 +2,13 @@ require 'pathname'
 require 'uri'
 require 'net/http'
 
+require 'rubocop/schema/helpers'
+
 module RuboCop
   module Schema
     class CachedHTTPClient
+      include Helpers
+
       def initialize(cache_dir, &event_handler)
         @cache_dir     = Pathname(cache_dir)
         @event_handler = event_handler
@@ -18,11 +22,9 @@ module RuboCop
         return path.read if path.readable?
 
         path.parent.mkpath
-        @event_handler&.call Event.new(type: :request)
+        Event.dispatch type: :request, &@event_handler
 
-        res = Net::HTTP.get_response(url)
-        res.body = '' unless res.is_a? Net::HTTPOK
-        res.body.force_encoding(Encoding::UTF_8).tap(&path.method(:write))
+        http_get(url).tap(&path.method(:write))
       end
 
       private
