@@ -1,5 +1,7 @@
 require 'nokogiri'
 require 'uri'
+require 'yaml'
+require 'net/http'
 
 module RuboCop
   module Schema

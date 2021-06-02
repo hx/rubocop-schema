@@ -1,6 +1,5 @@
 require 'pathname'
 require 'uri'
-require 'net/http'
 
 require 'rubocop/schema/helpers'
 

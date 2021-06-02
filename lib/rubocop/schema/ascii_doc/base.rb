@@ -1,3 +1,5 @@
+require 'nokogiri'
+
 require 'rubocop/schema/ascii_doc/stringifier'
 require 'rubocop/schema/helpers'
 

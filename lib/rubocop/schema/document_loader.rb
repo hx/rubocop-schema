@@ -1,4 +1,5 @@
 require 'asciidoctor'
+require 'yaml'
 
 module RuboCop
   module Schema

@@ -2,6 +2,8 @@ require 'json'
 
 require 'rubocop/schema/helpers'
 require 'rubocop/schema/diff'
+require 'rubocop/schema/extension_spec'
+require 'rubocop/schema/value_objects'
 
 module RuboCop
   module Schema
