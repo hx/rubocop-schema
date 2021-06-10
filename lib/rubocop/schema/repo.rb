@@ -10,7 +10,10 @@ module RuboCop
     class Repo
       include Helpers
 
-      TAGS_URL_TEMPLATE = -'https://api.github.com/repos/rubocop/%s/tags'
+      # GitHub public APIs have a rate limit of 60/hour when making unauthenticated requests. 100 items
+      # per page is the maximum allowed, which we'll use to keep the number of requests to a minimum.
+      TAGS_PER_PAGE     = 100
+      TAGS_URL_TEMPLATE = -"https://api.github.com/repos/rubocop/%s/tags?page=%d&per_page=#{TAGS_PER_PAGE}"
 
       def initialize(dir, loader, &event_handler)
         @dir           = Pathname(dir)
@@ -71,10 +74,17 @@ module RuboCop
       end
 
       def versions_of(name)
-        json = http_get(format(TAGS_URL_TEMPLATE, name))
-        raise "No tags available for #{name}" if json == ''
+        tags = []
+        loop do
+          json = http_get(format(TAGS_URL_TEMPLATE, name, (tags.length / TAGS_PER_PAGE) + 1))
+          raise "No tags available for #{name}" if json == ''
 
-        JSON.parse(json).reverse.map { |obj| obj['name'].to_s[/(?<=\Av)\d.+/] }.compact
+          parsed = JSON.parse(json)
+          tags += parsed
+          break unless parsed.length == TAGS_PER_PAGE
+        end
+
+        tags.reverse.map { |obj| obj['name'].to_s[/(?<=\Av)\d.+/] }.compact
       end
     end
   end
