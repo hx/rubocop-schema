@@ -19,13 +19,15 @@ module RuboCop
       # @param [Hash] defaults
       def initialize(defaults)
         @cops = defaults.map do |cop_name, attributes|
+          next unless attributes.is_a? Hash
+
           CopInfo.new(
             name:               cop_name,
             description:        attributes['Description'],
             enabled_by_default: attributes['Enabled'] == true,
             attributes:         transform_attributes(attributes)
           )
-        end
+        end.compact
       end
 
       private
