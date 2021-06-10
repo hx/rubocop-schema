@@ -30,5 +30,4 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'asciidoctor', '~> 2.0.14'
   spec.add_dependency 'bundler', '>= 1.17'
-  spec.add_dependency 'nokogiri', '~> 1'
 end

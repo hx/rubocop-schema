@@ -1,7 +1,7 @@
-require 'nokogiri'
 require 'uri'
 require 'yaml'
 require 'net/http'
+require 'cgi'
 
 module RuboCop
   module Schema
@@ -47,9 +47,8 @@ module RuboCop
 
       # Used for stripping HTML from Asciidoctor output, where raw output is not available, or not
       # appropriate to use.
-      # TODO: look into the Asciidoctor for a way to do a non-HTML conversion
       def strip_html(str)
-        Nokogiri::HTML(str).text
+        CGI.unescapeHTML str.gsub(/<.*?>/, '').gsub(/\s+/, ' ')
       end
 
       def http_get(url)

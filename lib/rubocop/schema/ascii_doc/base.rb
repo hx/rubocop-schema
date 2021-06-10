@@ -1,5 +1,3 @@
-require 'nokogiri'
-
 require 'rubocop/schema/ascii_doc/stringifier'
 require 'rubocop/schema/helpers'
 
@@ -26,8 +24,7 @@ module RuboCop
 
         def link_text(str)
           # The Asciidoctor API doesn't provide access to the raw title, or parts of it.
-          # If performance becomes an issue, this could become a regexp or similarly crude solution.
-          Nokogiri::HTML(str).at_css('a')&.text
+          str[%r{<a\s.+?>(.+?)</a>}, 1]&.then &method(:strip_html)
         end
 
         # @param [Asciidoctor::Table] table
