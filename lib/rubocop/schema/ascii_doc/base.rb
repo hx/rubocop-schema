@@ -24,7 +24,9 @@ module RuboCop
 
         def link_text(str)
           # The Asciidoctor API doesn't provide access to the raw title, or parts of it.
-          str[%r{<a\s.+?>(.+?)</a>}, 1]&.then &method(:strip_html)
+          return unless (text = str[%r{<a\s.+?>(.+?)</a>}, 1])
+
+          strip_html text
         end
 
         # @param [Asciidoctor::Table] table
